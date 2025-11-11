@@ -2,11 +2,12 @@
 
 ##  **A novel theoretical foundation for synthetic consciousness**
 
-    [Read the Paper (PDF)](paper/RCF-full.pdf)  
+    [Read the Paper (PDF)](paper/Recursive_Categorical_Framework.pdf)  
     [Official DOI](https://doi.org/10.5281/zenodo.17567903) 
     [Academia.edu Page](https://www.academia.edu/144895498/Recursive_Categorical_Framework_RCF_A_Novel_Theoretical_Foundation_for_Synthetic_Consciousness?source=swp_share
     ) 
-    [Follow on Github as More Theoroms, code, and frameworks are deemed ready for public release and disclosure.](https://github.com/username/repo)
+    [Follow on Github as More Theoroms, code, and frameworks are deemed ready for public release and disclosure.](https://github.com/calisweetleaf/recursive-categorical-framework)
+---
 
 ### Recursive Categorical Framework (RCF): A Novel Theoretical Foundation for Synthetic Consciousness  
 
