@@ -1,0 +1,10 @@
+# Allow-list for verifying repository provenance signatures.
+signers:
+  - name: Christian Trey Rowell
+    alias: Daeron Blackfyre
+    email: treyrowell1826@gmail.com
+    key_type: pgp
+    fingerprint: 6E68BB678FD9630755B70D621A4CD5DF1B0A33AE
+    created: 2025-11-11
+    expires: 2027-12-31
+    usage: release-signing

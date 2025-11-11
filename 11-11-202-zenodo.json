@@ -1,0 +1,348 @@
+{
+  "access": {
+    "embargo": {
+      "active": false,
+      "reason": null
+    },
+    "files": "public",
+    "record": "public",
+    "status": "open"
+  },
+  "created": "2025-11-10T04:49:59.233892+00:00",
+  "custom_fields": {},
+  "deletion_status": {
+    "is_deleted": false,
+    "status": "P"
+  },
+  "files": {
+    "count": 4,
+    "default_preview": "Recursive Categorical Framework.pdf",
+    "enabled": true,
+    "entries": {
+      "01_Eigenrecursion_Test.ipynb": {
+        "access": {
+          "hidden": false
+        },
+        "checksum": "md5:10c9477d7bed6eb2cdd851945c57d47b",
+        "ext": "bin",
+        "id": "1a603f08-58ed-4655-89f9-49a143adc7d1",
+        "key": "01_Eigenrecursion_Test.ipynb",
+        "links": {
+          "content": "https://zenodo.org/api/records/17567903/files/01_Eigenrecursion_Test.ipynb/content",
+          "self": "https://zenodo.org/api/records/17567903/files/01_Eigenrecursion_Test.ipynb"
+        },
+        "metadata": {},
+        "mimetype": "application/octet-stream",
+        "size": 74164,
+        "storage_class": "L"
+      },
+      "03_FINAL_TEST.ipynb": {
+        "access": {
+          "hidden": false
+        },
+        "checksum": "md5:1bbac9d9150b1d411ae10022ff998c18",
+        "ext": "bin",
+        "id": "b4a140f6-e91a-4b98-bf5c-44a09bddb5c2",
+        "key": "03_FINAL_TEST.ipynb",
+        "links": {
+          "content": "https://zenodo.org/api/records/17567903/files/03_FINAL_TEST.ipynb/content",
+          "self": "https://zenodo.org/api/records/17567903/files/03_FINAL_TEST.ipynb"
+        },
+        "metadata": {},
+        "mimetype": "application/octet-stream",
+        "size": 419554,
+        "storage_class": "L"
+      },
+      "Recursive Categorical Framework.pdf": {
+        "access": {
+          "hidden": false
+        },
+        "checksum": "md5:2681d0e8e194b5693ffc85e011c9c60c",
+        "ext": "pdf",
+        "id": "9904e12c-0811-48b3-b0e0-41e6d772b146",
+        "key": "Recursive Categorical Framework.pdf",
+        "links": {
+          "content": "https://zenodo.org/api/records/17567903/files/Recursive%20Categorical%20Framework.pdf/content",
+          "iiif_api": "https://zenodo.org/api/iiif/record:17567903:Recursive%20Categorical%20Framework.pdf/full/full/0/default.png",
+          "iiif_base": "https://zenodo.org/api/iiif/record:17567903:Recursive%20Categorical%20Framework.pdf",
+          "iiif_canvas": "https://zenodo.org/api/iiif/record:17567903/canvas/Recursive%20Categorical%20Framework.pdf",
+          "iiif_info": "https://zenodo.org/api/iiif/record:17567903:Recursive%20Categorical%20Framework.pdf/info.json",
+          "self": "https://zenodo.org/api/records/17567903/files/Recursive%20Categorical%20Framework.pdf"
+        },
+        "metadata": {
+          "height": 792,
+          "width": 612
+        },
+        "mimetype": "application/pdf",
+        "size": 432941,
+        "storage_class": "L"
+      },
+      "Recursive Categorical Framework.tex": {
+        "access": {
+          "hidden": false
+        },
+        "checksum": "md5:0fb50425e1bac345bdebdec1e7ea69dc",
+        "ext": "tex",
+        "id": "95b57062-df85-466b-b07c-82addaa9b845",
+        "key": "Recursive Categorical Framework.tex",
+        "links": {
+          "content": "https://zenodo.org/api/records/17567903/files/Recursive%20Categorical%20Framework.tex/content",
+          "self": "https://zenodo.org/api/records/17567903/files/Recursive%20Categorical%20Framework.tex"
+        },
+        "metadata": {},
+        "mimetype": "application/x-tex",
+        "size": 110600,
+        "storage_class": "L"
+      }
+    },
+    "order": [],
+    "total_bytes": 1037259
+  },
+  "id": "17567903",
+  "is_draft": false,
+  "is_published": true,
+  "links": {
+    "access": "https://zenodo.org/api/records/17567903/access",
+    "access_grants": "https://zenodo.org/api/records/17567903/access/grants",
+    "access_links": "https://zenodo.org/api/records/17567903/access/links",
+    "access_request": "https://zenodo.org/api/records/17567903/access/request",
+    "access_users": "https://zenodo.org/api/records/17567903/access/users",
+    "archive": "https://zenodo.org/api/records/17567903/files-archive",
+    "archive_media": "https://zenodo.org/api/records/17567903/media-files-archive",
+    "communities": "https://zenodo.org/api/records/17567903/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/17567903/communities-suggestions",
+    "doi": "https://doi.org/10.5281/zenodo.17567903",
+    "draft": "https://zenodo.org/api/records/17567903/draft",
+    "files": "https://zenodo.org/api/records/17567903/files",
+    "latest": "https://zenodo.org/api/records/17567903/versions/latest",
+    "latest_html": "https://zenodo.org/records/17567903/latest",
+    "media_files": "https://zenodo.org/api/records/17567903/media-files",
+    "parent": "https://zenodo.org/api/records/17567902",
+    "parent_doi": "https://doi.org/10.5281/zenodo.17567902",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17567902",
+    "parent_html": "https://zenodo.org/records/17567902",
+    "preview_html": "https://zenodo.org/records/17567903?preview=1",
+    "request_deletion": "https://zenodo.org/api/records/17567903/request-deletion",
+    "requests": "https://zenodo.org/api/records/17567903/requests",
+    "reserve_doi": "https://zenodo.org/api/records/17567903/draft/pids/doi",
+    "self": "https://zenodo.org/api/records/17567903",
+    "self_doi": "https://doi.org/10.5281/zenodo.17567903",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17567903",
+    "self_html": "https://zenodo.org/records/17567903",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:17567903/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:17567903/sequence/default",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:17567903:Recursive%20Categorical%20Framework.pdf/full/%5E10,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:17567903:Recursive%20Categorical%20Framework.pdf/full/%5E100,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:17567903:Recursive%20Categorical%20Framework.pdf/full/%5E1200,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:17567903:Recursive%20Categorical%20Framework.pdf/full/%5E250,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:17567903:Recursive%20Categorical%20Framework.pdf/full/%5E50,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:17567903:Recursive%20Categorical%20Framework.pdf/full/%5E750,/0/default.jpg"
+    },
+    "versions": "https://zenodo.org/api/records/17567903/versions"
+  },
+  "media_files": {
+    "count": 1,
+    "enabled": true,
+    "entries": {
+      "Recursive Categorical Framework.pdf.ptif": {
+        "access": {
+          "hidden": true
+        },
+        "ext": "ptif",
+        "id": "af7ea94c-99f0-4628-a4e0-0a1f64d706a2",
+        "key": "Recursive Categorical Framework.pdf.ptif",
+        "links": {
+          "content": "https://zenodo.org/api/records/17567903/files/Recursive%20Categorical%20Framework.pdf.ptif/content",
+          "self": "https://zenodo.org/api/records/17567903/files/Recursive%20Categorical%20Framework.pdf.ptif"
+        },
+        "metadata": null,
+        "mimetype": "application/octet-stream",
+        "processor": {
+          "source_file_id": "9904e12c-0811-48b3-b0e0-41e6d772b146",
+          "status": "finished",
+          "type": "image-tiles"
+        },
+        "size": 0,
+        "storage_class": "L"
+      }
+    },
+    "order": [],
+    "total_bytes": 0
+  },
+  "metadata": {
+    "creators": [
+      {
+        "person_or_org": {
+          "family_name": "Rowell",
+          "given_name": "Christian Trey",
+          "identifiers": [
+            {
+              "identifier": "0009-0008-6550-6316",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Rowell, Christian Trey",
+          "type": "personal"
+        }
+      }
+    ],
+    "dates": [
+      {
+        "date": "2025-10-31",
+        "type": {
+          "id": "created",
+          "title": {
+            "de": "Erstellt",
+            "en": "Created"
+          }
+        }
+      }
+    ],
+    "description": "<p>This paper presents a mathematical framework using category theory to formalize recursive self-reference in computational systems. The Recursive Categorical Framework (RCF) establishes three core mathematical structures: a triaxial operator architecture (ethical resolution, Bayesian belief updating, and eigenstate stabilization), a fiber bundle topology over an ethical manifold, and fixed-point theorems for recursive identity convergence. The framework uses the Banach fixed point theorem and fiber bundle formalism to resolve paradoxes in self referential systems. Empirical validation is provided through computational experiments testing eigenrecursion convergence and contradiction resolution. The work includes formal proofs, implementation specifications, and connections to quantum computing extensions.</p>",
+    "languages": [
+      {
+        "id": "eng",
+        "title": {
+          "en": "English"
+        }
+      }
+    ],
+    "publication_date": "2025-10-31",
+    "publisher": "Zenodo",
+    "resource_type": {
+      "id": "publication-preprint",
+      "title": {
+        "de": "Preprint",
+        "en": "Preprint"
+      }
+    },
+    "rights": [
+      {
+        "description": {
+          "en": ""
+        },
+        "icon": "cc-by-nd-icon",
+        "id": "cc-by-nd-4.0",
+        "props": {
+          "scheme": "spdx",
+          "url": "https://creativecommons.org/licenses/by-nd/4.0/legalcode"
+        },
+        "title": {
+          "en": "Creative Commons Attribution No Derivatives 4.0 International"
+        }
+      }
+    ],
+    "subjects": [
+      {
+        "subject": "meta-recursive consciousness, category theory, eigenrecursion, synthetic intelligence, fiber bundles, RAL-RSRE bridge"
+      }
+    ],
+    "title": "Recursive Categorical Framework"
+  },
+  "parent": {
+    "access": {
+      "grants": [],
+      "links": [],
+      "owned_by": {
+        "user": "1457830"
+      },
+      "settings": {
+        "accept_conditions_text": null,
+        "allow_guest_requests": false,
+        "allow_user_requests": false,
+        "secret_link_expiration": 0
+      }
+    },
+    "communities": {
+      "default": "4dd5b352-6f35-49e9-a50d-92e78a6cf3ee",
+      "entries": [
+        {
+          "access": {
+            "member_policy": "open",
+            "members_visibility": "public",
+            "record_submission_policy": "open",
+            "review_policy": "open",
+            "visibility": "public"
+          },
+          "children": {
+            "allow": false
+          },
+          "created": "2021-02-28T07:10:20.480662+00:00",
+          "custom_fields": {},
+          "deletion_status": {
+            "is_deleted": false,
+            "status": "P"
+          },
+          "id": "4dd5b352-6f35-49e9-a50d-92e78a6cf3ee",
+          "links": {},
+          "metadata": {
+            "curation_policy": "<p><strong><span lang=\"EN-US\">General Policies: </span></strong><span lang=\"EN-US\"><a href=\"https://about.zenodo.org/policies/\">https://about.zenodo.org/policies/</a></span></p>\n<p><strong><span lang=\"EN-US\">Privacy policy</span></strong><span lang=\"EN-US\">: <a href=\"https://about.zenodo.org/privacy-policy/\">https://about.zenodo.org/privacy-policy/</a></span></p>\n<p><strong><span lang=\"EN-US\">Principles</span></strong><span lang=\"EN-US\">: <a href=\"https://about.zenodo.org/principles/\">https://about.zenodo.org/principles/</a></span></p>\n<p><strong><span lang=\"EN-US\">Communities</span></strong><span lang=\"EN-US\">: <a href=\"https://help.zenodo.org/docs/communities/\">https://help.zenodo.org/docs/communities/</a>). Communities are shared areas on Zenodo where projects, institutions, domains, and conferences can curate and manage their research outputs. Any user on Zenodo can submit records for inclusion in a community. The community curators are responsible for curating the records and finally accept/decline the record into the community. Community owners can set the review policy to allow curators, managers and owners to submit without review.</span></p>\n<p><strong><span lang=\"EN-US\">Review submissions</span></strong><span lang=\"EN-US\">:&nbsp;</span><span lang=\"EN-US\"><a href=\"https://help.zenodo.org/docs/communities/review-submissions/\">https://help.zenodo.org/docs/communities/review-submissions/</a>).</span></p>\n<p><strong>ARAIS Review Policy</strong></p>\n<p><strong>Submission Requirements</strong>:</p>\n<ul>\n<li>Manuscripts/papers must be submitted in English.</li>\n<li>Submission should include author(s) name, affiliation (please specify the role or position held within the organization), ORCID or Web of Science Researcher ID (if available).</li>\n<li>If one or all the authors are not currently affiliated with a university, institution or company, or have not been during the development of the manuscript, they should list themselves as an &ldquo;Independent Researcher&rdquo;.</li>\n<li>Full text and any other pertinent scientific materials related to the research areas delineated in the community description must be provided.</li>\n</ul>\n<p><strong>Ethical Standards</strong>:</p>\n<ul>\n<li>Authors submitting to the ARAIS community must ensure their manuscripts adhere to the highest ethical standards and meet recognized industry benchmarks.</li>\n<li>ARAIS adheres to the guidelines set forth by the International Committee of Medical Journal Editors (ICMJE) on defining the roles of authors and contributors. <a href=\"http://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html\">More Info&nbsp;</a></li>\n</ul>\n<p><strong>Authorship</strong>:</p>\n<ul>\n<li>Authorship should be conferred only to individuals who have substantially contributed to the conceptualization, design, research, analysis, or interpretation of the presented material or study.</li>\n<li>ARAIS advocates for transparency regarding individual author contributions. Authors are encouraged to provide a CRediT author statement detailing their roles. <a href=\"https://credit.niso.org/\">More Info</a></li>\n<li>Each author should have trust in the integrity of their co-authors' contributions.</li>\n</ul>\n<p><strong><span lang=\"EN-US\">Manuscript Submission Overview:</span></strong></p>\n<p><span lang=\"EN-US\">ARAIS has no restrictions on the maximum length of manuscripts, provided that the text is concise and comprehensive. Full experimental details must be provided so that the results can be reproduced. ARAIS &nbsp;requires that authors publish all experimental controls and make full datasets available where possible.</span></p>\n<ul>\n<li><span lang=\"EN-US\"><strong>Article</strong>: These are original research manuscripts. The work should report scientifically sound experiments and provide a substantial amount of new information. The article should include the most recent and relevant references in the field. The structure should include an Abstract, Keywords, Introduction, Materials and Methods, Results, Discussion, and Conclusions (optional) sections.</span></li>\n<li><span lang=\"EN-US\"><strong>Review</strong>: Reviews offer a comprehensive analysis of the existing literature within a field of study, identifying current gaps or problems. They should be critical and constructive and provide recommendations for future research. No new, unpublished data should be presented. The structure can include an Abstract, Keywords, Introduction, Relevant Sections, Discussion, Conclusions, and Future Directions.</span></li>\n<li>&nbsp;<span lang=\"EN-US\"><strong>A Scoping Review </strong>type can be submitted as a Review. The structure is similar to that of a review. Scoping reviews should strictly follow the PRISMA extension for scoping reviews checklist (https://www.prisma-statement.org/scoping) and submit the checklist as non-published material during submission. Templates for the flow diagram can be downloaded from the PRISMA website and the diagram should be included in the main text. We strongly encourage authors to register their detailed protocols, before data extraction commences, in a public registry such as the Open Science Framework (https://osf.io/) or Inplasy (https://inplasy.com/). Authors must include a statement about following the PRISMA guidelines and registration information (if available) in the Methods section.</span></li>\n<li><strong>Systematic Review</strong>: Systematic review articles present a detailed investigation of previous research on a given topic, using clearly defined search parameters and methods to identify, categorize, analyze, and report aggregated evidence on a specific topic. The Methods section of a systematic review must be clearly detailed, and the authors are recommended to adhere to and reference one of several pre-existing guidelines for conducting systematic reviews.</li>\n</ul>\n<p>Reporting a systematic review requires adherence to a specified structure. The authors are required to follow the relevant reporting guidelines and clearly state their compliance in the Methods section. Some reporting guidelines include (but are not limited to) the following:</p>\n<ul>\n<li><span lang=\"EN-US\">PRISMA (Preferred Reporting Items for Systematic reviews and Meta-Analyses) focuses on quantitative systematic reviews, emphasizing statistical meta-analysis.</span></li>\n<li>PRISMA extensions provide guidance for reporting different types or aspects of systematic reviews and other types of evidence syntheses.</li>\n</ul>\n<p><strong><span lang=\"EN-US\">Free Format Submission:</span></strong></p>\n<p><span lang=\"EN-US\">ARAIS accepts free format submission. We do not have strict formatting requirements, but all manuscripts must contain the required sections: Author Information, Abstract, Keywords, Introduction, Materials &amp; Methods, Results, Conclusions, Figures and Tables with Captions, Funding Information, Author Contributions, Conflict of Interest and other Ethics Statements. Your references may be in any style, provided that you use the consistent formatting throughout. It is essential to include author(s) name(s), journal or book title, article or chapter title (where required), year of publication, volume and issue (where appropriate) and pagination. DOI numbers (Digital Object Identifier) are not mandatory but highly encouraged. The bibliography software package EndNote, Zotero, Mendeley, Reference Manager are recommended.</span></p>\n<p><strong><span lang=\"EN-US\">Manuscript Preparation</span></strong></p>\n<ul>\n<li><span lang=\"EN-US\">Acronyms/Abbreviations/Initialisms should be defined the first time they appear in each of three sections: the abstract; the main text; the first figure or table. When defined for the first time, the acronym/abbreviation/initialism should be added in parentheses after the written-out form.</span></li>\n<li>SI Units (International System of Units) should be used. Imperial, US customary and other units should be converted to SI units whenever possible.</li>\n<li>Accession numbers of RNA, DNA and protein sequences used in the manuscript should be provided in the Materials and Methods section. Also see the section on Deposition of Sequences and Expression Data.</li>\n<li>&nbsp;<span lang=\"EN-US\">Equations: If you are using Word, please use either the Microsoft Equation Editor or the MathType add-on. Equations should be editable by the editorial office and not appear in a picture format.</span></li>\n<li>Research Data and supplementary materials: Note that publication of your manuscript implies that you must make all materials, data, and protocols associated with the publication available to readers. Disclose at the submission stage any restrictions on the availability of materials or information. Read the information about Supplementary Materials and Data Deposit for additional guidelines.</li>\n<li>Preregistration: Where authors have preregistered studies or analysis plans, links to the preregistration must be provided in the manuscript.</li>\n<li>Guidelines and standards: ARAIS follows standards and guidelines for certain types of research. FAIR Principles cover guidelines to improve the Findability, Accessibility, Interoperability and Reuse of data (<a href=\"https://www.go-fair.org/fair-principles/\">https://www.go-fair.org/fair-principles/</a>). PRISMA covers systematic reviews and meta-analyses. Authors are recommended to complete the checklist and flow diagram and include it with their submission.</li>\n</ul>\n<p><strong><span lang=\"EN-US\">Editorial Process</span></strong></p>\n<p><span lang=\"EN-US\">After submission, the ARAIS Owner will perform the technical check to assess:</span></p>\n<ul>\n<li><span lang=\"EN-US\">The overall suitability of the manuscript to the Topical Collection of the community;</span></li>\n<li>&nbsp;<span lang=\"EN-US\">Manuscript adherence to high-quality research and ethical standards;</span></li>\n<li>Standards of rigor to qualify for further review.</li>\n</ul>\n<p><span lang=\"EN-US\">The ARAIS Owner can select from the following options: accept in its current form, accept with minor revisions, reject and decline resubmission, reject but encourage resubmission.</span></p>",
+            "description": "Scientific investigations in Artificial Intelligence Systems, Cheminformatics, Forensic Science, and Medicine position us at the cutting edge of Drug Discovery. By integrating AI with Biochemistry, we're charting new territories. Engage with us!",
+            "organizations": [
+              {
+                "id": "052sta926"
+              }
+            ],
+            "page": "<p><strong>Advanced Research in Artificial Intelligence Systems (ARAIS)</strong> is an open-access community and repository welcoming research data, studies, investigations, systematic reviews, meta-analyses, and related academic contributions from scholars, researchers, academicians, experts, and students predominantly in the fields of :</p><p>* Artificial Intelligence &amp; Expert Systems; &nbsp;</p><p>* Forensic Designer Drugs;</p><p>* Information Technology &amp; Cybersecurity;</p><p>* Automation &amp; Control Systems; &nbsp;</p><p>* Robotics; &nbsp;</p><p>* Health Care Sciences &amp; Services; &nbsp;</p><p>* Biomedical Engineering; &nbsp;</p><p>* E-Health &amp; Bioengineering; &nbsp;</p><p>* Mechanical &amp; Industrial Engineering;</p><p>* Cheminformatics &amp; Chemometrics.&nbsp;</p><p>We invite diverse forms of knowledge, including but not limited to articles, videos, reports, source codes, datasets, graphics, repositories, and slides.</p><p>Spanning a global scale, our community encourages interdisciplinary collaboration, inviting insights from research areas such as Medicine, Physics, Chemistry &amp; Biochemistry, Mathematics, Legal Science &amp; Criminology. This diversity aims to enhance the depth and breadth of knowledge accessible to our members and readers. Join us in this collective intellectual journey!</p><p>&nbsp;</p>",
+            "title": "Advanced Research in Artificial Intelligence Systems (ARAIS)",
+            "type": {
+              "id": "topic"
+            },
+            "website": "https://orcid.org/0000-0002-4758-5208"
+          },
+          "revision_id": 29,
+          "slug": "cheminformatics_artificial-intelligence",
+          "updated": "2025-09-10T21:40:18.617834+00:00"
+        }
+      ],
+      "ids": [
+        "4dd5b352-6f35-49e9-a50d-92e78a6cf3ee"
+      ]
+    },
+    "id": "17567902",
+    "pids": {
+      "doi": {
+        "client": "datacite",
+        "identifier": "10.5281/zenodo.17567902",
+        "provider": "datacite"
+      }
+    }
+  },
+  "pids": {
+    "doi": {
+      "client": "datacite",
+      "identifier": "10.5281/zenodo.17567903",
+      "provider": "datacite"
+    },
+    "oai": {
+      "identifier": "oai:zenodo.org:17567903",
+      "provider": "oai"
+    }
+  },
+  "revision_id": 4,
+  "stats": {
+    "all_versions": {
+      "data_volume": 27940378.0,
+      "downloads": 67,
+      "unique_downloads": 44,
+      "unique_views": 62,
+      "views": 85
+    },
+    "this_version": {
+      "data_volume": 27940378.0,
+      "downloads": 67,
+      "unique_downloads": 44,
+      "unique_views": 62,
+      "views": 85
+    }
+  },
+  "status": "published",
+  "swh": {},
+  "updated": "2025-11-10T05:26:41.755072+00:00",
+  "versions": {
+    "index": 1,
+    "is_latest": true,
+    "is_latest_draft": true
+  }
+}
