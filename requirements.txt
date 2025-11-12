@@ -1,0 +1,5 @@
+# Core scientific stack (versions intentionally unpinned for publication portability)
+numpy
+scipy
+torch
+matplotlib

@@ -1,0 +1,99 @@
+{
+  "generated_at": "2025-11-12T04:14:52.690528Z",
+  "overall_status": "success",
+  "totals": {
+    "tests_run": 25,
+    "passed": 25,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "duration": 1.350836799998433
+  },
+  "stages": [
+    {
+      "name": "Eigenrecursion Algorithm",
+      "module": "rcf_integration.eigenrecursion_algorithm",
+      "description": "Validates recursive convergence, RLDIS monitoring, and algorithmic resilience.",
+      "tests_run": 7,
+      "passed": 7,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration": 0.43607479999991483,
+      "status": "passed",
+      "failure_details": [],
+      "error_details": [],
+      "skipped_details": [],
+      "console_output": "test_basic_eigenrecursion_convergence (__main__.TestEigenrecursionAlgorithm.test_basic_eigenrecursion_convergence)\nTest basic eigenrecursion finds fixed point. ... ok\ntest_bayesian_intervention_selector (__main__.TestEigenrecursionAlgorithm.test_bayesian_intervention_selector)\nTest Bayesian intervention selection framework. ... ok\ntest_gradient_contradiction_resolver (__main__.TestEigenrecursionAlgorithm.test_gradient_contradiction_resolver)\nTest gradient-based contradiction resolution. ... ok\ntest_meta_cognition_amplifier (__main__.TestEigenrecursionAlgorithm.test_meta_cognition_amplifier)\nTest meta-cognition amplification. ... ok\ntest_pattern_analysis_entropy_detection (__main__.TestEigenrecursionAlgorithm.test_pattern_analysis_entropy_detection)\nTest entropy-based pattern detection. ... ok\ntest_rldis_pattern_detection (__main__.TestEigenrecursionAlgorithm.test_rldis_pattern_detection)\nTest RLDIS pattern detection system. ... ok\ntest_semantic_analysis_topological (__main__.TestEigenrecursionAlgorithm.test_semantic_analysis_topological)\nTest topological phase space analysis. ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.436s\n\nOK"
+    },
+    {
+      "name": "Eigenrecursive Operations",
+      "module": "rcf_integration.eigenrecursive_operations",
+      "description": "Exercises eigenstate convergence, contradiction tension, and operator stacks.",
+      "tests_run": 8,
+      "passed": 8,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration": 0.9019470000002912,
+      "status": "passed",
+      "failure_details": [],
+      "error_details": [],
+      "skipped_details": [],
+      "console_output": "test_consciousness_eigenoperator (__main__.TestEigenrecursiveOperations.test_consciousness_eigenoperator)\nTest consciousness eigenoperator with full metrics. ... ok\ntest_contradiction_tension_engine (__main__.TestEigenrecursiveOperations.test_contradiction_tension_engine)\nTest contradiction tension computation and minimization. ... ok\ntest_eigenstate_convergence_engine (__main__.TestEigenrecursiveOperations.test_eigenstate_convergence_engine)\nTest full eigenstate convergence with all integrated components. ... ok\ntest_free_energy_minimizer (__main__.TestEigenrecursiveOperations.test_free_energy_minimizer)\nTest free energy minimization. ... ok\ntest_information_geometry (__main__.TestEigenrecursiveOperations.test_information_geometry)\nTest information geometry and natural gradient descent. ... ok\ntest_information_theoretic_detector (__main__.TestEigenrecursiveOperations.test_information_theoretic_detector)\nTest information-theoretic pattern detection. ... ok\ntest_quantum_cognition_model (__main__.TestEigenrecursiveOperations.test_quantum_cognition_model)\nTest quantum cognition model for identity representation. ... ok\ntest_topological_analyzer (__main__.TestEigenrecursiveOperations.test_topological_analyzer)\nTest topological phase space analysis. ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.902s\n\nOK"
+    },
+    {
+      "name": "Governance Framework",
+      "module": "rcf_integration.governance_framework",
+      "description": "Ensures homeostatic control, narrative identity, and policy metrics behave stably.",
+      "tests_run": 3,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration": 0.010407599998870865,
+      "status": "passed",
+      "failure_details": [],
+      "error_details": [],
+      "skipped_details": [],
+      "console_output": "test_governance_framework (__main__.TestGovernanceFramework.test_governance_framework)\nTest governance framework for human-AI interaction. ... ok\ntest_homeostatic_controller (__main__.TestGovernanceFramework.test_homeostatic_controller)\nTest homeostatic control theory implementation. ... ok\ntest_narrative_identity_engine (__main__.TestGovernanceFramework.test_narrative_identity_engine)\nTest narrative identity formation. ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.010s\n\nOK"
+    },
+    {
+      "name": "Epistemic Operators",
+      "module": "rcf_integration.eigenrecursive_operations",
+      "description": "Checks epistemic inference, modal logic operators, and belief revision dynamics.",
+      "tests_run": 2,
+      "passed": 2,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration": 0.00046320000001287553,
+      "status": "passed",
+      "failure_details": [],
+      "error_details": [],
+      "skipped_details": [],
+      "console_output": "test_epistemic_operators (__main__.TestEpistemicOperators.test_epistemic_operators)\nTest epistemic operators: K_a \u03c6 \u2192 \u03c6, M_a \u03c6 \u2192 K_a(K_a \u03c6 \u2228 \u00acK_a \u03c6) ... ok\ntest_modal_logic_operators (__main__.TestEpistemicOperators.test_modal_logic_operators)\nTest modal logic operators for recursive reasoning. ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nOK"
+    },
+    {
+      "name": "Formula Validation",
+      "module": "rcf_integration.governance_framework",
+      "description": "Confirms analytical formulas align with published theoretical specifications.",
+      "tests_run": 5,
+      "passed": 5,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration": 0.0019441999993432546,
+      "status": "passed",
+      "failure_details": [],
+      "error_details": [],
+      "skipped_details": [],
+      "console_output": "test_autonomy_authority_ratio_formula (__main__.TestFormulaValidation.test_autonomy_authority_ratio_formula)\nValidate autonomy-authority ratio: AAR = DA/HA ... ok\ntest_entropy_formula (__main__.TestFormulaValidation.test_entropy_formula)\nValidate entropy formula: H(O) = -\u03a3_i p(o_i) log p(o_i) ... ok\ntest_lyapunov_exponent_formula (__main__.TestFormulaValidation.test_lyapunov_exponent_formula)\nValidate Lyapunov exponent: \u03bb = lim_{t\u2192\u221e} (1/t) ln(|\u03b4\u03a6(t)|/|\u03b4\u03a6(0)|) ... ok\ntest_mutual_information_formula (__main__.TestFormulaValidation.test_mutual_information_formula)\nValidate mutual information: I(O_t; O_{t-1}) = H(O_t) + H(O_{t-1}) - H(O_t, O_{t-1}) ... ok\ntest_transparency_obligation_formula (__main__.TestFormulaValidation.test_transparency_obligation_formula)\nValidate transparency obligation: TO(DA) = k\u00b7DA^\u03b1 ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.002s\n\nOK"
+    }
+  ],
+  "artifacts": {
+    "log": "C:\\Users\\treyr\\Desktop\\recursive-categorical-framework\\reports\\eigenrecursion_integration.log",
+    "memmap": "C:\\Users\\treyr\\Desktop\\recursive-categorical-framework\\reports\\eigenrecursion_stage_metrics.dat",
+    "markdown": "C:\\Users\\treyr\\Desktop\\recursive-categorical-framework\\reports\\eigenrecursion_integration_report.md"
+  }
+}

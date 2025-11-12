@@ -6,7 +6,7 @@ param(
   [switch]$SkipExisting,          # Skip files already listed in the index
   [switch]$UseSidecar,            # Reuse sidecar hashes like file.ext.sha256 / .sha1
   [switch]$Verify,                # Verify files against the index instead of writing
-  [string[]]$Exclude = @('.git','node_modules',"$IndexFile","$IndexFile.sha256")
+  [string[]]$Exclude = @('.git', ,'.venv', 'node_modules',"$IndexFile","$IndexFile.sha256")
 )
 
 Set-StrictMode -Version Latest
