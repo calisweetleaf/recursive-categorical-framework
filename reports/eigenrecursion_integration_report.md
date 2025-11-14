@@ -1,15 +1,15 @@
 # Eigenrecursion Integration Report
-- Generated: 2025-11-12T04:14:52.692532Z
-- Overall Status: SUCCESS
-- Total Tests: 25 (passed=25, failed=0, errors=0, skipped=0)
+- Generated: 2025-11-14T04:40:43.547017Z
+- Overall Status: FAILURE
+- Total Tests: 25 (passed=24, failed=0, errors=1, skipped=0)
 
 | Stage | Module | Tests | Passed | Failed | Errors | Skipped | Duration (s) | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Eigenrecursion Algorithm | `rcf_integration.eigenrecursion_algorithm` | 7 | 7 | 0 | 0 | 0 | 0.436 | PASSED |
-| Eigenrecursive Operations | `rcf_integration.eigenrecursive_operations` | 8 | 8 | 0 | 0 | 0 | 0.902 | PASSED |
-| Governance Framework | `rcf_integration.governance_framework` | 3 | 3 | 0 | 0 | 0 | 0.010 | PASSED |
-| Epistemic Operators | `rcf_integration.eigenrecursive_operations` | 2 | 2 | 0 | 0 | 0 | 0.000 | PASSED |
-| Formula Validation | `rcf_integration.governance_framework` | 5 | 5 | 0 | 0 | 0 | 0.002 | PASSED |
+| Eigenrecursion Algorithm | `rcf_integration.eigenrecursion_algorithm` | 7 | 7 | 0 | 0 | 0 | 0.507 | PASSED |
+| Eigenrecursive Operations | `rcf_integration.eigenrecursive_operations` | 8 | 7 | 0 | 1 | 0 | 0.211 | FAILED |
+| Governance Framework | `rcf_integration.governance_framework` | 3 | 3 | 0 | 0 | 0 | 0.012 | PASSED |
+| Epistemic Operators | `rcf_integration.eigenrecursive_operations` | 2 | 2 | 0 | 0 | 0 | 0.001 | PASSED |
+| Formula Validation | `rcf_integration.governance_framework` | 5 | 5 | 0 | 0 | 0 | 0.003 | PASSED |
 
 ## Eigenrecursion Algorithm
 Validates recursive convergence, RLDIS monitoring, and algorithmic resilience.
@@ -31,7 +31,7 @@ test_semantic_analysis_topological (__main__.TestEigenrecursionAlgorithm.test_se
 Test topological phase space analysis. ... ok
 
 ----------------------------------------------------------------------
-Ran 7 tests in 0.436s
+Ran 7 tests in 0.507s
 
 OK
 ```
@@ -45,7 +45,7 @@ Test consciousness eigenoperator with full metrics. ... ok
 test_contradiction_tension_engine (__main__.TestEigenrecursiveOperations.test_contradiction_tension_engine)
 Test contradiction tension computation and minimization. ... ok
 test_eigenstate_convergence_engine (__main__.TestEigenrecursiveOperations.test_eigenstate_convergence_engine)
-Test full eigenstate convergence with all integrated components. ... ok
+Test full eigenstate convergence with all integrated components. ... ERROR
 test_free_energy_minimizer (__main__.TestEigenrecursiveOperations.test_free_energy_minimizer)
 Test free energy minimization. ... ok
 test_information_geometry (__main__.TestEigenrecursiveOperations.test_information_geometry)
@@ -57,10 +57,32 @@ Test quantum cognition model for identity representation. ... ok
 test_topological_analyzer (__main__.TestEigenrecursiveOperations.test_topological_analyzer)
 Test topological phase space analysis. ... ok
 
+======================================================================
+ERROR: test_eigenstate_convergence_engine (__main__.TestEigenrecursiveOperations.test_eigenstate_convergence_engine)
+Test full eigenstate convergence with all integrated components.
 ----------------------------------------------------------------------
-Ran 8 tests in 0.902s
+Traceback (most recent call last):
+  File "c:\Users\treyr\Desktop\recursive-categorical-framework\test_eigenrecursion_integration.py", line 398, in test_eigenstate_convergence_engine
+    result = engine.converge_to_eigenstate(initial_state, operator)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\treyr\Desktop\recursive-categorical-framework\rcf_integration\eigenrecursive_operations.py", line 1952, in converge_to_eigenstate
+    next_state = self.contradiction_tension_engine.minimize_tension_gradient_descent(next_state)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\treyr\Desktop\recursive-categorical-framework\rcf_integration\eigenrecursive_operations.py", line 394, in minimize_tension_gradient_descent
+    tension.backward()
+  File "C:\Users\treyr\Desktop\recursive-categorical-framework\.venv\Lib\site-packages\torch\_tensor.py", line 625, in backward
+    torch.autograd.backward(
+  File "C:\Users\treyr\Desktop\recursive-categorical-framework\.venv\Lib\site-packages\torch\autograd\__init__.py", line 347, in backward
+    grad_tensors_ = _make_grads(tensors, grad_tensors_, is_grads_batched=False)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\treyr\Desktop\recursive-categorical-framework\.venv\Lib\site-packages\torch\autograd\__init__.py", line 207, in _make_grads
+    raise RuntimeError(msg)
+RuntimeError: grad can be implicitly created only for real scalar outputs but got torch.complex64
 
-OK
+----------------------------------------------------------------------
+Ran 8 tests in 0.211s
+
+FAILED (errors=1)
 ```
 
 ## Governance Framework
@@ -75,7 +97,7 @@ test_narrative_identity_engine (__main__.TestGovernanceFramework.test_narrative_
 Test narrative identity formation. ... ok
 
 ----------------------------------------------------------------------
-Ran 3 tests in 0.010s
+Ran 3 tests in 0.012s
 
 OK
 ```
@@ -90,7 +112,7 @@ test_modal_logic_operators (__main__.TestEpistemicOperators.test_modal_logic_ope
 Test modal logic operators for recursive reasoning. ... ok
 
 ----------------------------------------------------------------------
-Ran 2 tests in 0.000s
+Ran 2 tests in 0.001s
 
 OK
 ```

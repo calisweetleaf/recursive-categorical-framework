@@ -8,7 +8,7 @@ import random
 import logging
 import time
 from collections import deque, defaultdict
-from typing import Dict, List, Tuple, Optional, Any
+from typing import Dict, List, Tuple, Optional, Any, Callable
 import math
 from enum import Enum, auto
 import sys
