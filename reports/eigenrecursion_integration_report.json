@@ -1,13 +1,13 @@
 {
-  "generated_at": "2025-11-14T04:40:43.545015Z",
+  "generated_at": "2025-11-27T23:26:20.857636Z",
   "overall_status": "failure",
   "totals": {
     "tests_run": 25,
-    "passed": 24,
-    "failed": 0,
+    "passed": 23,
+    "failed": 1,
     "errors": 1,
     "skipped": 0,
-    "duration": 0.7331266000001051
+    "duration": 2.1614944000029936
   },
   "stages": [
     {
@@ -15,16 +15,21 @@
       "module": "rcf_integration.eigenrecursion_algorithm",
       "description": "Validates recursive convergence, RLDIS monitoring, and algorithmic resilience.",
       "tests_run": 7,
-      "passed": 7,
-      "failed": 0,
+      "passed": 6,
+      "failed": 1,
       "errors": 0,
       "skipped": 0,
-      "duration": 0.5069612999977835,
-      "status": "passed",
-      "failure_details": [],
+      "duration": 2.091776499990374,
+      "status": "failed",
+      "failure_details": [
+        {
+          "test": "__main__.TestEigenrecursionAlgorithm.test_basic_eigenrecursion_convergence",
+          "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\treyr\\Desktop\\recursive-categorical-framework\\test_eigenrecursion_integration.py\", line 127, in test_basic_eigenrecursion_convergence\n    self.assertEqual(result['status'], ConvergenceStatus.CONVERGED)\nAssertionError: <ConvergenceStatus.ERROR: 'Error occurred during recursion'> != <ConvergenceStatus.CONVERGED: 'Convergence achieved within tolerance'>\n"
+        }
+      ],
       "error_details": [],
       "skipped_details": [],
-      "console_output": "test_basic_eigenrecursion_convergence (__main__.TestEigenrecursionAlgorithm.test_basic_eigenrecursion_convergence)\nTest basic eigenrecursion finds fixed point. ... ok\ntest_bayesian_intervention_selector (__main__.TestEigenrecursionAlgorithm.test_bayesian_intervention_selector)\nTest Bayesian intervention selection framework. ... ok\ntest_gradient_contradiction_resolver (__main__.TestEigenrecursionAlgorithm.test_gradient_contradiction_resolver)\nTest gradient-based contradiction resolution. ... ok\ntest_meta_cognition_amplifier (__main__.TestEigenrecursionAlgorithm.test_meta_cognition_amplifier)\nTest meta-cognition amplification. ... ok\ntest_pattern_analysis_entropy_detection (__main__.TestEigenrecursionAlgorithm.test_pattern_analysis_entropy_detection)\nTest entropy-based pattern detection. ... ok\ntest_rldis_pattern_detection (__main__.TestEigenrecursionAlgorithm.test_rldis_pattern_detection)\nTest RLDIS pattern detection system. ... ok\ntest_semantic_analysis_topological (__main__.TestEigenrecursionAlgorithm.test_semantic_analysis_topological)\nTest topological phase space analysis. ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.507s\n\nOK"
+      "console_output": "test_basic_eigenrecursion_convergence (__main__.TestEigenrecursionAlgorithm.test_basic_eigenrecursion_convergence)\nTest basic eigenrecursion finds fixed point. ... FAIL\ntest_bayesian_intervention_selector (__main__.TestEigenrecursionAlgorithm.test_bayesian_intervention_selector)\nTest Bayesian intervention selection framework. ... ok\ntest_gradient_contradiction_resolver (__main__.TestEigenrecursionAlgorithm.test_gradient_contradiction_resolver)\nTest gradient-based contradiction resolution. ... ok\ntest_meta_cognition_amplifier (__main__.TestEigenrecursionAlgorithm.test_meta_cognition_amplifier)\nTest meta-cognition amplification. ... ok\ntest_pattern_analysis_entropy_detection (__main__.TestEigenrecursionAlgorithm.test_pattern_analysis_entropy_detection)\nTest entropy-based pattern detection. ... ok\ntest_rldis_pattern_detection (__main__.TestEigenrecursionAlgorithm.test_rldis_pattern_detection)\nTest RLDIS pattern detection system. ... ok\ntest_semantic_analysis_topological (__main__.TestEigenrecursionAlgorithm.test_semantic_analysis_topological)\nTest topological phase space analysis. ... ok\n\n======================================================================\nFAIL: test_basic_eigenrecursion_convergence (__main__.TestEigenrecursionAlgorithm.test_basic_eigenrecursion_convergence)\nTest basic eigenrecursion finds fixed point.\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\treyr\\Desktop\\recursive-categorical-framework\\test_eigenrecursion_integration.py\", line 127, in test_basic_eigenrecursion_convergence\n    self.assertEqual(result['status'], ConvergenceStatus.CONVERGED)\nAssertionError: <ConvergenceStatus.ERROR: 'Error occurred during recursion'> != <ConvergenceStatus.CONVERGED: 'Convergence achieved within tolerance'>\n\n----------------------------------------------------------------------\nRan 7 tests in 2.092s\n\nFAILED (failures=1)"
     },
     {
       "name": "Eigenrecursive Operations",
@@ -35,17 +40,17 @@
       "failed": 0,
       "errors": 1,
       "skipped": 0,
-      "duration": 0.21109680000154185,
+      "duration": 0.058298800024203956,
       "status": "failed",
       "failure_details": [],
       "error_details": [
         {
           "test": "__main__.TestEigenrecursiveOperations.test_eigenstate_convergence_engine",
-          "traceback": "Traceback (most recent call last):\n  File \"c:\\Users\\treyr\\Desktop\\recursive-categorical-framework\\test_eigenrecursion_integration.py\", line 398, in test_eigenstate_convergence_engine\n    result = engine.converge_to_eigenstate(initial_state, operator)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"c:\\Users\\treyr\\Desktop\\recursive-categorical-framework\\rcf_integration\\eigenrecursive_operations.py\", line 1952, in converge_to_eigenstate\n    next_state = self.contradiction_tension_engine.minimize_tension_gradient_descent(next_state)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"c:\\Users\\treyr\\Desktop\\recursive-categorical-framework\\rcf_integration\\eigenrecursive_operations.py\", line 394, in minimize_tension_gradient_descent\n    tension.backward()\n  File \"C:\\Users\\treyr\\Desktop\\recursive-categorical-framework\\.venv\\Lib\\site-packages\\torch\\_tensor.py\", line 625, in backward\n    torch.autograd.backward(\n  File \"C:\\Users\\treyr\\Desktop\\recursive-categorical-framework\\.venv\\Lib\\site-packages\\torch\\autograd\\__init__.py\", line 347, in backward\n    grad_tensors_ = _make_grads(tensors, grad_tensors_, is_grads_batched=False)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\treyr\\Desktop\\recursive-categorical-framework\\.venv\\Lib\\site-packages\\torch\\autograd\\__init__.py\", line 207, in _make_grads\n    raise RuntimeError(msg)\nRuntimeError: grad can be implicitly created only for real scalar outputs but got torch.complex64\n"
+          "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\treyr\\Desktop\\recursive-categorical-framework\\test_eigenrecursion_integration.py\", line 398, in test_eigenstate_convergence_engine\n    result = engine.converge_to_eigenstate(initial_state, operator)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\treyr\\Desktop\\recursive-categorical-framework\\rcf_integration\\eigenrecursive_operations.py\", line 2029, in converge_to_eigenstate\n    if self.recursion_tracer and len(self.recursion_tracer.trace) >= 3:\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'EigenrecursionTracer' object has no attribute 'trace'\n"
         }
       ],
       "skipped_details": [],
-      "console_output": "test_consciousness_eigenoperator (__main__.TestEigenrecursiveOperations.test_consciousness_eigenoperator)\nTest consciousness eigenoperator with full metrics. ... ok\ntest_contradiction_tension_engine (__main__.TestEigenrecursiveOperations.test_contradiction_tension_engine)\nTest contradiction tension computation and minimization. ... ok\ntest_eigenstate_convergence_engine (__main__.TestEigenrecursiveOperations.test_eigenstate_convergence_engine)\nTest full eigenstate convergence with all integrated components. ... ERROR\ntest_free_energy_minimizer (__main__.TestEigenrecursiveOperations.test_free_energy_minimizer)\nTest free energy minimization. ... ok\ntest_information_geometry (__main__.TestEigenrecursiveOperations.test_information_geometry)\nTest information geometry and natural gradient descent. ... ok\ntest_information_theoretic_detector (__main__.TestEigenrecursiveOperations.test_information_theoretic_detector)\nTest information-theoretic pattern detection. ... ok\ntest_quantum_cognition_model (__main__.TestEigenrecursiveOperations.test_quantum_cognition_model)\nTest quantum cognition model for identity representation. ... ok\ntest_topological_analyzer (__main__.TestEigenrecursiveOperations.test_topological_analyzer)\nTest topological phase space analysis. ... ok\n\n======================================================================\nERROR: test_eigenstate_convergence_engine (__main__.TestEigenrecursiveOperations.test_eigenstate_convergence_engine)\nTest full eigenstate convergence with all integrated components.\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"c:\\Users\\treyr\\Desktop\\recursive-categorical-framework\\test_eigenrecursion_integration.py\", line 398, in test_eigenstate_convergence_engine\n    result = engine.converge_to_eigenstate(initial_state, operator)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"c:\\Users\\treyr\\Desktop\\recursive-categorical-framework\\rcf_integration\\eigenrecursive_operations.py\", line 1952, in converge_to_eigenstate\n    next_state = self.contradiction_tension_engine.minimize_tension_gradient_descent(next_state)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"c:\\Users\\treyr\\Desktop\\recursive-categorical-framework\\rcf_integration\\eigenrecursive_operations.py\", line 394, in minimize_tension_gradient_descent\n    tension.backward()\n  File \"C:\\Users\\treyr\\Desktop\\recursive-categorical-framework\\.venv\\Lib\\site-packages\\torch\\_tensor.py\", line 625, in backward\n    torch.autograd.backward(\n  File \"C:\\Users\\treyr\\Desktop\\recursive-categorical-framework\\.venv\\Lib\\site-packages\\torch\\autograd\\__init__.py\", line 347, in backward\n    grad_tensors_ = _make_grads(tensors, grad_tensors_, is_grads_batched=False)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\treyr\\Desktop\\recursive-categorical-framework\\.venv\\Lib\\site-packages\\torch\\autograd\\__init__.py\", line 207, in _make_grads\n    raise RuntimeError(msg)\nRuntimeError: grad can be implicitly created only for real scalar outputs but got torch.complex64\n\n----------------------------------------------------------------------\nRan 8 tests in 0.211s\n\nFAILED (errors=1)"
+      "console_output": "test_consciousness_eigenoperator (__main__.TestEigenrecursiveOperations.test_consciousness_eigenoperator)\nTest consciousness eigenoperator with full metrics. ... ok\ntest_contradiction_tension_engine (__main__.TestEigenrecursiveOperations.test_contradiction_tension_engine)\nTest contradiction tension computation and minimization. ... ok\ntest_eigenstate_convergence_engine (__main__.TestEigenrecursiveOperations.test_eigenstate_convergence_engine)\nTest full eigenstate convergence with all integrated components. ... ERROR\ntest_free_energy_minimizer (__main__.TestEigenrecursiveOperations.test_free_energy_minimizer)\nTest free energy minimization. ... ok\ntest_information_geometry (__main__.TestEigenrecursiveOperations.test_information_geometry)\nTest information geometry and natural gradient descent. ... ok\ntest_information_theoretic_detector (__main__.TestEigenrecursiveOperations.test_information_theoretic_detector)\nTest information-theoretic pattern detection. ... ok\ntest_quantum_cognition_model (__main__.TestEigenrecursiveOperations.test_quantum_cognition_model)\nTest quantum cognition model for identity representation. ... ok\ntest_topological_analyzer (__main__.TestEigenrecursiveOperations.test_topological_analyzer)\nTest topological phase space analysis. ... ok\n\n======================================================================\nERROR: test_eigenstate_convergence_engine (__main__.TestEigenrecursiveOperations.test_eigenstate_convergence_engine)\nTest full eigenstate convergence with all integrated components.\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\treyr\\Desktop\\recursive-categorical-framework\\test_eigenrecursion_integration.py\", line 398, in test_eigenstate_convergence_engine\n    result = engine.converge_to_eigenstate(initial_state, operator)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\treyr\\Desktop\\recursive-categorical-framework\\rcf_integration\\eigenrecursive_operations.py\", line 2029, in converge_to_eigenstate\n    if self.recursion_tracer and len(self.recursion_tracer.trace) >= 3:\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'EigenrecursionTracer' object has no attribute 'trace'\n\n----------------------------------------------------------------------\nRan 8 tests in 0.058s\n\nFAILED (errors=1)"
     },
     {
       "name": "Governance Framework",
@@ -56,12 +61,12 @@
       "failed": 0,
       "errors": 0,
       "skipped": 0,
-      "duration": 0.011985699999058852,
+      "duration": 0.009027899999637157,
       "status": "passed",
       "failure_details": [],
       "error_details": [],
       "skipped_details": [],
-      "console_output": "test_governance_framework (__main__.TestGovernanceFramework.test_governance_framework)\nTest governance framework for human-AI interaction. ... ok\ntest_homeostatic_controller (__main__.TestGovernanceFramework.test_homeostatic_controller)\nTest homeostatic control theory implementation. ... ok\ntest_narrative_identity_engine (__main__.TestGovernanceFramework.test_narrative_identity_engine)\nTest narrative identity formation. ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.012s\n\nOK"
+      "console_output": "test_governance_framework (__main__.TestGovernanceFramework.test_governance_framework)\nTest governance framework for human-AI interaction. ... ok\ntest_homeostatic_controller (__main__.TestGovernanceFramework.test_homeostatic_controller)\nTest homeostatic control theory implementation. ... ok\ntest_narrative_identity_engine (__main__.TestGovernanceFramework.test_narrative_identity_engine)\nTest narrative identity formation. ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.009s\n\nOK"
     },
     {
       "name": "Epistemic Operators",
@@ -72,12 +77,12 @@
       "failed": 0,
       "errors": 0,
       "skipped": 0,
-      "duration": 0.0005736000020988286,
+      "duration": 0.0003761999832931906,
       "status": "passed",
       "failure_details": [],
       "error_details": [],
       "skipped_details": [],
-      "console_output": "test_epistemic_operators (__main__.TestEpistemicOperators.test_epistemic_operators)\nTest epistemic operators: K_a \u03c6 \u2192 \u03c6, M_a \u03c6 \u2192 K_a(K_a \u03c6 \u2228 \u00acK_a \u03c6) ... ok\ntest_modal_logic_operators (__main__.TestEpistemicOperators.test_modal_logic_operators)\nTest modal logic operators for recursive reasoning. ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.001s\n\nOK"
+      "console_output": "test_epistemic_operators (__main__.TestEpistemicOperators.test_epistemic_operators)\nTest epistemic operators: K_a \u03c6 \u2192 \u03c6, M_a \u03c6 \u2192 K_a(K_a \u03c6 \u2228 \u00acK_a \u03c6) ... ok\ntest_modal_logic_operators (__main__.TestEpistemicOperators.test_modal_logic_operators)\nTest modal logic operators for recursive reasoning. ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nOK"
     },
     {
       "name": "Formula Validation",
@@ -88,7 +93,7 @@
       "failed": 0,
       "errors": 0,
       "skipped": 0,
-      "duration": 0.0025091999996220693,
+      "duration": 0.00201500000548549,
       "status": "passed",
       "failure_details": [],
       "error_details": [],

@@ -33,17 +33,21 @@ RECURSIVE_TENSOR_NOTICE = (
 RECURSIVE_TENSOR_WARNING_EMITTED = False
 
 try:
-    from processing.recursive_tensor import RecursiveTensor
+    from rcf_integration.recursive_tensor import RecursiveTensor
     RECURSIVE_TENSOR_AVAILABLE = True
 except ImportError:
-    RECURSIVE_TENSOR_AVAILABLE = False
+    try:
+        from .recursive_tensor import RecursiveTensor
+        RECURSIVE_TENSOR_AVAILABLE = True
+    except ImportError:
+        RECURSIVE_TENSOR_AVAILABLE = False
 
-    class RecursiveTensor:  # type: ignore
-        """Placeholder used when the proprietary recursive tensor is unavailable."""
+        class RecursiveTensor:  # type: ignore
+            """Placeholder used when the proprietary recursive tensor is unavailable."""
 
-        pass
-from rcf_integration.stability_matrix import EigenrecursionStabilizer
-from rcf_integration.eigenrecursion_algorithm import (
+            pass
+from zynx_zebra_core import EigenrecursionStabilizer
+from .eigenrecursion_algorithm import (
     RecursiveLoopDetectionSystem,
     EigenrecursionTracer,
     RLDISSeverityLevel,
@@ -1824,11 +1828,9 @@ class EigenstateConvergenceEngine:
         state_dim = current_state.numel()
         if self.stabilizer is None:
             self.stabilizer = EigenrecursionStabilizer(
-                state_dimension=state_dim,
-                contraction_factor=0.85,
-                convergence_threshold=1e-6,
-                max_iterations=500,
-                learning_rate=0.01
+                dimension=state_dim,
+                epsilon=1e-6,
+                max_iterations=500
             )
             logger.info(f"Eigenrecursion stabilizer engaged (state_dim={state_dim})")
         if self.recursion_tracer is None:
@@ -1988,11 +1990,25 @@ class EigenstateConvergenceEngine:
                     next_state_np = next_state
                     current_state_np = current_state
                 
-                stability_metrics = self.stabilizer.evaluate_state(
-                    torch.tensor(next_state_np) if not isinstance(next_state_np, torch.Tensor) else next_state,
-                    torch.tensor(current_state_np) if current_state_np is not None and not isinstance(current_state_np, torch.Tensor) else current_state,
-                    iteration
-                )
+                # Manual stability evaluation since evaluate_state is not available in zynx_zebra_core
+                if current_state_np is not None:
+                    # Calculate norm of difference
+                    if isinstance(next_state_np, np.ndarray) and isinstance(current_state_np, np.ndarray):
+                        delta = np.linalg.norm(next_state_np - current_state_np)
+                    else:
+                        # Handle scalar or other types
+                        delta = abs(next_state_np - current_state_np)
+                    
+                    converged = delta < self.stabilizer.epsilon
+                else:
+                    delta = 1.0
+                    converged = False
+                
+                stability_metrics = {
+                    'converged': converged,
+                    'delta': delta,
+                    'iteration': iteration
+                }
                 
                 # Only minimize free energy if not converged and delta is significant
                 should_minimize_fe = not stability_metrics.get('converged', False) and stability_metrics.get('delta', 1.0) > 1e-6
@@ -2092,16 +2108,16 @@ class EigenstateConvergenceEngine:
                 self.spectral_history.append(spectral_radius)
 
                 if spectral_radius > 1.5:
-                    self.stabilizer.adaptive_adjustment(instability_detected=True)
+                    # self.stabilizer.adaptive_adjustment(instability_detected=True)
+                    # Adaptive adjustment not available in current stabilizer
                     logger.info(
-                        "Recursive tension detected at iteration %d | spectral radius %.3f | "
-                        "contraction factor %.3f",
+                        "Recursive tension detected at iteration %d | spectral radius %.3f",
                         iteration,
-                        spectral_radius,
-                        getattr(self.stabilizer, "contraction_factor", float("nan")),
+                        spectral_radius
                     )
                 else:
-                    self.stabilizer.adaptive_adjustment(instability_detected=False)
+                    # self.stabilizer.adaptive_adjustment(instability_detected=False)
+                    pass
             
             # Convergence check
             if self._check_convergence(convergence_metric, iteration):

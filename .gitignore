@@ -1,3 +1,49 @@
 .venv
 __pycache__
 *.pyc
+resources/ethics&stability/
+tensor_output_compiled.rta
+node_modules/
+
+# Labs: keep only entrypoint TSX files so users scaffold locally
+labs/**
+!labs/eigenrecursion/
+!labs/triaxial-cascade/
+
+labs/eigenrecursion/**
+!labs/eigenrecursion/eigenrecursion_convergence.tsx
+!labs/eigenrecursion/src/
+labs/eigenrecursion/src/**
+!labs/eigenrecursion/src/main.tsx
+
+labs/triaxial-cascade/**
+!labs/triaxial-cascade/triaxial_metacognitive_cascade.tsx
+!labs/triaxial-cascade/src/
+labs/triaxial-cascade/src/**
+!labs/triaxial-cascade/src/main.tsx
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Build outputs
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+harmonic_breath_field.py

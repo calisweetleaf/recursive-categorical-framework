@@ -1,0 +1,30 @@
+{
+  "integration": {
+    "iterations": 100,
+    "dimensionality": 64,
+    "symbols_start": 6,
+    "symbols_end": 106,
+    "eigenpatterns_found": 1,
+    "paradoxes_detected": 0,
+    "paradox_by_type": {},
+    "memories_created": 1,
+    "resonance_detected": false,
+    "timings": {
+      "total_seconds": 0.30676770210266113,
+      "loop_seconds": 0.30495166778564453,
+      "transformation_seconds": 0.02075791358947754,
+      "paradox_scan_seconds": 0.28268909454345703,
+      "crystallization_seconds": 0.0
+    },
+    "stability": {},
+    "rldis": {},
+    "governance": {},
+    "env": {
+      "python_version": "3.12.10",
+      "platform": "win32",
+      "torch_cuda_available": false,
+      "tensorflow_present": true
+    },
+    "seed": null
+  }
+}

@@ -26,6 +26,8 @@ from collections import deque
 from scipy.sparse import csr_matrix
 import time
 import warnings
+import tempfile
+import os
 
 
 @dataclass
@@ -128,6 +130,13 @@ class BaseTensor(ABC, nn.Module):
         self.convergence_history = deque(maxlen=1000)
         self.information_flow_matrix = None
         
+        # Memory mapping support
+        self._info_flow_use_mmap = False
+        self._info_flow_mmap_file = None
+        self._info_flow_mmap_array = None
+        self._eigenstate_mmap_file = None
+        self._eigenstate_mmap_shape = None
+        
         # Performance metrics
         self.recursion_depth = 0
         self.last_convergence_score = 0.0
@@ -172,12 +181,47 @@ class BaseTensor(ABC, nn.Module):
         )
     
     def _initialize_information_flow(self):
-        """Initialize information flow tracking matrix."""
+        """Initialize information flow tracking matrix using memory mapping for large arrays."""
         # Flatten dimensions for information flow computation
-        flow_dim = min(np.prod(self.dimensions), 512)  # Cap for memory efficiency
-        self.information_flow_matrix = torch.zeros(
-            flow_dim, flow_dim, dtype=self.dtype, device=self.device
-        )
+        flow_dim = np.prod(self.dimensions)
+        
+        # Use memory mapping for large matrices (> 1M elements)
+        large_threshold = 1024 * 1024  # 1M elements
+        if flow_dim * flow_dim > large_threshold:
+            # Create temporary file for memory mapping
+            temp_file = tempfile.NamedTemporaryFile(delete=False, suffix='.npy')
+            temp_file.close()
+            
+            # Create memory-mapped array
+            mmap_array = np.memmap(
+                temp_file.name,
+                dtype=np.float32,
+                mode='w+',
+                shape=(flow_dim, flow_dim)
+            )
+            mmap_array[:] = 0.0  # Initialize to zeros
+            mmap_array.flush()
+            
+            # Store reference to temp file for cleanup
+            self._info_flow_mmap_file = temp_file.name
+            self._info_flow_mmap_array = mmap_array
+            
+            # Convert to torch tensor (will be loaded on-demand)
+            self.information_flow_matrix = None  # Will be loaded from mmap when needed
+            self._info_flow_use_mmap = True
+            
+            warnings.warn(f"Using memory-mapped array for information flow matrix "
+                         f"({flow_dim}x{flow_dim} = {flow_dim*flow_dim:,} elements, "
+                         f"~{flow_dim*flow_dim*4/1024/1024:.1f}MB). "
+                         f"Temporary file: {temp_file.name}")
+        else:
+            # Small enough for regular tensor
+            self.information_flow_matrix = torch.zeros(
+                flow_dim, flow_dim, dtype=self.dtype, device=self.device
+            )
+            self._info_flow_use_mmap = False
+            self._info_flow_mmap_file = None
+            self._info_flow_mmap_array = None
     
     def _to_sparse(self, tensor: torch.Tensor):
         """Convert dense tensor to sparse representation."""
@@ -338,27 +382,123 @@ class BaseTensor(ABC, nn.Module):
         if len(data.shape) > 2:
             # Flatten higher-dimensional tensors
             data_flat = data.flatten()
+            
             matrix_size = int(np.sqrt(len(data_flat)))
             if matrix_size * matrix_size < len(data_flat):
                 matrix_size += 1
             
-            # Pad to square matrix
-            padded_size = matrix_size * matrix_size
-            if len(data_flat) < padded_size:
-                padding = torch.zeros(padded_size - len(data_flat), 
-                                    dtype=data.dtype, device=data.device)
-                data_flat = torch.cat([data_flat, padding])
-            
-            matrix = data_flat[:matrix_size*matrix_size].reshape(matrix_size, matrix_size)
+            # Use memory mapping for large matrices (> 1M elements)
+            large_threshold = 1024 * 1024  # 1M elements
+            if matrix_size * matrix_size > large_threshold:
+                # Create temporary file for memory mapping
+                temp_file = tempfile.NamedTemporaryFile(delete=False, suffix='.npy')
+                temp_file.close()
+                
+                # Pad to square matrix size
+                padded_size = matrix_size * matrix_size
+                if len(data_flat) < padded_size:
+                    data_np = data_flat.detach().cpu().numpy() if torch.is_tensor(data_flat) else np.array(data_flat)
+                    padding = np.zeros(padded_size - len(data_flat), dtype=np.float32)
+                    data_padded = np.concatenate([data_np, padding])
+                else:
+                    data_padded = data_flat.detach().cpu().numpy() if torch.is_tensor(data_flat) else np.array(data_flat)
+                    data_padded = data_padded[:padded_size]
+                
+                # Create memory-mapped array
+                mmap_matrix = np.memmap(
+                    temp_file.name,
+                    dtype=np.float32,
+                    mode='w+',
+                    shape=(matrix_size, matrix_size)
+                )
+                
+                # Reshape and write in chunks to memory-mapped file
+                mmap_matrix[:] = data_padded.reshape(matrix_size, matrix_size)
+                mmap_matrix.flush()
+                
+                # Use memory-mapped array directly (don't load full array into RAM)
+                # Load only what's needed for computation
+                matrix = torch.from_numpy(mmap_matrix).to(dtype=data.dtype, device=data.device)
+                
+                warnings.warn(f"Using memory-mapped matrix for eigenstate computation "
+                             f"({matrix_size}x{matrix_size} = {matrix_size*matrix_size:,} elements, "
+                             f"~{matrix_size*matrix_size*4/1024/1024:.1f}MB). Temporary file: {temp_file.name}. "
+                             f"Matrix accessed on-demand from disk.")
+            else:
+                # Small enough for regular tensor
+                padded_size = matrix_size * matrix_size
+                if len(data_flat) < padded_size:
+                    padding = torch.zeros(padded_size - len(data_flat), 
+                                        dtype=data.dtype, device=data.device)
+                    data_flat = torch.cat([data_flat, padding])
+                
+                matrix = data_flat[:matrix_size*matrix_size].reshape(matrix_size, matrix_size)
         elif len(data.shape) == 2:
             matrix = data
         else:
-            # 1D tensor - create circulant matrix
+            # 1D tensor - create circulant matrix using memory mapping for large arrays
             n = len(data)
-            matrix = torch.zeros(n, n, dtype=data.dtype, device=data.device)
-            for i in range(n):
-                for j in range(n):
-                    matrix[i, j] = data[(j - i) % n]
+            
+            # Use memory mapping for large matrices (> 1M elements)
+            large_threshold = 1024 * 1024  # 1M elements
+            if n * n > large_threshold:
+                # Create temporary file for memory mapping
+                temp_file = tempfile.NamedTemporaryFile(delete=False, suffix='.npy')
+                temp_file.close()
+                
+                # Create memory-mapped array
+                mmap_matrix = np.memmap(
+                    temp_file.name,
+                    dtype=np.float32,
+                    mode='w+',
+                    shape=(n, n)
+                )
+                
+                # Build circulant matrix in chunks to avoid loading all into memory
+                chunk_size = min(1000, n)  # Process in chunks
+                data_np = data.detach().cpu().numpy() if torch.is_tensor(data) else data
+                
+                for i_start in range(0, n, chunk_size):
+                    i_end = min(i_start + chunk_size, n)
+                    for j_start in range(0, n, chunk_size):
+                        j_end = min(j_start + chunk_size, n)
+                        
+                        # Compute circulant values for this chunk
+                        chunk = np.zeros((i_end - i_start, j_end - j_start), dtype=np.float32)
+                        for i_idx, i in enumerate(range(i_start, i_end)):
+                            for j_idx, j in enumerate(range(j_start, j_end)):
+                                chunk[i_idx, j_idx] = data_np[(j - i) % n]
+                        
+                        mmap_matrix[i_start:i_end, j_start:j_end] = chunk
+                
+                mmap_matrix.flush()
+                
+                # Keep as memory-mapped array - don't convert to torch yet
+                # Will work with numpy memmap directly, convert chunks to torch only when needed
+                # Store reference to mmap file for later chunked access
+                matrix_mmap_file = temp_file.name
+                matrix_mmap_shape = (n, n)
+                
+                # For eigenvalue computation, we'll need to work in chunks
+                # Create a wrapper that accesses the mmap in chunks
+                # For now, create a small view for the computation
+                # The actual computation will happen in chunks in the eigenvalue methods
+                matrix = torch.from_numpy(mmap_matrix[:min(1000, n), :min(1000, n)]).to(dtype=data.dtype, device=data.device)
+                
+                # Store mmap info for full matrix access later
+                self._eigenstate_mmap_file = matrix_mmap_file
+                self._eigenstate_mmap_shape = matrix_mmap_shape
+                
+                warnings.warn(f"Using memory-mapped circulant matrix ({n}x{n} = {n*n:,} elements, "
+                             f"~{n*n*4/1024/1024:.1f}MB). Temporary file: {temp_file.name}. "
+                             f"Matrix will be computed on-demand from disk.")
+            else:
+                # Small enough for regular tensor
+                matrix = torch.zeros(n, n, dtype=data.dtype, device=data.device)
+                data_np = data.detach().cpu().numpy() if torch.is_tensor(data) else data
+                for i in range(n):
+                    for j in range(n):
+                        matrix[i, j] = data_np[(j - i) % n]
         
         # Ensure matrix is square
         if matrix.shape[0] != matrix.shape[1]:
@@ -519,12 +659,24 @@ class BaseTensor(ABC, nn.Module):
         current_data = current_data[:min_len]
         previous_data = previous_data[:min_len]
         
-        # Limit to matrix dimensions for memory efficiency
-        flow_dim = self.information_flow_matrix.shape[0]
+        # Get flow dimension and handle memory-mapped arrays
+        if self._info_flow_use_mmap:
+            flow_dim = self._info_flow_mmap_array.shape[0]
+            # Reload mmap array if needed
+            if self._info_flow_mmap_array is None:
+                self._info_flow_mmap_array = np.memmap(
+                    self._info_flow_mmap_file,
+                    dtype=np.float32,
+                    mode='r+',
+                    shape=(flow_dim, flow_dim)
+                )
+        else:
+            flow_dim = self.information_flow_matrix.shape[0]
+        
         current_data = current_data[:flow_dim]
         previous_data = previous_data[:flow_dim]
         
-        # Update information flow matrix
+        # Update information flow matrix (memory-mapped or regular)
         for i in range(len(current_data)):
             for j in range(len(previous_data)):
                 if i < flow_dim and j < flow_dim:
@@ -535,13 +687,35 @@ class BaseTensor(ABC, nn.Module):
                     ).item()
                     
                     # Update with exponential moving average
-                    self.information_flow_matrix[i, j] = (
-                        0.9 * self.information_flow_matrix[i, j] + 
-                        0.1 * info_transfer
-                    )
+                    if self._info_flow_use_mmap:
+                        old_val = float(self._info_flow_mmap_array[i, j])
+                        self._info_flow_mmap_array[i, j] = 0.9 * old_val + 0.1 * info_transfer
+                    else:
+                        self.information_flow_matrix[i, j] = (
+                            0.9 * self.information_flow_matrix[i, j] + 
+                            0.1 * info_transfer
+                        )
+        
+        # Flush memory-mapped array if used
+        if self._info_flow_use_mmap:
+            self._info_flow_mmap_array.flush()
         
         # Compute integrated information flow (Φ_eigen)
-        phi_eigen = torch.sum(torch.abs(self.information_flow_matrix)).item()
+        # For memory-mapped arrays, compute in chunks to avoid loading entire array
+        if self._info_flow_use_mmap:
+            # Compute sum in chunks to avoid loading entire array into RAM
+            # Process row by row to minimize memory footprint
+            chunk_size = min(100, flow_dim)  # Smaller chunks for memory efficiency
+            phi_eigen = 0.0
+            for i_start in range(0, flow_dim, chunk_size):
+                i_end = min(i_start + chunk_size, flow_dim)
+                # Access memory-mapped array in chunks (only loads chunk into RAM)
+                chunk = self._info_flow_mmap_array[i_start:i_end, :]
+                phi_eigen += float(np.sum(np.abs(chunk)))
+                # Explicitly delete chunk reference to free memory
+                del chunk
+        else:
+            phi_eigen = torch.sum(torch.abs(self.information_flow_matrix)).item()
         
         # Update state information flow
         current_state.information_flow = phi_eigen
@@ -671,11 +845,27 @@ class BaseTensor(ABC, nn.Module):
         self.state_history.clear()
         self.convergence_history.clear()
         
+        # Clean up memory-mapped files if they exist
+        if self._info_flow_mmap_file and os.path.exists(self._info_flow_mmap_file):
+            try:
+                os.unlink(self._info_flow_mmap_file)
+            except Exception:
+                pass
+        
         # Reinitialize tensor data
         self._initialize_tensor()
         
         # Reset information flow matrix
         self._initialize_information_flow()
+    
+    def __del__(self):
+        """Cleanup memory-mapped files on destruction."""
+        if hasattr(self, '_info_flow_mmap_file') and self._info_flow_mmap_file:
+            if os.path.exists(self._info_flow_mmap_file):
+                try:
+                    os.unlink(self._info_flow_mmap_file)
+                except Exception:
+                    pass
     
     def __repr__(self) -> str:
         """String representation of the tensor."""

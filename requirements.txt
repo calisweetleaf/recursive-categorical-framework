@@ -2,4 +2,11 @@
 numpy
 scipy
 torch
+torchvision
+torchaudio
+tensorflow
 matplotlib
+seaborn
+scikit-learn
+pywavelets
+react

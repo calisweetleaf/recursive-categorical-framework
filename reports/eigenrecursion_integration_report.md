@@ -1,22 +1,22 @@
 # Eigenrecursion Integration Report
-- Generated: 2025-11-14T04:40:43.547017Z
+- Generated: 2025-11-27T23:26:20.858638Z
 - Overall Status: FAILURE
-- Total Tests: 25 (passed=24, failed=0, errors=1, skipped=0)
+- Total Tests: 25 (passed=23, failed=1, errors=1, skipped=0)
 
 | Stage | Module | Tests | Passed | Failed | Errors | Skipped | Duration (s) | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Eigenrecursion Algorithm | `rcf_integration.eigenrecursion_algorithm` | 7 | 7 | 0 | 0 | 0 | 0.507 | PASSED |
-| Eigenrecursive Operations | `rcf_integration.eigenrecursive_operations` | 8 | 7 | 0 | 1 | 0 | 0.211 | FAILED |
-| Governance Framework | `rcf_integration.governance_framework` | 3 | 3 | 0 | 0 | 0 | 0.012 | PASSED |
-| Epistemic Operators | `rcf_integration.eigenrecursive_operations` | 2 | 2 | 0 | 0 | 0 | 0.001 | PASSED |
-| Formula Validation | `rcf_integration.governance_framework` | 5 | 5 | 0 | 0 | 0 | 0.003 | PASSED |
+| Eigenrecursion Algorithm | `rcf_integration.eigenrecursion_algorithm` | 7 | 6 | 1 | 0 | 0 | 2.092 | FAILED |
+| Eigenrecursive Operations | `rcf_integration.eigenrecursive_operations` | 8 | 7 | 0 | 1 | 0 | 0.058 | FAILED |
+| Governance Framework | `rcf_integration.governance_framework` | 3 | 3 | 0 | 0 | 0 | 0.009 | PASSED |
+| Epistemic Operators | `rcf_integration.eigenrecursive_operations` | 2 | 2 | 0 | 0 | 0 | 0.000 | PASSED |
+| Formula Validation | `rcf_integration.governance_framework` | 5 | 5 | 0 | 0 | 0 | 0.002 | PASSED |
 
 ## Eigenrecursion Algorithm
 Validates recursive convergence, RLDIS monitoring, and algorithmic resilience.
 
 ```
 test_basic_eigenrecursion_convergence (__main__.TestEigenrecursionAlgorithm.test_basic_eigenrecursion_convergence)
-Test basic eigenrecursion finds fixed point. ... ok
+Test basic eigenrecursion finds fixed point. ... FAIL
 test_bayesian_intervention_selector (__main__.TestEigenrecursionAlgorithm.test_bayesian_intervention_selector)
 Test Bayesian intervention selection framework. ... ok
 test_gradient_contradiction_resolver (__main__.TestEigenrecursionAlgorithm.test_gradient_contradiction_resolver)
@@ -30,10 +30,19 @@ Test RLDIS pattern detection system. ... ok
 test_semantic_analysis_topological (__main__.TestEigenrecursionAlgorithm.test_semantic_analysis_topological)
 Test topological phase space analysis. ... ok
 
+======================================================================
+FAIL: test_basic_eigenrecursion_convergence (__main__.TestEigenrecursionAlgorithm.test_basic_eigenrecursion_convergence)
+Test basic eigenrecursion finds fixed point.
 ----------------------------------------------------------------------
-Ran 7 tests in 0.507s
+Traceback (most recent call last):
+  File "C:\Users\treyr\Desktop\recursive-categorical-framework\test_eigenrecursion_integration.py", line 127, in test_basic_eigenrecursion_convergence
+    self.assertEqual(result['status'], ConvergenceStatus.CONVERGED)
+AssertionError: <ConvergenceStatus.ERROR: 'Error occurred during recursion'> != <ConvergenceStatus.CONVERGED: 'Convergence achieved within tolerance'>
 
-OK
+----------------------------------------------------------------------
+Ran 7 tests in 2.092s
+
+FAILED (failures=1)
 ```
 
 ## Eigenrecursive Operations
@@ -62,25 +71,16 @@ ERROR: test_eigenstate_convergence_engine (__main__.TestEigenrecursiveOperations
 Test full eigenstate convergence with all integrated components.
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "c:\Users\treyr\Desktop\recursive-categorical-framework\test_eigenrecursion_integration.py", line 398, in test_eigenstate_convergence_engine
+  File "C:\Users\treyr\Desktop\recursive-categorical-framework\test_eigenrecursion_integration.py", line 398, in test_eigenstate_convergence_engine
     result = engine.converge_to_eigenstate(initial_state, operator)
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "c:\Users\treyr\Desktop\recursive-categorical-framework\rcf_integration\eigenrecursive_operations.py", line 1952, in converge_to_eigenstate
-    next_state = self.contradiction_tension_engine.minimize_tension_gradient_descent(next_state)
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "c:\Users\treyr\Desktop\recursive-categorical-framework\rcf_integration\eigenrecursive_operations.py", line 394, in minimize_tension_gradient_descent
-    tension.backward()
-  File "C:\Users\treyr\Desktop\recursive-categorical-framework\.venv\Lib\site-packages\torch\_tensor.py", line 625, in backward
-    torch.autograd.backward(
-  File "C:\Users\treyr\Desktop\recursive-categorical-framework\.venv\Lib\site-packages\torch\autograd\__init__.py", line 347, in backward
-    grad_tensors_ = _make_grads(tensors, grad_tensors_, is_grads_batched=False)
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\treyr\Desktop\recursive-categorical-framework\.venv\Lib\site-packages\torch\autograd\__init__.py", line 207, in _make_grads
-    raise RuntimeError(msg)
-RuntimeError: grad can be implicitly created only for real scalar outputs but got torch.complex64
+  File "C:\Users\treyr\Desktop\recursive-categorical-framework\rcf_integration\eigenrecursive_operations.py", line 2029, in converge_to_eigenstate
+    if self.recursion_tracer and len(self.recursion_tracer.trace) >= 3:
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'EigenrecursionTracer' object has no attribute 'trace'
 
 ----------------------------------------------------------------------
-Ran 8 tests in 0.211s
+Ran 8 tests in 0.058s
 
 FAILED (errors=1)
 ```
@@ -97,7 +97,7 @@ test_narrative_identity_engine (__main__.TestGovernanceFramework.test_narrative_
 Test narrative identity formation. ... ok
 
 ----------------------------------------------------------------------
-Ran 3 tests in 0.012s
+Ran 3 tests in 0.009s
 
 OK
 ```
@@ -112,7 +112,7 @@ test_modal_logic_operators (__main__.TestEpistemicOperators.test_modal_logic_ope
 Test modal logic operators for recursive reasoning. ... ok
 
 ----------------------------------------------------------------------
-Ran 2 tests in 0.001s
+Ran 2 tests in 0.000s
 
 OK
 ```
