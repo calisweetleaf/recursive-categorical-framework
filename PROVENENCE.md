@@ -1,8 +1,8 @@
 # Recursive Categorical Framework – Provenance Dossier
 
 ## Identity & Contacts
-- Legal name: Christian “Trey” Rowell  
-- Research alias: Daeron Blackfyre  
+- Name: Christian “Trey” Rowell  
+- Now Old Research alias: Daeron Blackfyre  
 - Primary email: treyrowell1826@gmail.com  
 - Secondary email: daeronblackfyre18@gmail.com  
 - ORCID: 0009-0008-6550-6316 — https://orcid.org/0009-0008-6550-6316  
