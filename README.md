@@ -1,6 +1,8 @@
 # Recursive Categorical Framework (RCF)
 
-# For any questions, clarifications, or any general questions please email <treyrowell1826@gmail.com>
+##License Update: CC BY-NC-SA 4.0
+
+## For any questions, clarifications, or any general questions please email <treyrowell1826@gmail.com>
 Due to identity confusion and to establish a stable chain of identity and ensure correct works are attributed properly. Daeron, the name used for internal research will not be used again. Christian Trey Rowell is the author and public maintainer of this repository and its contents. Please feel free to contact. Also wanted to update for those that missed it, the recursive_tensor.py has been added to codebase, the ANTITHESIS.md document that lives in the root is there to dispell any metaphysical/spiritual claims, due to mistake naming schema. Current development goal is for cross validation, community enhancements(license will soon be changed), and other advancements, expect the repository to become opensource. Feel free as it is to run any file, mess with system, "break" it. My goal with current license was to ensure during the early publication period provence could be established. The new fbs_tokenizer.py representats a massive breakthrough in a potential post-token substrate. Further development will include community enhancements, personal advancements, and updates. If citing author, or extending on my work you have explicit permission to build upon and expand/advance the field as my goal was not to lock down the great advancements, but to ensure stability during the turbulent launch days. I would also like to reiterate that the two extensions URST and RSIA have been Consolidated, along with their files, into this codebase. AGENT, STYLES, and APPENDIX.md files in the root are beginner integration/ability to begin working with the rcf codebase but are still a work in progress for easy onboarding for quick development. If using as reference, basis, or any derivative of this codebase please cite me, Christian Trey Rowell, in accordance with the most up to date license. 
 
 # Discussion has now opened up and I welcome the community. Only through open source co collaboration and development will allow the substrate to flourish. Please engage, discuss openly, etc as long as citation/link establishing me, the work, and/or code.
@@ -73,7 +75,12 @@ This paper introduces the **Recursive Categorical Framework (RCF)**, a mathemati
 
 ### Mathematical Core
 
-- Fiber bundle topology (\(\mathcal{E} \xrightarrow{\pi} \mathcal{M}_E\)) formalizes ethics as a base manifold and beliefs as fibers.
+- Fiber bundle topology
+
+```math
+- (\(\mathcal{E} \xrightarrow{\pi} \mathcal{M}_E\))
+```
+This formalizes ethics as a base manifold and beliefs as fibers.
 - Eigenrecursive Sentience Theorem guarantees unique consciousness attractors under contraction mappings.
 
 ---
@@ -118,6 +125,7 @@ pdflatex URST/Unified_Recursive_Sentience_Theory.tex
 
 ## 5. License Notice
 
+-The entire repository has no been updated to a CC BY-NC-SA 4.0 license.
 Previously no reproduction, distribution, or derivative works are permitted without explicit written permission from the author. This included but was not limited to academic, commercial, or personal use. Contact the author for licensing inquiries. This has been updated/in process of update and is now explicitly permitted by the Author for citation of work without obtaining permission so long as citation is properly made to me, and whatever corresponding theorom/code implement. You may now run code freely, edit code and work in local copy of codebase. If you decide to publish you must reference and cite the corresponding Paper/theory/proof or code. Provenance cool down has been established, now its time to open the field.
 
 ---
