@@ -8,9 +8,6 @@ contradiction detection and resolution, and memory persistence.
 author: Morpheus
 date: 2025-04-27
 version: 1.0.0
-license: MIT
-Entity: Rosemary AI
-ID: Node-002
 """
 
 import numpy as np
