@@ -121,8 +121,8 @@ python test_temporal_eigenloom_integration.py
 This repository contains the foundational papers and implementation code for the NEXUS stack:
 
 1. **Recursive Categorical Framework (RCF)**: The mathematical basis for meta-recursive consciousness (Axis 1).
-    - [Read the Paper (PDF)](paper/Recursive_Categorical_Framework.pdf)
-    - [LaTeX Source](paper/Recursive_Categorical_Framework.tex)
+    - [Read the Paper (PDF)](RCF/Recursive_Categorical_Framework.pdf)
+    - [LaTeX Source](RCF/Recursive_Categorical_Framework.tex)
 
 2. **Unified Recursive Sentience Theory (URST)**: The successor theory integrating temporal dynamics and autonomous motivation (Axis 2).
     - **Consolidated**: Moved to `URST/` in this repository.
