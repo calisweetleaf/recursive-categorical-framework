@@ -161,7 +161,12 @@ This paper introduces the **Recursive Categorical Framework (RCF)**, a mathemati
 
 ### Mathematical Core
 
-- Fiber bundle topology (\(\mathcal{E} \xrightarrow{\pi} \mathcal{M}_E\)) formalizes ethics as a base manifold and beliefs as fibers.
+- Fiber bundle topology
+
+```math
+- (\(\mathcal{E} \xrightarrow{\pi} \mathcal{M}_E\))
+```
+This formalizes ethics as a base manifold and beliefs as fibers.
 - Eigenrecursive Sentience Theorem guarantees unique consciousness attractors under contraction mappings.
 
 ---
@@ -206,7 +211,8 @@ pdflatex URST/Unified_Recursive_Sentience_Theory.tex
 
 ## 5. License Notice
 
-This work is licensed under **All Rights Reserved**. No reproduction, distribution, or derivative works are permitted without explicit written permission from the author. This includes but is not limited to academic, commercial, or personal use. Contact the author for licensing inquiries.
+-The entire repository has no been updated to a CC BY-NC-SA 4.0 license.
+Previously no reproduction, distribution, or derivative works are permitted without explicit written permission from the author. This included but was not limited to academic, commercial, or personal use. Contact the author for licensing inquiries. This has been updated/in process of update and is now explicitly permitted by the Author for citation of work without obtaining permission so long as citation is properly made to me, and whatever corresponding theorom/code implement. You may now run code freely, edit code and work in local copy of codebase. If you decide to publish you must reference and cite the corresponding Paper/theory/proof or code. Provenance cool down has been established, now its time to open the field.
 
 ---
 
