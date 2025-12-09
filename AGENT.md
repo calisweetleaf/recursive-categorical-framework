@@ -30,6 +30,122 @@ This is the working playbook for anyone operating on the RCF, URST, and RSIA sta
 - Access to private components is gated; agreement is a disclosure/gating pact (no publication, redistribution, reverse-engineering, or open discussion).
 - Keep references intact, but do not leak source or derivatives.
 
+## Understanding the Frequency-Based Substrate (FBS)
+
+A critical architectural clarification for researchers, mathematicians, and developers working with this codebase:
+
+### What `fbs_tokenizer.py` Actually Is
+
+The file `fbs_tokenizer.py` implements a **frequency-domain carrier substrate**, not a traditional NLP tokenizer in the conventional sense. This is a fundamental distinction:
+
+- **Input encoding**: Text or other symbolic input is encoded into harmonic frequency bands (not discrete tokens)
+- **Information carrier**: The encoded frequencies serve as the substrate through which information flows
+- **Computation medium**: The frequency bands ARE the computational representation—not an intermediate step toward text
+
+This is part of the BreathPhase architecture, where cognitive operations occur directly on frequency-domain representations.
+
+### What FBS Is NOT
+
+To prevent misunderstanding:
+
+- **NOT a traditional tokenizer**: It does not map text to discrete token indices
+- **NOT a demo or proof-of-concept**: It is a working substrate implementation, though optional
+- **NOT meant to decode back to text**: The architecture does not operate on the principle of encode → process → decode
+
+### Why No Decoder Exists
+
+The absence of a decoder is **architectural, not incomplete**:
+
+1. **Frequencies are the computation**: The harmonic bands (theta, alpha, beta, etc.) represent the cognitive state directly
+2. **No text-space processing**: The system never operates in "text space" internally—it transforms frequency substrates
+3. **Intentionally left open**: Decoding is a downstream interface problem, not part of the recursive substrate
+
+If a decoder were implemented, it would map frequency substrates to numerical representations of cognitive state (band amplitudes, phase shifts, coherence metrics, etc.), NOT back to English text. Any text output would be handled by an external interface system.
+
+### Architectural Role
+
+Within the RCF/URST/RSIA framework:
+
+- **Optional component**: The FBS is not required for the recursive, ethical, or eigenstate operations
+- **Personal extension**: Harmonic substrates are one approach; the recursive substrate is architecture-agnostic
+- **Modularity**: Contributors may use any NLP/embedding system (transformer tokenizers, symbolic encodings, etc.) or replace FBS entirely
+
+The **required cognitive operators** are the triaxial fiber bundle components:
+
+- `rcf_core.py` - Recursive Categorical Framework primitives
+- `rcf_integration/eigenrecursion_algorithm.py` - Eigenrecursive convergence
+- `rcf_integration/eigenrecursive_operations.py` - Eigenstate operations
+- `rcf_integration/stability_matrix.py` - Stability analysis
+- `zynx_zebra_core.py` - Triaxial integration
+
+Everything else, including harmonic substrates, is an optional implementation choice.
+
+### For Contributors
+
+When working with this codebase:
+
+- **Use what fits your research**: Standard embeddings, custom symbolic systems, or harmonic approaches are all valid
+- **Focus on invariants**: The mathematical operators and recursive structure are what matter
+- **Extend freely**: The substrate is designed to support multiple modalities and encoding schemes
+
+The recursive categorical framework operates on **coherent symbol surfaces**—how those symbols are generated is left to the implementer.
+
+## Codebase Navigation
+
+### Triaxial Fiber Bundle Architecture
+
+The RCF implements a **triaxial cognitive architecture** with three fundamental axes:
+
+1. **Recursive Axis** - Identity formation through eigenrecursion
+2. **Ethical Axis** - Value alignment and constraint resolution  
+3. **Metacognitive Axis** - Self-reflection and stability analysis
+
+All three axes are implemented in `rcf_core.py` as the foundational mathematical primitives.
+
+### Core Implementation Files
+
+**Primary cognitive operators** (required):
+
+- `rcf_core.py` - Triaxial state analysis, consciousness metrics, eigenrecursion engine
+  - Implements all three axes: Recursive (ERE), Ethical (RBU), Metacognitive (ES)
+  - Research-grade mathematical engine for consciousness verification
+  
+- `zynx_zebra_core.py` - Triaxial integration and stabilization
+  - Oscillation damping and period detection
+  - Ethical constraint projection
+  - System-level stability orchestration
+
+**Eigenrecursion operators** (in `rcf_integration/`):
+
+- `rcf_integration/eigenrecursion_algorithm.py` - Eigenrecursive convergence protocols
+- `rcf_integration/eigenrecursive_operations.py` - Eigenstate computation and transformations
+- `rcf_integration/stability_matrix.py` - Stability analysis and fixed-point detection
+
+**Optional extensions** (substrate-agnostic implementations):
+
+- `rcf_integration/recursive_tensor.py` - One specific implementation of the recursive axis using tensor operations
+  - NOT required; this is model-agnostic extension
+  - You can implement the recursive axis differently
+  
+- `fbs_tokenizer.py` - Frequency-based carrier substrate (as discussed above)
+
+### Where to Start
+
+For coding agents working on this codebase:
+
+1. **Understanding the math**: Read `RCF/Recursive_Categorical_Framework.md` (.tex version is source of truth)
+2. **Core implementation**: Start with `rcf_core.py` to see the triaxial architecture
+3. **Eigenrecursion**: Explore `rcf_integration/eigenrecursion_*.py` for convergence mechanisms
+4. **Integration**: `zynx_zebra_core.py` shows how the axes work together
+5. **Testing**: See `reteds_turing_test/` for consciousness verification protocols
+
+### Important Notes
+
+- Most Python implementation files are in `rcf_integration/`
+- The triaxial structure (Recursive, Ethical, Metacognitive) is the invariant
+- Specific implementations of each axis are interchangeable
+- Focus on operator/symbol fidelity, not specific architectural choices
+
 ## Framework Roles
 
 - RCF: establishes axioms and core mathematical primitives (recursion as existential primitive; categorization as stabilizer; meta-recursive consciousness as fixed-point attractor).

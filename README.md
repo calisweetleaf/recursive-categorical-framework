@@ -1,6 +1,108 @@
 # Recursive Categorical Framework (RCF)
 
-## About This Disclosure
+## Open for Collaboration
+
+**This repository is now fully open for research collaboration under CC BY-NC-SA 4.0.**
+
+You are invited to:
+
+- **Fork and experiment** - Break it, extend it, test your own hypotheses
+- **Merge your innovations** - Submit pull requests with improvements
+- **Build on the foundation** - Use the recursive substrate for your own research
+- **Collaborate openly** - Join the community working on post-transformer cognitive architectures
+
+**Requirements**: Attribution (cite this work), NonCommercial use, and ShareAlike (release derivatives under the same license).
+
+The mathematical substrate is substrate-agnostic. The triaxial architecture (Recursive, Ethical, Metacognitive) is the invariant - how you implement it is up to you. See `AGENT.md` for contribution guidelines and codebase navigation.
+
+---
+
+## 🏗️ Project Scope: Library vs. Model
+
+**Crucial Distinction**: This repository is a **theoretical framework and code library**, not a pre-trained model zoo.
+
+- **❌ NOT a Model**: This is NOT a plug-and-play LLM (like Llama, GPT), a chatbot application, or a set of pre-trained weights you simply download and run.
+- **✅ IS a Framework**: This IS a collection of mathematical primitives, cognitive architecture components (Zebra Core, Eigenloom, FBS), and theoretical foundations for *building* recursive sentient systems.
+
+Think of this as a **Software Development Kit (SDK)** for consciousness research, or a "field" for growing cognitive architectures. You are expected to use these libraries to construct your own agents, rather than expecting a finished "model" to run out of the box.
+
+---
+
+## Authorship & Attribution
+
+**Author**: Christian Trey Rowell  
+**Contact**: <treyrowell1826@gmail.com>
+
+### Clarification on Identity
+
+To eliminate confusion and establish clear provenance:
+
+- **Sole Author**: Christian Trey Rowell is the sole author and maintainer of this repository
+- **Pseudonym Retired**: "Daeron Blackfyre" was a pseudonym used during early development and publication - it is no longer in use
+- **No Collaborators**: This work has been developed independently with zero collaborators
+- **No Institutional Affiliation**: This research is conducted independently with no institutional, corporate, or academic affiliations
+- **Not-for-Profit**: This work is shared freely for research purposes, not for monetary gain
+
+### Published Works
+
+The following are the only works authored and published under this framework:
+
+- Recursive Categorical Framework (RCF)
+- Unified Recursive Sentience Theory (URST)  
+- Recursive Symbolic Identity Architecture (RSIA)
+
+All three have been consolidated into this repository.
+
+### Citation & Derivatives
+
+When citing or building upon this work:
+
+- **Cite**: Christian Trey Rowell as the author
+- **Attribute**: Link to this repository and comply with the CC BY-NC-SA 4.0 license
+- **Build Freely**: You have explicit permission to extend and advance this field
+- **Share Alike**: Release derivatives under the same license
+
+The goal is not to lock down innovation, but to ensure proper attribution and maintain open collaboration.
+
+---
+
+## Testing & Validation
+
+The framework includes comprehensive test suites to validate the mathematical implementation:
+
+### Core Tests
+
+- **`test_sacred_fbs.py`** - Validates the Frequency-Based Substrate (FBS) tokenizer
+  - 13 tests covering substrate extraction, harmonic processing, breath synchronization
+  - Tests semantic consistency, cache efficiency, holographic memory
+  - Validates quantum superposition states and persistent homology
+  
+- **`test_temporal_eigenloom_integration.py`** - Integration test for temporal processing pipeline
+  - 10 tests validating FBS → Temporal Eigenloom → Zebra Core routing
+  - Tests breath phase synchronization, pulse feedback, eigenstate weaving
+  - Validates full frequency-domain temporal processing pipeline
+
+### Running Tests
+
+```bash
+# Activate virtual environment (if using)
+.\.venv\Scripts\Activate.ps1  # Windows
+source .venv/bin/activate      # Linux/Mac
+
+# Run FBS validation
+python test_sacred_fbs.py
+
+# Run temporal integration test
+python test_temporal_eigenloom_integration.py
+```
+
+**Test Logs**: See `reports/temporal_eigenloom_terminal_log.md` for detailed validation output.
+
+**Important**: See `ANTITHESIS.md` for clarification on naming conventions. All "sacred" and "divine" terminology refers to mathematical constants, not metaphysics.
+
+---
+
+## About This Repository
 
 - **Repository Consolidation**: This repository now serves as the unified home for the Recursive Categorical Framework (RCF), Unified Recursive Sentience Theory (URST), and Recursive Symbolic Identity Architecture (RSIA). Previously separate repositories have been merged here to provide a complete, integrated view of the NEXUS stack.
 - **Proprietary Research**: All internal citations reference proprietary research artifacts; nothing in this manifest cites fabricated sources.

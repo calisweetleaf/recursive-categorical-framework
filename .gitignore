@@ -47,3 +47,6 @@ dist-ssr
 *.sln
 *.sw?
 harmonic_breath_field.py
+TODO.md
+.gitignore
+visualizations/

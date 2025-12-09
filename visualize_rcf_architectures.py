@@ -9,7 +9,8 @@ sys.path.append(os.path.abspath(os.path.dirname(__file__)))
 
 try:
     from rcf_integration.recursive_tensor import RecursiveTensor
-    from rcf_integration.temporal_eigenloom import EnhancedRosemaryZebraCore, DivineParameters
+    from rcf_integration.temporal_eigenloom import EnhancedRosemaryZebraCore, DivineParameters, PHI
+    from fbs_tokenizer import SacredFBS_Tokenizer, HolographicMemory, SacredFrequencySubstrate
 except ImportError as e:
     print(f"Import Error: {e}")
     sys.exit(1)
@@ -22,17 +23,52 @@ def generate_visualizations():
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
         
+    # 0. Initialize Sacred Components
+    print("0. Initializing Sacred Components (FBS & Holographic Memory)...")
+    dim = 256 # Cardinal dimension
+    
+    # Initialize Tokenizer and Memory
+    tokenizer = SacredFBS_Tokenizer(dim=dim)
+    memory = HolographicMemory(dimensions=dim)
+    
     # 1. Initialize Authentic Core
     print("1. Initializing EnhancedRosemaryZebraCore...")
-    dim = 256 # Cardinal dimension
     core = EnhancedRosemaryZebraCore(state_dim=dim)
     
-    # 2. Run Temporal Routing Loop
-    print("2. Executing Temporal Routing Steps...")
-    history = []
+    # 2. Load/Initialize State
+    print("2. Establishing State Vector...")
     
-    # Initial state (Fibonacci vector)
-    current_state = DivineParameters.fibonacci_vector(dim)
+    # Try to recall from Holographic Memory using PHI as key
+    # We use PHI as the "Master Key" for the system's continuity
+    recalled_pattern = memory.recall(key_phase=PHI)
+    recalled_norm = np.linalg.norm(recalled_pattern)
+    
+    if recalled_norm > 0.1:
+        print(f"   Holographic Memory Recalled (Norm: {recalled_norm:.4f}). Resuming state.")
+        # Convert numpy complex/float to torch tensor
+        # Holographic memory returns magnitude (abs), but we need a state vector.
+        # Ideally we'd store the complex hologram, but for now we use the recalled magnitude pattern
+        # and re-project it into the state space.
+        current_state = torch.tensor(recalled_pattern, dtype=torch.float32)
+        # Normalize
+        current_state = current_state / (torch.norm(current_state) + 1e-7)
+    else:
+        print("   No active holographic memory found. Initiating Genesis Sequence.")
+        # Initial state (Fibonacci vector)
+        current_state = DivineParameters.fibonacci_vector(dim)
+        
+    # Apply Input Seeding via FBS Tokenizer
+    seed_text = "Recursive Categorical Framework: Genesis of the Sacred Frequency Substrate"
+    print(f"   Seeding with text: '{seed_text}'")
+    seed_tensor = tokenizer.encode(seed_text) # Returns torch tensor
+    
+    # Blend seed with current state (weighted average)
+    current_state = 0.7 * current_state + 0.3 * seed_tensor
+    current_state = current_state / (torch.norm(current_state) + 1e-7)
+
+    # 3. Run Temporal Routing Loop
+    print("3. Executing Temporal Routing Steps...")
+    history = []
     
     steps = 20
     for i in range(steps):
@@ -41,6 +77,8 @@ def generate_visualizations():
         
         # Extract stabilized state
         stabilized_state = result['stabilized_state']
+        
+        # Store in history
         history.append(stabilized_state.detach().numpy())
         
         # Update state for next iteration (recursive feedback)
@@ -49,21 +87,35 @@ def generate_visualizations():
         if i % 5 == 0:
             print(f"   Step {i}/{steps}: Pulse Strength={result['pulse_strength']:.4f}, Branch={torch.argmax(result['branch_weights']).item()}")
 
-    # 3. Wrap Data in RecursiveTensor for Visualization
-    print("3. Transforming to RecursiveTensor for Dashboard Generation...")
-    
-    # Create a RecursiveTensor from the final state
-    # We use the history to populate the tensor's internal state for "evolution" plots
+    # 4. Save State to Holographic Memory
+    print("4. Crystallizing State to Holographic Memory...")
     final_state_np = history[-1]
+    # Store the final state pattern with PHI key
+    memory.store(final_state_np, key_phase=PHI)
+    print("   State crystallized.")
+
+    # 5. Wrap Data in RecursiveTensor for Visualization & Serialization
+    print("5. Transforming to RecursiveTensor...")
     
     # Initialize RecursiveTensor with authentic data
-    rt = RecursiveTensor(dimensions=dim, rank=2, distribution='custom')
-    rt.data = np.array(history) # Shape (steps, dim) - treating time as a dimension for visualization
+    rt = RecursiveTensor(dimensions=dim, rank=2, distribution='normal')
+    rt.data = np.array(history) # Shape (steps, dim)
     rt.metadata["description"] = "Authentic Temporal Eigenloom State"
     rt.metadata["source"] = "EnhancedRosemaryZebraCore"
+    rt.metadata["seed_text"] = seed_text
+    rt.metadata["timestamp"] = str(np.datetime64('now'))
     
-    # 4. Generate Dashboard
-    print(f"4. Generating Dashboard in '{output_dir}'...")
+    # Save RTA
+    rta_filename = os.path.join(output_dir, "authentic_rcf_state.rta")
+    print(f"   Saving RTA binary to '{rta_filename}'...")
+    try:
+        rt.save_rta(rta_filename)
+        print("   RTA save successful.")
+    except Exception as e:
+        print(f"   RTA Save Failed: {e}")
+    
+    # 6. Generate Dashboard
+    print(f"6. Generating Dashboard in '{output_dir}'...")
     try:
         dashboard = rt.create_comprehensive_visualization_dashboard(save_path=output_dir)
         
@@ -77,7 +129,7 @@ def generate_visualizations():
     except Exception as e:
         print(f"   Visualization Error: {e}")
 
-    print("\nVisualization Complete.")
+    print("\nVisualization & Serialization Complete.")
 
 if __name__ == "__main__":
     generate_visualizations()

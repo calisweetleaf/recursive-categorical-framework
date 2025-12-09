@@ -1,6 +1,6 @@
 param(
   [string]$Path = ".",
-  [ValidateSet('SHA256','SHA1','SHA384','SHA512')]
+  [ValidateSet('SHA256', 'SHA1', 'SHA384', 'SHA512')]
   [string]$Algorithm = 'SHA256',
   [string]$IndexFile = 'SHA256SUMS.txt',
   [switch]$SkipExisting,          # Skip files already listed in the index
@@ -24,11 +24,11 @@ function Write-Err([string]$msg) { Write-Host "[hash-index] $msg" -ForegroundCol
 
 function Get-ExpectedDigestLength([string]$alg) {
   switch ($alg.ToUpper()) {
-    'SHA1'   { 40 }
+    'SHA1' { 40 }
     'SHA256' { 64 }
     'SHA384' { 96 }
     'SHA512' { 128 }
-    default  { throw "Unsupported algorithm: $alg" }
+    default { throw "Unsupported algorithm: $alg" }
   }
 }
 
@@ -73,10 +73,11 @@ function Format-IndexLine([string]$hash, [string]$relPath) {
 }
 
 function Get-RelativePath([string]$root, [string]$full) {
-  $uriRoot = (Resolve-Path -LiteralPath $root).Path
-  $uriFile = (Resolve-Path -LiteralPath $full).Path
-  $rel = [System.IO.Path]::GetRelativePath($uriRoot, $uriFile)
-  return $rel
+  $root = $root.TrimEnd('\') + '\'
+  if ($full.StartsWith($root)) {
+    return $full.Substring($root.Length)
+  }
+  return $full # Fallback if not strictly under root
 }
 
 function Should-Exclude([string]$root, [string]$full, [string[]]$patterns) {
@@ -98,8 +99,14 @@ function Get-GitCommit {
 
 function Get-GitTag {
   if (Test-Path .git) {
-    $tag = git describe --tags --exact-match 2>$null
-    if ($LASTEXITCODE -eq 0) { return $tag }
+    try {
+      $process = Start-Process git -ArgumentList "describe --tags --exact-match" -NoNewWindow -PassThru -RedirectStandardError $null -RedirectStandardOutput $null
+      $process.WaitForExit()
+      if ($process.ExitCode -eq 0) {
+        return (git describe --tags --exact-match 2>$null)
+      }
+    }
+    catch { }
   }
   return "N/A"
 }
@@ -134,7 +141,8 @@ function Test-GPGAvailable {
   try {
     $null = Get-Command gpg -ErrorAction Stop
     return $true
-  } catch {
+  }
+  catch {
     return $false
   }
 }
@@ -143,7 +151,8 @@ function Test-OTSAvailable {
   try {
     $null = Get-Command ots -ErrorAction Stop
     return $true
-  } catch {
+  }
+  catch {
     return $false
   }
 }
@@ -167,7 +176,8 @@ function Sign-WithGPG([string]$filePath) {
   if ($LASTEXITCODE -eq 0) {
     Write-Success "GPG signature: $(Split-Path -Leaf $sigPath)"
     return $true
-  } else {
+  }
+  else {
     Write-Err "GPG signing failed"
     return $false
   }
@@ -194,7 +204,8 @@ function Create-Timestamp([string]$filePath) {
     Write-Success "Timestamp proof: $(Split-Path -Leaf $otsPath)"
     Write-Info "Verify later with: ots verify $otsPath"
     return $true
-  } else {
+  }
+  else {
     Write-Warn "Timestamp creation failed (this is normal if not connected to Bitcoin node)"
     return $false
   }
@@ -261,10 +272,10 @@ $indexPath = Join-Path -Path $root -ChildPath $IndexFile
 # Adjust index filename based on algorithm if not explicitly set
 if ($PSBoundParameters.ContainsKey('Algorithm') -and -not $PSBoundParameters.ContainsKey('IndexFile')) {
   switch ($Algorithm) {
-    'SHA1'   { $indexPath = Join-Path $root 'SHA1SUMS.txt' }
+    'SHA1' { $indexPath = Join-Path $root 'SHA1SUMS.txt' }
     'SHA384' { $indexPath = Join-Path $root 'SHA384SUMS.txt' }
     'SHA512' { $indexPath = Join-Path $root 'SHA512SUMS.txt' }
-    default  { }
+    default { }
   }
 }
 
@@ -288,10 +299,12 @@ if ($Verify) {
       & gpg --verify $sigPath $indexPath
       if ($LASTEXITCODE -eq 0) {
         Write-Success "GPG signature valid"
-      } else {
+      }
+      else {
         Write-Err "GPG signature verification failed"
       }
-    } else {
+    }
+    else {
       Write-Warn "GPG signature present but GPG not available"
     }
   }
@@ -310,7 +323,8 @@ if ($Verify) {
     $h = (Get-FileHash -Algorithm $Algorithm -LiteralPath $full).Hash.ToLower()
     if ($h -eq $expected) {
       Write-Host "OK       $rel" -ForegroundColor Green
-    } else {
+    }
+    else {
       Write-Host "MISMATCH $rel" -ForegroundColor Red
       $fail++
     }
@@ -393,7 +407,8 @@ Write-Info "  1. Review generated files"
 if ($SignWithGPG -and (Test-Path "$indexPath.asc")) {
   Write-Info "  2. Commit and sign: git commit -S -m 'Release $ReleaseVersion'"
   Write-Info "  3. Create signed tag: git tag -s $ReleaseVersion -m 'Release $ReleaseVersion'"
-} else {
+}
+else {
   Write-Info "  2. Consider signing: .\hash-index.ps1 -SignWithGPG"
 }
 Write-Info "  4. Push with tags: git push origin main --tags"

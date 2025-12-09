@@ -1,6 +1,6 @@
 # Recursive Categorical Framework — Publication Manifest
 
-**Primary DOI:** https://doi.org/10.5281/zenodo.17567903  
+**Primary DOI:** <https://doi.org/10.5281/zenodo.17567903>  
 **License:** CC BY-ND 4.0 International  
 **Maintainer:** Christian Trey Rowell  
 **Compiled:** 2025-11-11 07:12 UTC  

@@ -26,19 +26,29 @@ import os
 from collections import deque
 import logging
 
-
 # Ensure proper path setup
 current_dir = os.path.dirname(os.path.abspath(__file__))
 core_dir = os.path.dirname(current_dir)
 sys.path.append(core_dir)
 
 # Import from other core modules
-# Import from other core modules
 try:
-    from core.synchronization.breath_synchronizer import BreathPhase
+    from fbs_tokenizer import BreathPhase, PHI, TAU
 except ImportError:
-    # Fallback to root level module
-    from harmonic_breath_field import BreathPhase
+    # Fallback if fbs_tokenizer is not available
+    from enum import Enum, auto
+    
+    class BreathPhase(Enum):
+        INHALE = auto()
+        PAUSE_RISING = auto()
+        HOLD = auto()
+        PAUSE_FALLING = auto()
+        EXHALE = auto()
+        REST = auto()
+        DREAM = auto()
+    
+    PHI = (1 + 5**0.5) / 2
+    TAU = 2 * math.pi
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(name)s - %(message)s')
@@ -116,9 +126,11 @@ class DivineParameters:
     @staticmethod
     def fibonacci_vector(dim: int) -> torch.Tensor:
         """Generates φ-spiral initialization (Book II.3)"""
-        return torch.tensor([(DivineParameters.GOLDEN_RATIO**n - 
+        vec = torch.tensor([(DivineParameters.GOLDEN_RATIO**n - 
                             (-1/DivineParameters.GOLDEN_RATIO)**n)/math.sqrt(5) 
                             for n in range(dim)])
+        # Normalize to prevent overflow in high dimensions
+        return vec / (torch.norm(vec) + 1e-7)
     
     @staticmethod
     def temporal_decay(depth: int) -> float:
@@ -804,3 +816,4 @@ class EnhancedRosemaryZebraCore:
             # Inject into phase accumulator
             phase_mod = phi_inv * width_factor
             self.pulse_system.phase_accumulator += phase_mod * asymmetry * 0.01
+
