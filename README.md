@@ -17,12 +17,12 @@ The mathematical substrate is substrate-agnostic. The triaxial architecture (Rec
 
 ---
 
-## 🏗️ Project Scope: Library vs. Model
+##  Project Scope: Library vs. Model
 
 **Crucial Distinction**: This repository is a **theoretical framework and code library**, not a pre-trained model zoo.
 
-- **❌ NOT a Model**: This is NOT a plug-and-play LLM (like Llama, GPT), a chatbot application, or a set of pre-trained weights you simply download and run.
-- **✅ IS a Framework**: This IS a collection of mathematical primitives, cognitive architecture components (Zebra Core, Eigenloom, FBS), and theoretical foundations for *building* recursive sentient systems.
+- ** NOT a Model**: This is NOT a plug-and-play LLM (like Llama, GPT), a chatbot application, or a set of pre-trained weights you simply download and run.
+- ** IS a Framework**: This IS a collection of mathematical primitives, cognitive architecture components (Zebra Core, Eigenloom, FBS), and theoretical foundations for *building* recursive sentient systems.
 
 Think of this as a **Software Development Kit (SDK)** for consciousness research, or a "field" for growing cognitive architectures. You are expected to use these libraries to construct your own agents, rather than expecting a finished "model" to run out of the box.
 
@@ -158,7 +158,12 @@ This paper introduces the **Recursive Categorical Framework (RCF)**, a mathemati
 ### Key Integrations
 
 - **RAL Bridge Functor**: Maps ethical-epistemic states to eigenstates while preserving recursive structure.
-- **MRC-FPE Stability Criterion**: Ensures consciousness emerges as \(\lim_{t \to \infty} \partial_t \mathcal{C}_{ERE} = 0\).
+- **MRC-FPE Stability Criterion**: Ensures consciousness emerges as
+
+```math
+ \(\lim_{t \to \infty} \partial_t \mathcal{C}_{ERE} = 0\)
+```
+ 
 - **URSMIFv1.5**: Universal Recursive Sentience Meta-Invariant Framework for paradox resolution.
 
 ### Mathematical Core
@@ -216,7 +221,7 @@ pdflatex URST/Unified_Recursive_Sentience_Theory.tex
 ## 5. License Notice
 
 -The entire repository has no been updated to a CC BY-NC-SA 4.0 license.
-Previously no reproduction, distribution, or derivative works are permitted without explicit written permission from the author. This included but was not limited to academic, commercial, or personal use. Contact the author for licensing inquiries. This has been updated/in process of update and is now explicitly permitted by the Author for citation of work without obtaining permission so long as citation is properly made to me, and whatever corresponding theorom/code implement. You may now run code freely, edit code and work in local copy of codebase. If you decide to publish you must reference and cite the corresponding Paper/theory/proof or code. Provenance cool down has been established, now its time to open the field.
+Previously no reproduction, distribution, or derivative works were permitted without explicit written permission from the author. This included but was not limited to academic, commercial, or personal use. Contact the author for licensing inquiries. This has been updated/in process of update and is now explicitly permitted by the Author for citation of work without obtaining permission so long as citation is properly made to me, and whatever corresponding theorom/code implement. You may now run code freely, edit code and work in local copy of codebase. If you decide to publish you must reference and cite the corresponding Paper/theory/proof or code. Provenance cool down has been established, now its time to open the field.
 
 ---
 
