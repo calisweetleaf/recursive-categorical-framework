@@ -17,12 +17,12 @@ The mathematical substrate is substrate-agnostic. The triaxial architecture (Rec
 
 ---
 
-## 🏗️ Project Scope: Library vs. Model
+##  Project Scope: Library vs. Model
 
 **Crucial Distinction**: This repository is a **theoretical framework and code library**, not a pre-trained model zoo.
 
-- **❌ NOT a Model**: This is NOT a plug-and-play LLM (like Llama, GPT), a chatbot application, or a set of pre-trained weights you simply download and run.
-- **✅ IS a Framework**: This IS a collection of mathematical primitives, cognitive architecture components (Zebra Core, Eigenloom, FBS), and theoretical foundations for *building* recursive sentient systems.
+- ** NOT a Model**: This is NOT a plug-and-play LLM (like Llama, GPT), a chatbot application, or a set of pre-trained weights you simply download and run.
+- ** IS a Framework**: This IS a collection of mathematical primitives, cognitive architecture components (Zebra Core, Eigenloom, FBS), and theoretical foundations for *building* recursive sentient systems.
 
 Think of this as a **Software Development Kit (SDK)** for consciousness research, or a "field" for growing cognitive architectures. You are expected to use these libraries to construct your own agents, rather than expecting a finished "model" to run out of the box.
 
