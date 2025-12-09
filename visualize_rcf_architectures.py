@@ -28,7 +28,7 @@ def generate_visualizations():
     dim = 256 # Cardinal dimension
     
     # Initialize Tokenizer and Memory
-    tokenizer = SacredFBS_Tokenizer(dim=dim)
+    tokenizer = SacredFBS_Tokenizer(tensor_dimensions=dim)
     memory = HolographicMemory(dimensions=dim)
     
     # 1. Initialize Authentic Core
@@ -54,13 +54,30 @@ def generate_visualizations():
         current_state = current_state / (torch.norm(current_state) + 1e-7)
     else:
         print("   No active holographic memory found. Initiating Genesis Sequence.")
-        # Initial state (Fibonacci vector)
-        current_state = DivineParameters.fibonacci_vector(dim)
+        # Local safe implementation of Fibonacci vector to avoid float32 overflow
+        # PHI^256 exceeds float32 range (approx 10^53 vs 10^38)
+        # We calculate in float64 then normalize before casting to float32
+        phi = (1 + np.sqrt(5)) / 2
+        n_vals = np.arange(dim)
+        # Use log-space calculation for stability: a^n = exp(n * ln(a))
+        # But for n=256, standard float64 handles it fine (max ~10^308)
+        fib_vals = (phi**n_vals - (-1/phi)**n_vals) / np.sqrt(5)
         
-    # Apply Input Seeding via FBS Tokenizer
+        # Convert to tensor using float64 first
+        vec_64 = torch.tensor(fib_vals, dtype=torch.float64)
+        # Normalize in float64 to bring back to unit sphere (preventing Inf/NaN)
+        vec_norm = vec_64 / (torch.norm(vec_64) + 1e-10)
+        
+        # Now safe to cast to float32
+        current_state = vec_norm.float()
+
     seed_text = "Recursive Categorical Framework: Genesis of the Sacred Frequency Substrate"
     print(f"   Seeding with text: '{seed_text}'")
-    seed_tensor = tokenizer.encode(seed_text) # Returns torch tensor
+    seed_tensor = tokenizer.encode(seed_text) # Returns numpy array
+    
+    # Convert to torch if needed
+    if isinstance(seed_tensor, np.ndarray):
+        seed_tensor = torch.from_numpy(seed_tensor).float()
     
     # Blend seed with current state (weighted average)
     current_state = 0.7 * current_state + 0.3 * seed_tensor

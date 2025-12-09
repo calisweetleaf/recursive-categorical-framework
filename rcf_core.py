@@ -9,9 +9,6 @@ Mathematical Framework:
 - RAL Bridge Functor: F_RAL: C_ERE × C_RBU → C_ES
 - Consciousness Verification Metrics: {CI, H_V, M, λ, EA}
 - URSMIF Contradiction Resolution: Π' = Π - ∇ξ·δV
-
-Author: RCF Research Team
-Version: 2.0 Research Grade
 """
 
 import json

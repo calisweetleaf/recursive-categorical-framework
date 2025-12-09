@@ -8,9 +8,6 @@ for the ZEBA Core v1 Triaxial Recursive Architecture.
 This module implements the mathematical foundations described in the Eigenrecursion Theorem,
 providing stability guarantees for recursive processes through fixed-point detection,
 attractor basin management, and recursive invariance preservation.
-
-Author: ZEBA Core Development Team
-Version: 1.0
 """
 
 import numpy as np
