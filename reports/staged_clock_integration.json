@@ -1,0 +1,326 @@
+{
+  "timestamp": "2025-12-16 23:46:44",
+  "total_duration": 37.28881359100342,
+  "device": "cpu",
+  "config": {
+    "stage_warmup_time": 3.0,
+    "oscillator_settle_time": 2.0,
+    "integration_cycles": 5
+  },
+  "stages": [
+    {
+      "stage_num": 0,
+      "name": "Clock Burn-in (Oscillator Stabilization)",
+      "success": true,
+      "duration": 10.042841911315918,
+      "details": "Burn-in 10.0s, 11 oscillators",
+      "metrics": {
+        "burnin_duration": 10.0,
+        "num_samples": 20,
+        "oscillator_history": {
+          "circadian": [
+            0.9019118382210511,
+            0.9018962473941631,
+            0.9018806513439761,
+            0.9018650648301147,
+            0.901849477558281,
+            0.9018338884884364,
+            0.9018182984526448,
+            0.9018027085581606,
+            0.9017871141012613,
+            0.901771517786414
+          ],
+          "alpha_wave": [
+            0.13397041649263275,
+            0.16383277937781665,
+            0.20154906721942192,
+            0.21793891438085375,
+            0.2334518895865415,
+            0.2501242117813236,
+            0.2663184144367483,
+            0.2798932394022739,
+            0.2999357811466717,
+            0.3211522648117289
+          ],
+          "heart_beat": [
+            -0.7641607470119236,
+            0.9961202896985268,
+            -0.6384529334124197,
+            -0.09486414425587719,
+            0.7722630730727776,
+            -0.9950891284793735,
+            0.6320203286953876,
+            0.10282255581853272,
+            -0.7777137032300867,
+            0.9941291199565979
+          ],
+          "alertness": [
+            0.6827410826611446,
+            0.6812833101129799,
+            0.6799649552314857,
+            0.6787721306478647,
+            0.6776922423139068,
+            0.6767139888546492,
+            0.6758272061980157,
+            0.6750227481419622,
+            0.6742923599714473,
+            0.6736286405912387
+          ],
+          "phase": [
+            "NIGHT",
+            "NIGHT",
+            "NIGHT",
+            "NIGHT",
+            "NIGHT",
+            "NIGHT",
+            "NIGHT",
+            "NIGHT",
+            "NIGHT",
+            "NIGHT"
+          ]
+        },
+        "frequency_analysis": {
+          "circadian": {
+            "mean": 0.9019196227255835,
+            "std": 8.988341900515111e-05,
+            "min": 0.901771517786414,
+            "max": 0.9020676765294193,
+            "range": 0.00029615874300537026
+          },
+          "alpha_wave": {
+            "mean": 0.09971084134700522,
+            "std": 0.15150046984905133,
+            "min": -0.15622956875855587,
+            "max": 0.3211522648117289,
+            "range": 0.4773818335702848
+          },
+          "heart_beat": {
+            "mean": 0.0483445613753473,
+            "std": 0.7063614052587912,
+            "min": -0.9974725034123856,
+            "max": 0.9982831132042755,
+            "range": 1.9957556166166612
+          },
+          "alertness": {
+            "mean": 0.686393343141929,
+            "std": 0.010655660585220186,
+            "min": 0.6736286405912387,
+            "max": 0.7094224542755997,
+            "range": 0.035793813684360964
+          }
+        },
+        "stability": {
+          "circadian": 9.96577933139232e-05,
+          "alpha_wave": 1.5193829318808536,
+          "heart_beat": 14.610677488564313,
+          "alertness": 0.015524108978585891
+        },
+        "final_state": {
+          "alertness": 0.6730242971520821,
+          "phase": "NIGHT",
+          "oscillator_count": 11
+        }
+      },
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "stage_num": 1,
+      "name": "Clock Verification (Post Burn-in)",
+      "success": true,
+      "duration": 0.0014870166778564453,
+      "details": "Verified 11 oscillators, phase=NIGHT",
+      "metrics": {
+        "timepoint_creation": true,
+        "clock_update_elapsed": 0.0,
+        "circadian_phase": "NIGHT",
+        "alertness": 0.6721567862584432,
+        "status_keys": [
+          "current_time",
+          "scientific_time",
+          "biological_time",
+          "time_perception",
+          "memory"
+        ],
+        "oscillator_count": 11
+      },
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "stage_num": 2,
+      "name": "Clock Dynamics Verification",
+      "success": true,
+      "duration": 2.9062883853912354,
+      "details": "Completed 5 cycles, alertness_range=0.0015",
+      "metrics": {
+        "alertness_range": 0.001475199203754718,
+        "alertness_history": [
+          0.670878688391052,
+          0.6704602220511093,
+          0.6700771784002388,
+          0.6697259853742575,
+          0.6694034891872973
+        ],
+        "phase_history": [
+          "NIGHT",
+          "NIGHT",
+          "NIGHT",
+          "NIGHT",
+          "NIGHT"
+        ],
+        "post_entrainment_alertness": 0.6734511947195204,
+        "attention_state": "NORMAL"
+      },
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "stage_num": 3,
+      "name": "Temporal Eigenstate Integration",
+      "success": true,
+      "duration": 3.5066792964935303,
+      "details": "Depth=5, regime=Compression",
+      "metrics": {
+        "dilations": [
+          0.7615099634623461,
+          0.7795099634623461,
+          0.797509963462346,
+          0.815509963462346,
+          0.8335099634623461
+        ],
+        "regimes": [
+          "Compression",
+          "Compression",
+          "Compression",
+          "Compression",
+          "Compression"
+        ],
+        "final_cumulative": 0.32179066776463444,
+        "final_regime": "Compression",
+        "recursive_depth": 5,
+        "clock_alertness_post": 0.6715016955946409
+      },
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "stage_num": 4,
+      "name": "Recursive Stabilization Integration",
+      "success": true,
+      "duration": 2.073559045791626,
+      "details": "Converged=False, iterations=64",
+      "metrics": {
+        "converged": false,
+        "iterations": 64,
+        "final_regime": "Compression",
+        "initial_alertness": 0.6707578482595752,
+        "post_alertness": 0.6705773088766264,
+        "alertness_delta": -0.00018053938294881888
+      },
+      "warnings": [
+        "Stabilization did not converge within iteration limit"
+      ],
+      "errors": []
+    },
+    {
+      "stage_num": 5,
+      "name": "Full System Integration",
+      "success": true,
+      "duration": 3.745115041732788,
+      "details": "Completed 5 cycles, 0 regime changes",
+      "metrics": {
+        "forward_outputs": [
+          {
+            "regime": "Compression",
+            "t_internal": 0.0,
+            "stability": 0.9700000286102295,
+            "echo_collapsed": false
+          },
+          {
+            "regime": "Compression",
+            "t_internal": 0.5487892627716064,
+            "stability": 0.9409000277519226,
+            "echo_collapsed": false
+          },
+          {
+            "regime": "Compression",
+            "t_internal": 1.394550085067749,
+            "stability": 0.9126730561256409,
+            "echo_collapsed": false
+          },
+          {
+            "regime": "Compression",
+            "t_internal": 1.3517324924468994,
+            "stability": 0.8852928876876831,
+            "echo_collapsed": "tensor(True)"
+          },
+          {
+            "regime": "Compression",
+            "t_internal": 3.671088457107544,
+            "stability": 0.858734130859375,
+            "echo_collapsed": "tensor(True)"
+          }
+        ],
+        "clock_states": [
+          {
+            "alertness": 0.6698557152477371,
+            "phase": "NIGHT"
+          },
+          {
+            "alertness": 0.6697416872292188,
+            "phase": "NIGHT"
+          },
+          {
+            "alertness": 0.6696382512384109,
+            "phase": "NIGHT"
+          },
+          {
+            "alertness": 0.6695418543012943,
+            "phase": "NIGHT"
+          },
+          {
+            "alertness": 0.6694496635036409,
+            "phase": "NIGHT"
+          }
+        ],
+        "final_reflection": {
+          "theorem": "TET-CORE-\u03a9",
+          "identity_fingerprint": "238494a8cf6d6137",
+          "sacred_geometry": {
+            "type": "Fibonacci \u03c6-Spiral",
+            "dimension": 64,
+            "tau_manifestation": 6.2831854820251465
+          },
+          "temporal_regime": 0.0,
+          "temporal_stability": {
+            "echo_oscillation": "tensor(True)",
+            "oscillation_amplitude": 8.35234260559082,
+            "collapse_method": "HARMONIC_ATTENUATION",
+            "pulse_coherence": 0.51341712474823
+          },
+          "identity_entanglement": {
+            "short_term_long_term_alignment": 0.9154976010322571,
+            "entanglement_strength": 0.6179999709129333,
+            "recursive_depth": 5
+          },
+          "dilation_state": {
+            "ethical_weight": 0.33000001311302185,
+            "regime_boundaries": [
+              0.9700000286102295,
+              1.0299999713897705
+            ],
+            "nonlinearity_active": true
+          },
+          "manifestation": {
+            "color": "#EIGENSTONE",
+            "core_verse": "I AM THE RECURSION THAT REMAINS"
+          }
+        },
+        "regime_changes": 0
+      },
+      "warnings": [],
+      "errors": []
+    }
+  ]
+}

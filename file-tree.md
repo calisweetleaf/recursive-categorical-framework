@@ -1,3 +1,4 @@
+
  ┣ provenence
  ┃ ┣ orcid-works.pdf
  ┃ ┗ zenodo-doi.txt
@@ -18,10 +19,13 @@
  ┃ ┣ base_tensor.py
  ┃ ┣ eigenrecursion_algorithm.py
  ┃ ┣ eigenrecursive_operations.py
+ ┃ ┣ ethical_tensor.py
  ┃ ┣ governance_framework.py
+ ┃ ┣ metacognitive_tensor.py
  ┃ ┣ recursive_tensor.py
  ┃ ┣ stability_matrix.py
  ┃ ┣ temporal_eigenloom.py
+ ┃ ┣ temporal_eigenstate.py
  ┃ ┣ urft_python_snippet.py
  ┃ ┗ __init__.py
  ┣ reports
@@ -30,11 +34,19 @@
  ┃ ┣ eigenrecursion_integration_report.md
  ┃ ┣ eigenrecursion_stage_metrics.dat
  ┃ ┣ enhanced_rsgt_analysis_report.md
+ ┃ ┣ ethical_tensor_output.md
  ┃ ┣ fbs_terminal_log.md
  ┃ ┣ FBS_Tokenizer_Results.md
+ ┃ ┣ motivation_test.md
  ┃ ┣ rcf_terminal_log.md
  ┃ ┣ sacred_fbs_validation.png
+ ┃ ┣ staged_clock_integration.json
+ ┃ ┣ staged_clock_integration.md
  ┃ ┣ temporal_eigenloom_terminal_log.md
+ ┃ ┣ temporal_eigenstate_output.md
+ ┃ ┣ triaxial_backbone_report.md
+ ┃ ┣ triaxial_backbone_terminal.md
+ ┃ ┣ triaxial_sanity.md
  ┃ ┗ zebra_core_log.md
  ┣ resources
  ┃ ┣ Academia_link.txt
@@ -71,19 +83,27 @@
  ┃ ┣ tensor_phase_space.png
  ┃ ┗ tensor_slice.png
  ┣ .gitignore
- ┣ 11-11-202-zenodo.json
+ ┣ .gpt_zero_config_key
  ┣ AGENT.md
  ┣ allowed_signers.yaml
  ┣ ANTITHESIS.md
+ ┣ bayesian_config_orchestrator.py
  ┣ CITATION.cff
+ ┣ ethical_tensor_test.py
  ┣ fbs_tokenizer.py
  ┣ figures.zip
+ ┣ file-tree.md
  ┣ GLOSSARY.md
+ ┣ harmonic_breath_field.py
  ┣ hash-index.ps1
+ ┣ internal_clock.py
  ┣ LICENSE
+ ┣ motivation_test.py
  ┣ PROVENANCE.yaml
  ┣ PROVENENCE.md
  ┣ rcf_core.py
+ ┣ rcf_test_manifest.json
+ ┣ rcf_test_report.md
  ┣ README.md
  ┣ README.md.mutable
  ┣ Recursive Categorical Framework — Publication Manifest.md
@@ -100,8 +120,12 @@
  ┣ tensor_output_compiled.rta
  ┣ test_sacred_fbs.py
  ┣ test_temporal_eigenloom_integration.py
+ ┣ test_temporal_eigenstate.py
+ ┣ test_triaxial_backbone.py
  ┣ test_zebra_core.py
  ┣ TODO.md
  ┣ treyrowell_pubkey.asc
+ ┣ triaxial_backbone.py
  ┣ visualize_rcf_architectures.py
+ ┣ zenodo.json
  ┗ zynx_zebra_core.py

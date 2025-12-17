@@ -1,14 +1,14 @@
 disclosure:
-  title: "Updates"
-  version: "v3.5.0"
-  release_date: "2025-11-27T23:37:28.0402782Z"
+  title: "Triaxial Backbone, Ethical Tensor, Metacognitive Tensor, Bayesian Config, Temporal Eigenstate, and Internal Clock now disclosed."
+  version: "v5.0.0"
+  release_date: "2025-12-17T06:56:44.7575370Z"
   author: "Christian Trey Rowell"
   
 chain:
   - event: "Hash manifest generation"
-    date: "2025-11-27T23:37:28.0402782Z"
-    git_commit: "e9a19c674f11ca8d047009677c1ffab9b744c886"
-    git_tag: "v1.1.0"
+    date: "2025-12-17T06:56:44.7575370Z"
+    git_commit: "ca87a51435f87170faf8be7cb9de12d802297ddb"
+    git_tag: "N/A"
     
 signatures:
   gpg_key: "8AC029E245638CC6"

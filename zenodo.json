@@ -8,8 +8,24 @@
     "record": "public",
     "status": "open"
   },
-  "created": "2025-11-10T04:49:59.233892+00:00",
-  "custom_fields": {},
+  "created": "2025-11-29T05:56:46.262864+00:00",
+  "custom_fields": {
+    "code:codeRepository": "https://github.com/calisweetleaf/recursive-categorical-framework",
+    "code:developmentStatus": {
+      "id": "active",
+      "title": {
+        "en": "Active"
+      }
+    },
+    "code:programmingLanguage": [
+      {
+        "id": "python",
+        "title": {
+          "en": "Python"
+        }
+      }
+    ]
+  },
   "deletion_status": {
     "is_deleted": false,
     "status": "P"
@@ -28,8 +44,8 @@
         "id": "1a603f08-58ed-4655-89f9-49a143adc7d1",
         "key": "01_Eigenrecursion_Test.ipynb",
         "links": {
-          "content": "https://zenodo.org/api/records/17567903/files/01_Eigenrecursion_Test.ipynb/content",
-          "self": "https://zenodo.org/api/records/17567903/files/01_Eigenrecursion_Test.ipynb"
+          "content": "https://zenodo.org/api/records/17758916/files/01_Eigenrecursion_Test.ipynb/content",
+          "self": "https://zenodo.org/api/records/17758916/files/01_Eigenrecursion_Test.ipynb"
         },
         "metadata": {},
         "mimetype": "application/octet-stream",
@@ -45,8 +61,8 @@
         "id": "b4a140f6-e91a-4b98-bf5c-44a09bddb5c2",
         "key": "03_FINAL_TEST.ipynb",
         "links": {
-          "content": "https://zenodo.org/api/records/17567903/files/03_FINAL_TEST.ipynb/content",
-          "self": "https://zenodo.org/api/records/17567903/files/03_FINAL_TEST.ipynb"
+          "content": "https://zenodo.org/api/records/17758916/files/03_FINAL_TEST.ipynb/content",
+          "self": "https://zenodo.org/api/records/17758916/files/03_FINAL_TEST.ipynb"
         },
         "metadata": {},
         "mimetype": "application/octet-stream",
@@ -62,12 +78,12 @@
         "id": "9904e12c-0811-48b3-b0e0-41e6d772b146",
         "key": "Recursive Categorical Framework.pdf",
         "links": {
-          "content": "https://zenodo.org/api/records/17567903/files/Recursive%20Categorical%20Framework.pdf/content",
-          "iiif_api": "https://zenodo.org/api/iiif/record:17567903:Recursive%20Categorical%20Framework.pdf/full/full/0/default.png",
-          "iiif_base": "https://zenodo.org/api/iiif/record:17567903:Recursive%20Categorical%20Framework.pdf",
-          "iiif_canvas": "https://zenodo.org/api/iiif/record:17567903/canvas/Recursive%20Categorical%20Framework.pdf",
-          "iiif_info": "https://zenodo.org/api/iiif/record:17567903:Recursive%20Categorical%20Framework.pdf/info.json",
-          "self": "https://zenodo.org/api/records/17567903/files/Recursive%20Categorical%20Framework.pdf"
+          "content": "https://zenodo.org/api/records/17758916/files/Recursive%20Categorical%20Framework.pdf/content",
+          "iiif_api": "https://zenodo.org/api/iiif/record:17758916:Recursive%20Categorical%20Framework.pdf/full/full/0/default.png",
+          "iiif_base": "https://zenodo.org/api/iiif/record:17758916:Recursive%20Categorical%20Framework.pdf",
+          "iiif_canvas": "https://zenodo.org/api/iiif/record:17758916/canvas/Recursive%20Categorical%20Framework.pdf",
+          "iiif_info": "https://zenodo.org/api/iiif/record:17758916:Recursive%20Categorical%20Framework.pdf/info.json",
+          "self": "https://zenodo.org/api/records/17758916/files/Recursive%20Categorical%20Framework.pdf"
         },
         "metadata": {
           "height": 792,
@@ -86,8 +102,8 @@
         "id": "95b57062-df85-466b-b07c-82addaa9b845",
         "key": "Recursive Categorical Framework.tex",
         "links": {
-          "content": "https://zenodo.org/api/records/17567903/files/Recursive%20Categorical%20Framework.tex/content",
-          "self": "https://zenodo.org/api/records/17567903/files/Recursive%20Categorical%20Framework.tex"
+          "content": "https://zenodo.org/api/records/17758916/files/Recursive%20Categorical%20Framework.tex/content",
+          "self": "https://zenodo.org/api/records/17758916/files/Recursive%20Categorical%20Framework.tex"
         },
         "metadata": {},
         "mimetype": "application/x-tex",
@@ -98,48 +114,49 @@
     "order": [],
     "total_bytes": 1037259
   },
-  "id": "17567903",
+  "id": "17758916",
   "is_draft": false,
   "is_published": true,
   "links": {
-    "access": "https://zenodo.org/api/records/17567903/access",
-    "access_grants": "https://zenodo.org/api/records/17567903/access/grants",
-    "access_links": "https://zenodo.org/api/records/17567903/access/links",
-    "access_request": "https://zenodo.org/api/records/17567903/access/request",
-    "access_users": "https://zenodo.org/api/records/17567903/access/users",
-    "archive": "https://zenodo.org/api/records/17567903/files-archive",
-    "archive_media": "https://zenodo.org/api/records/17567903/media-files-archive",
-    "communities": "https://zenodo.org/api/records/17567903/communities",
-    "communities-suggestions": "https://zenodo.org/api/records/17567903/communities-suggestions",
-    "doi": "https://doi.org/10.5281/zenodo.17567903",
-    "draft": "https://zenodo.org/api/records/17567903/draft",
-    "files": "https://zenodo.org/api/records/17567903/files",
-    "latest": "https://zenodo.org/api/records/17567903/versions/latest",
-    "latest_html": "https://zenodo.org/records/17567903/latest",
-    "media_files": "https://zenodo.org/api/records/17567903/media-files",
+    "access": "https://zenodo.org/api/records/17758916/access",
+    "access_grants": "https://zenodo.org/api/records/17758916/access/grants",
+    "access_links": "https://zenodo.org/api/records/17758916/access/links",
+    "access_request": "https://zenodo.org/api/records/17758916/access/request",
+    "access_users": "https://zenodo.org/api/records/17758916/access/users",
+    "archive": "https://zenodo.org/api/records/17758916/files-archive",
+    "archive_media": "https://zenodo.org/api/records/17758916/media-files-archive",
+    "communities": "https://zenodo.org/api/records/17758916/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/17758916/communities-suggestions",
+    "doi": "https://doi.org/10.5281/zenodo.17758916",
+    "draft": "https://zenodo.org/api/records/17758916/draft",
+    "file_modification": "https://zenodo.org/api/records/17758916/file-modification",
+    "files": "https://zenodo.org/api/records/17758916/files",
+    "latest": "https://zenodo.org/api/records/17758916/versions/latest",
+    "latest_html": "https://zenodo.org/records/17758916/latest",
+    "media_files": "https://zenodo.org/api/records/17758916/media-files",
     "parent": "https://zenodo.org/api/records/17567902",
     "parent_doi": "https://doi.org/10.5281/zenodo.17567902",
     "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17567902",
     "parent_html": "https://zenodo.org/records/17567902",
-    "preview_html": "https://zenodo.org/records/17567903?preview=1",
-    "request_deletion": "https://zenodo.org/api/records/17567903/request-deletion",
-    "requests": "https://zenodo.org/api/records/17567903/requests",
-    "reserve_doi": "https://zenodo.org/api/records/17567903/draft/pids/doi",
-    "self": "https://zenodo.org/api/records/17567903",
-    "self_doi": "https://doi.org/10.5281/zenodo.17567903",
-    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17567903",
-    "self_html": "https://zenodo.org/records/17567903",
-    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:17567903/manifest",
-    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:17567903/sequence/default",
+    "preview_html": "https://zenodo.org/records/17758916?preview=1",
+    "request_deletion": "https://zenodo.org/api/records/17758916/request-deletion",
+    "requests": "https://zenodo.org/api/records/17758916/requests",
+    "reserve_doi": "https://zenodo.org/api/records/17758916/draft/pids/doi",
+    "self": "https://zenodo.org/api/records/17758916",
+    "self_doi": "https://doi.org/10.5281/zenodo.17758916",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.17758916",
+    "self_html": "https://zenodo.org/records/17758916",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:17758916/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:17758916/sequence/default",
     "thumbnails": {
-      "10": "https://zenodo.org/api/iiif/record:17567903:Recursive%20Categorical%20Framework.pdf/full/%5E10,/0/default.jpg",
-      "100": "https://zenodo.org/api/iiif/record:17567903:Recursive%20Categorical%20Framework.pdf/full/%5E100,/0/default.jpg",
-      "1200": "https://zenodo.org/api/iiif/record:17567903:Recursive%20Categorical%20Framework.pdf/full/%5E1200,/0/default.jpg",
-      "250": "https://zenodo.org/api/iiif/record:17567903:Recursive%20Categorical%20Framework.pdf/full/%5E250,/0/default.jpg",
-      "50": "https://zenodo.org/api/iiif/record:17567903:Recursive%20Categorical%20Framework.pdf/full/%5E50,/0/default.jpg",
-      "750": "https://zenodo.org/api/iiif/record:17567903:Recursive%20Categorical%20Framework.pdf/full/%5E750,/0/default.jpg"
+      "10": "https://zenodo.org/api/iiif/record:17758916:Recursive%20Categorical%20Framework.pdf/full/%5E10,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:17758916:Recursive%20Categorical%20Framework.pdf/full/%5E100,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:17758916:Recursive%20Categorical%20Framework.pdf/full/%5E1200,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:17758916:Recursive%20Categorical%20Framework.pdf/full/%5E250,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:17758916:Recursive%20Categorical%20Framework.pdf/full/%5E50,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:17758916:Recursive%20Categorical%20Framework.pdf/full/%5E750,/0/default.jpg"
     },
-    "versions": "https://zenodo.org/api/records/17567903/versions"
+    "versions": "https://zenodo.org/api/records/17758916/versions"
   },
   "media_files": {
     "count": 1,
@@ -150,11 +167,11 @@
           "hidden": true
         },
         "ext": "ptif",
-        "id": "af7ea94c-99f0-4628-a4e0-0a1f64d706a2",
+        "id": "162de42e-f785-4cea-a853-a5d7005a9c75",
         "key": "Recursive Categorical Framework.pdf.ptif",
         "links": {
-          "content": "https://zenodo.org/api/records/17567903/files/Recursive%20Categorical%20Framework.pdf.ptif/content",
-          "self": "https://zenodo.org/api/records/17567903/files/Recursive%20Categorical%20Framework.pdf.ptif"
+          "content": "https://zenodo.org/api/records/17758916/files/Recursive%20Categorical%20Framework.pdf.ptif/content",
+          "self": "https://zenodo.org/api/records/17758916/files/Recursive%20Categorical%20Framework.pdf.ptif"
         },
         "metadata": null,
         "mimetype": "application/octet-stream",
@@ -199,7 +216,7 @@
         }
       }
     ],
-    "description": "<p>This paper presents a mathematical framework using category theory to formalize recursive self-reference in computational systems. The Recursive Categorical Framework (RCF) establishes three core mathematical structures: a triaxial operator architecture (ethical resolution, Bayesian belief updating, and eigenstate stabilization), a fiber bundle topology over an ethical manifold, and fixed-point theorems for recursive identity convergence. The framework uses the Banach fixed point theorem and fiber bundle formalism to resolve paradoxes in self referential systems. Empirical validation is provided through computational experiments testing eigenrecursion convergence and contradiction resolution. The work includes formal proofs, implementation specifications, and connections to quantum computing extensions.</p>",
+    "description": "<p>This paper presents a mathematical framework using category theory to formalize recursive self-reference in computational systems. The Recursive Categorical Framework (RCF) establishes three core mathematical structures: a triaxial operator architecture (ethical resolution, Bayesian belief updating, and eigenstate stabilization), a fiber bundle topology over an ethical manifold, and fixed-point theorems for recursive identity convergence. The framework uses the Banach fixed point theorem and fiber bundle formalism to resolve paradoxes in self referential systems. Empirical validation is provided through computational experiments testing eigenrecursion convergence and contradiction resolution. The work includes formal proofs, implementation specifications, and connections to quantum computing extensions.</p>\n<p>&nbsp;</p>\n<p>The sole maintainer/author is Christian Trey Rowell, a 23 year old solo non affiliated, independent researcher. There are no other contributors, maintainers, or prior work preceding this publication. Github repository is open for community engagement, validation, and running the code/working in local copy of codebase.</p>",
     "languages": [
       {
         "id": "eng",
@@ -208,7 +225,7 @@
         }
       }
     ],
-    "publication_date": "2025-10-31",
+    "publication_date": "2025-11-11",
     "publisher": "Zenodo",
     "resource_type": {
       "id": "publication-preprint",
@@ -222,14 +239,14 @@
         "description": {
           "en": ""
         },
-        "icon": "cc-by-nd-icon",
-        "id": "cc-by-nd-4.0",
+        "icon": "cc-by-nc-sa-icon",
+        "id": "cc-by-nc-sa-4.0",
         "props": {
           "scheme": "spdx",
-          "url": "https://creativecommons.org/licenses/by-nd/4.0/legalcode"
+          "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode"
         },
         "title": {
-          "en": "Creative Commons Attribution No Derivatives 4.0 International"
+          "en": "Creative Commons Attribution Non Commercial Share Alike 4.0 International"
         }
       }
     ],
@@ -242,8 +259,6 @@
   },
   "parent": {
     "access": {
-      "grants": [],
-      "links": [],
       "owned_by": {
         "user": "1457830"
       },
@@ -294,10 +309,37 @@
           "revision_id": 29,
           "slug": "cheminformatics_artificial-intelligence",
           "updated": "2025-09-10T21:40:18.617834+00:00"
+        },
+        {
+          "access": {
+            "member_policy": "open",
+            "members_visibility": "public",
+            "record_submission_policy": "open",
+            "review_policy": "closed",
+            "visibility": "public"
+          },
+          "children": {
+            "allow": false
+          },
+          "created": "2025-06-27T00:03:31.108970+00:00",
+          "custom_fields": {},
+          "deletion_status": {
+            "is_deleted": false,
+            "status": "P"
+          },
+          "id": "5609347e-2ca9-4d55-a006-58430f9d7005",
+          "links": {},
+          "metadata": {
+            "title": "Free Artificial Intelligence Science"
+          },
+          "revision_id": 2,
+          "slug": "fais",
+          "updated": "2025-06-27T00:03:31.314574+00:00"
         }
       ],
       "ids": [
-        "4dd5b352-6f35-49e9-a50d-92e78a6cf3ee"
+        "4dd5b352-6f35-49e9-a50d-92e78a6cf3ee",
+        "5609347e-2ca9-4d55-a006-58430f9d7005"
       ]
     },
     "id": "17567902",
@@ -312,37 +354,36 @@
   "pids": {
     "doi": {
       "client": "datacite",
-      "identifier": "10.5281/zenodo.17567903",
+      "identifier": "10.5281/zenodo.17758916",
       "provider": "datacite"
     },
     "oai": {
-      "identifier": "oai:zenodo.org:17567903",
+      "identifier": "oai:zenodo.org:17758916",
       "provider": "oai"
     }
   },
-  "revision_id": 4,
+  "revision_id": 5,
   "stats": {
     "all_versions": {
-      "data_volume": 27940378.0,
-      "downloads": 67,
-      "unique_downloads": 44,
-      "unique_views": 62,
-      "views": 85
+      "data_volume": 132838044.0,
+      "downloads": 319,
+      "unique_downloads": 218,
+      "unique_views": 326,
+      "views": 438
     },
     "this_version": {
-      "data_volume": 27940378.0,
-      "downloads": 67,
-      "unique_downloads": 44,
-      "unique_views": 62,
-      "views": 85
+      "data_volume": 7792938.0,
+      "downloads": 18,
+      "unique_downloads": 12,
+      "unique_views": 13,
+      "views": 14
     }
   },
   "status": "published",
   "swh": {},
-  "updated": "2025-11-10T05:26:41.755072+00:00",
+  "updated": "2025-11-29T06:00:07.142679+00:00",
   "versions": {
-    "index": 1,
-    "is_latest": true,
-    "is_latest_draft": true
+    "index": 2,
+    "is_latest": true
   }
 }

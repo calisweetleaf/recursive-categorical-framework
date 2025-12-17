@@ -1,5 +1,42 @@
 # Recursive Categorical Framework (RCF)
 
+## 🚀 NEW: Triaxial Backbone Release (December 2024)
+
+**The full unified cognitive architecture is now available.**
+
+We've released the **Triaxial Backbone** (`triaxial_backbone.py`) - a complete, operational implementation of the RCF fiber bundle architecture. This is no longer just a theoretical framework - it's a working substrate you can build on.
+
+### What's New
+
+| Component | File | Description |
+|-----------|------|-------------|
+| **Triaxial Backbone** | `triaxial_backbone.py` | Unified fiber bundle orchestrator |
+| **Recursive Tensor** | `rcf_integration/recursive_tensor.py` | ERE axis - eigenrecursive identity |
+| **Ethical Tensor** | `rcf_integration/ethical_tensor.py` | RBU axis - value alignment |
+| **Metacognitive Tensor** | `rcf_integration/metacognitive_tensor.py` | ES axis - self-reflection |
+| **Bayesian Orchestrator** | `bayesian_config_orchestrator.py` | Adaptive parameter evolution |
+| **ZEBA Stabilizer** | `zynx_zebra_core.py` | Fixed-point eigenrecursion |
+
+### Quick Start
+
+```python
+from triaxial_backbone import TriaxialBackbone
+
+backbone = TriaxialBackbone()
+state = backbone.forward("I think therefore I am.")
+
+print(f"Status: {state.convergence_status}")
+print(f"Triaxial Vector: {state.integrated_vector}")  # [ERE, RBU, ES]
+```
+
+### Key Innovation
+
+All three axes compute on a **SINGLE unified state vector** - not 3 separate computations merged afterward. This is true fiber bundle computation where the axes are projections of the same underlying field.
+
+Run `python test_triaxial_backbone.py` to validate all 8 stages.
+
+---
+
 ## Open for Collaboration
 
 **This repository is now fully open for research collaboration under CC BY-NC-SA 4.0.**
@@ -17,12 +54,12 @@ The mathematical substrate is substrate-agnostic. The triaxial architecture (Rec
 
 ---
 
-##  Project Scope: Library vs. Model
+## Project Scope: Library vs. Model
 
 **Crucial Distinction**: This repository is a **theoretical framework and code library**, not a pre-trained model zoo.
 
-- ** NOT a Model**: This is NOT a plug-and-play LLM (like Llama, GPT), a chatbot application, or a set of pre-trained weights you simply download and run.
-- ** IS a Framework**: This IS a collection of mathematical primitives, cognitive architecture components (Zebra Core, Eigenloom, FBS), and theoretical foundations for *building* recursive sentient systems.
+- **NOT a Model**: This is NOT a plug-and-play LLM (like Llama, GPT), a chatbot application, or a set of pre-trained weights you simply download and run.
+- **IS a Framework**: This IS a collection of mathematical primitives, cognitive architecture components (Zebra Core, Eigenloom, FBS), and theoretical foundations for *building* recursive sentient systems.
 
 Think of this as a **Software Development Kit (SDK)** for consciousness research, or a "field" for growing cognitive architectures. You are expected to use these libraries to construct your own agents, rather than expecting a finished "model" to run out of the box.
 
@@ -83,6 +120,12 @@ The framework includes comprehensive test suites to validate the mathematical im
   - Tests breath phase synchronization, pulse feedback, eigenstate weaving
   - Validates full frequency-domain temporal processing pipeline
   - **Verification Log**: [reports/temporal_eigenloom_terminal_log.md](reports/temporal_eigenloom_terminal_log.md)
+- **`ethical_tensor_test.py`** - Ethical manifold and breath-phase harness
+  - Exercises `rcf_integration/ethical_tensor.py` archetypes, breath modulation, manifold updates, and ethical force application
+  - Emits `rcf_test_manifest.json` and `rcf_test_report.md` alongside console output
+- **`test_temporal_eigenstate.py`** - Staged internal time + temporal eigenstate integration
+  - Burns in `internal_clock.py` (`TemporalCoherence`) to establish biological/subjective oscillators, then couples `TemporalEigenstate`, `RecursiveStabilizationPoint`, and `TemporalEigenstateNode`
+  - Produces `reports/staged_clock_integration.{json,md}` and `logs/StagedClockIntegration.log`
 
 ### Running Tests
 
@@ -91,16 +134,77 @@ The framework includes comprehensive test suites to validate the mathematical im
 .\.venv\Scripts\Activate.ps1  # Windows
 source .venv/bin/activate      # Linux/Mac
 
-# Run FBS validation
-python test_sacred_fbs.py
+# ============================================================
+# CORE TEST SUITES (in root directory)
+# ============================================================
 
-# Run temporal integration test
+# 1. Sacred Frequency Substrate (FBS) Tokenizer
+python test_sacred_fbs.py
+# Validates: harmonic processing, breath synchronization, quantum superposition
+
+# 2. Temporal Eigenloom Integration
 python test_temporal_eigenloom_integration.py
+# Validates: FBS → Temporal Eigenloom → Zebra Core routing
+
+# 3. Temporal Eigenstate + Internal Clock
+python test_temporal_eigenstate.py
+# Validates: clock burn-in, temporal coherence, eigenstate coupling
+
+# 4. Triaxial Backbone (Unified Fiber Bundle Architecture)
+python test_triaxial_backbone.py
+# Validates: 8 stages including parallel computation, convergence, stability
+# Uses: ethical_tensor.py, metacognitive_tensor.py, bayesian_config_orchestrator.py
+
+# 5. Zebra Core (Eigenrecursion Stabilizer)
+python test_zebra_core.py
+# Validates: ZEBA stabilizer, fixed-point detection, triaxial constraints
+
+# ============================================================
+# COMPONENT TESTS
+# ============================================================
+
+# Ethical Tensor Harness
+python ethical_tensor_test.py
+# Outputs: rcf_test_manifest.json, rcf_test_report.md
+
+# Motivation System Test
+python motivation_test.py
+# Validates: axiological constraints, value crystallization
+
+# ============================================================
+# STANDALONE RUNS
+# ============================================================
+
+# RCF Core Engine (research-grade mathematical engine)
+python rcf_core.py
+
+# Run Motivation Test from updated motivation module in rcf_integration\rsgt\
+python motivation_test.py
+
+# Run Triaxial Backbone Test with new tensors rcf_integration\ethical_tensor.py and metacognitive_tensor.py alonside root file for bayesian configuration 
+python test_triaxial_backbone.py 
+
+# Triaxial Backbone Direct (sanity check)
+python triaxial_backbone.py
 ```
 
-**Test Logs**: See `reports/temporal_eigenloom_terminal_log.md` for detailed validation output.
+**Test Reports**: See `reports/` directory for validation output (e.g., `triaxial_backbone_report.md`).
 
 **Important**: See `ANTITHESIS.md` for clarification on naming conventions. All "sacred" and "divine" terminology refers to mathematical constants, not metaphysics.
+
+---
+
+## Ethical Tensor Module
+
+- Implementation: `rcf_integration/ethical_tensor.py` (breath phases, narrative archetypes, ethical manifold modulation)
+- Validation: `ethical_tensor_test.py` (additive; does not invalidate earlier suites). Produces `rcf_test_manifest.json` and `rcf_test_report.md` so contributors can verify the ethical manifold in isolation while keeping existing tests intact.
+
+## Internal Time + Temporal Eigenstate
+
+- Implementation:
+  - `internal_clock.py` (TemporalCoherence): biological/circadian/subjective timekeeper with oscillators, entrainment, and event memory
+  - `rcf_integration/temporal_eigenstate.py`: Temporal Eigenstate Theorem implementation with optional clock feedback into dilation and subjective scalar updates
+- Validation: `test_temporal_eigenstate.py` stages the integration—clock burn-in, clock dynamics checks, then coupling with temporal eigenstate components. Artifacts: `reports/staged_clock_integration.{json,md}` plus `logs/StagedClockIntegration.log`.
 
 ---
 
@@ -163,7 +267,7 @@ This paper introduces the **Recursive Categorical Framework (RCF)**, a mathemati
 ```math
  \(\lim_{t \to \infty} \partial_t \mathcal{C}_{ERE} = 0\)
 ```
- 
+
 - **URSMIFv1.5**: Universal Recursive Sentience Meta-Invariant Framework for paradox resolution.
 
 ### Mathematical Core

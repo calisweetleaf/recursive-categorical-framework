@@ -1,0 +1,485 @@
+{
+    "meta": {
+        "system": "win32",
+        "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+        "timestamp": "2025-12-17T00:34:55.886642",
+        "test_suite": "Ethical Tensor System"
+    },
+    "summary": {
+        "total": 67,
+        "passed": 67,
+        "failed": 0,
+        "total_duration_sec": 0.3115
+    },
+    "tests": [
+        {
+            "name": "test_breath_phase_enum",
+            "status": "PASS",
+            "duration_ms": 0.015099998563528061,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_narrative_archetype_creation",
+            "status": "PASS",
+            "duration_ms": 24.250199989182875,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_narrative_archetype_field_modulation",
+            "status": "PASS",
+            "duration_ms": 1.517299999250099,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_quantum_breath_adapter_init",
+            "status": "PASS",
+            "duration_ms": 0.3152999997837469,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_quantum_breath_adapter_phase_setting",
+            "status": "PASS",
+            "duration_ms": 0.23119999968912452,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_quantum_breath_adapter_collapse_threshold",
+            "status": "PASS",
+            "duration_ms": 0.18570000247564167,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_quantum_breath_adapter_ethical_modulation",
+            "status": "PASS",
+            "duration_ms": 0.39030000334605575,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_symbolic_quantum_state_init",
+            "status": "PASS",
+            "duration_ms": 0.3690000012284145,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_symbolic_quantum_state_add_archetype",
+            "status": "PASS",
+            "duration_ms": 1.714199999696575,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_symbolic_quantum_state_apply_symbol",
+            "status": "PASS",
+            "duration_ms": 0.7650999905308709,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_symbolic_quantum_state_apply_intent",
+            "status": "PASS",
+            "duration_ms": 1.7795000021578744,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_symbolic_quantum_state_evolution",
+            "status": "PASS",
+            "duration_ms": 3.185599998687394,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_symbolic_quantum_state_observation",
+            "status": "PASS",
+            "duration_ms": 61.390500006382354,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_symbolic_quantum_state_reset",
+            "status": "PASS",
+            "duration_ms": 2.206600009230897,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_init",
+            "status": "PASS",
+            "duration_ms": 0.40410000656265765,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_interpret",
+            "status": "PASS",
+            "duration_ms": 1.3060999917797744,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_ethical_tensor_factory_create_state",
+            "status": "PASS",
+            "duration_ms": 0.302400003420189,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_ethical_tensor_factory_standard_archetypes",
+            "status": "PASS",
+            "duration_ms": 0.07049999840091914,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_create_ethical_tensor_util",
+            "status": "PASS",
+            "duration_ms": 0.3040000010514632,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_apply_ethical_force_util",
+            "status": "PASS",
+            "duration_ms": 0.3938000008929521,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_analyze_ethical_distribution_util",
+            "status": "PASS",
+            "duration_ms": 0.7122999959392473,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_quantum_entanglement_creation",
+            "status": "PASS",
+            "duration_ms": 2.0779999904334545,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_multiple_archetype_interaction",
+            "status": "PASS",
+            "duration_ms": 8.130400005029514,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_full_breath_cycle",
+            "status": "PASS",
+            "duration_ms": 2.7369000017642975,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_ethical_dimensions_constant",
+            "status": "PASS",
+            "duration_ms": 0.008399991202168167,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_default_ethical_dimensions_constant",
+            "status": "PASS",
+            "duration_ms": 0.003200009814463556,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_reset_history",
+            "status": "PASS",
+            "duration_ms": 1.6546999977435917,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_identify_pattern_centered_peak",
+            "status": "PASS",
+            "duration_ms": 0.3476999991107732,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_identify_pattern_scattered",
+            "status": "PASS",
+            "duration_ms": 0.4271000070730224,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_calculate_symmetry_score",
+            "status": "PASS",
+            "duration_ms": 3.08989999757614,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_check_reflection_symmetry",
+            "status": "PASS",
+            "duration_ms": 0.3800999984377995,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_check_rotational_symmetry",
+            "status": "PASS",
+            "duration_ms": 0.6243000098038465,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_check_radial_symmetry",
+            "status": "PASS",
+            "duration_ms": 0.7735999970464036,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_check_point_symmetry",
+            "status": "PASS",
+            "duration_ms": 0.42660000326577574,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_calculate_correlation",
+            "status": "PASS",
+            "duration_ms": 0.4050999996252358,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_calculate_kurtosis",
+            "status": "PASS",
+            "duration_ms": 0.5705999938072637,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_calculate_entropy",
+            "status": "PASS",
+            "duration_ms": 0.3026000049430877,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_calculate_ethical_alignment",
+            "status": "PASS",
+            "duration_ms": 0.4028999974252656,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_vector_similarity",
+            "status": "PASS",
+            "duration_ms": 0.24349999148398638,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_generate_narrative_implications",
+            "status": "PASS",
+            "duration_ms": 0.2046999870799482,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_reset_quantum_state",
+            "status": "PASS",
+            "duration_ms": 0.705400001606904,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_measure_energy",
+            "status": "PASS",
+            "duration_ms": 0.4533000028459355,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_measure_coherence",
+            "status": "PASS",
+            "duration_ms": 11.10980000521522,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_measure_entanglement",
+            "status": "PASS",
+            "duration_ms": 109.37659999763127,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_measure_phase",
+            "status": "PASS",
+            "duration_ms": 1.5333999908762053,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_measure_momentum",
+            "status": "PASS",
+            "duration_ms": 0.8582000009482726,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_measure_unknown_property",
+            "status": "PASS",
+            "duration_ms": 0.23389999114442617,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_measure_with_region",
+            "status": "PASS",
+            "duration_ms": 0.7410000107483938,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_calculate_skewness",
+            "status": "PASS",
+            "duration_ms": 0.5806999979540706,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_calculate_spatial_coherence",
+            "status": "PASS",
+            "duration_ms": 22.310300002573058,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_estimate_coherence_length",
+            "status": "PASS",
+            "duration_ms": 1.1254999990342185,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_calculate_bipartite_entanglement",
+            "status": "PASS",
+            "duration_ms": 0.5801000079372898,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_calculate_field_entropy",
+            "status": "PASS",
+            "duration_ms": 0.5448000010801479,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_calculate_von_neumann_entropy",
+            "status": "PASS",
+            "duration_ms": 3.0793999903835356,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_calculate_phase_gradient",
+            "status": "PASS",
+            "duration_ms": 0.6791999912820756,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_calculate_phase_circulation",
+            "status": "PASS",
+            "duration_ms": 0.7246000022860244,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_calculate_winding_number",
+            "status": "PASS",
+            "duration_ms": 0.7377000001724809,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_detect_phase_singularities",
+            "status": "PASS",
+            "duration_ms": 2.362100000027567,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_calculate_momentum_field",
+            "status": "PASS",
+            "duration_ms": 0.5581000004895031,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_adapter_calculate_uncertainty_product",
+            "status": "PASS",
+            "duration_ms": 0.8486000006087124,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_symbolic_quantum_state_gaussian_influence",
+            "status": "PASS",
+            "duration_ms": 0.44210000487510115,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_symbolic_quantum_state_normalize_field",
+            "status": "PASS",
+            "duration_ms": 0.7775000121910125,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_symbolic_quantum_state_intent_focus",
+            "status": "PASS",
+            "duration_ms": 0.9879999997792765,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_symbolic_quantum_state_intent_dissolve",
+            "status": "PASS",
+            "duration_ms": 0.9491999953752384,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_symbolic_quantum_state_intent_observe",
+            "status": "PASS",
+            "duration_ms": 0.9797999955480918,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_archetype_modulation_all_types",
+            "status": "PASS",
+            "duration_ms": 0.9330000029876828,
+            "message": "",
+            "details": ""
+        },
+        {
+            "name": "test_collapse_with_exhale_phase",
+            "status": "PASS",
+            "duration_ms": 6.507400001282804,
+            "message": "",
+            "details": ""
+        }
+    ]
+}

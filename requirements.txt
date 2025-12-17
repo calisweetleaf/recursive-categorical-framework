@@ -10,3 +10,8 @@ seaborn
 scikit-learn
 pywavelets
 react
+pyyaml
+psutil
+cryptography
+lz4
+prometheus_client

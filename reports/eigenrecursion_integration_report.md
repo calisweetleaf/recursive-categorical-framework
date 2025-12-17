@@ -1,4 +1,5 @@
 # Eigenrecursion Integration Report
+
 - Generated: 2025-11-27T23:26:20.858638Z
 - Overall Status: FAILURE
 - Total Tests: 25 (passed=23, failed=1, errors=1, skipped=0)
@@ -12,6 +13,7 @@
 | Formula Validation | `rcf_integration.governance_framework` | 5 | 5 | 0 | 0 | 0 | 0.002 | PASSED |
 
 ## Eigenrecursion Algorithm
+
 Validates recursive convergence, RLDIS monitoring, and algorithmic resilience.
 
 ```
@@ -46,6 +48,7 @@ FAILED (failures=1)
 ```
 
 ## Eigenrecursive Operations
+
 Exercises eigenstate convergence, contradiction tension, and operator stacks.
 
 ```
@@ -86,6 +89,7 @@ FAILED (errors=1)
 ```
 
 ## Governance Framework
+
 Ensures homeostatic control, narrative identity, and policy metrics behave stably.
 
 ```
@@ -103,6 +107,7 @@ OK
 ```
 
 ## Epistemic Operators
+
 Checks epistemic inference, modal logic operators, and belief revision dynamics.
 
 ```
@@ -118,6 +123,7 @@ OK
 ```
 
 ## Formula Validation
+
 Confirms analytical formulas align with published theoretical specifications.
 
 ```

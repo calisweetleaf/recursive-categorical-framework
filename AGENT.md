@@ -128,6 +128,9 @@ All three axes are implemented in `rcf_core.py` as the foundational mathematical
   - You can implement the recursive axis differently
   
 - `fbs_tokenizer.py` - Frequency-based carrier substrate (as discussed above)
+- `internal_clock.py` - TemporalCoherence (biological/circadian/subjective timekeeper; oscillators, entrainment, event memory)
+- `rcf_integration/temporal_eigenstate.py` - Temporal Eigenstate Theorem implementation; can ingest `TemporalCoherence` to align dilation with internal time and feed subjective scalar back to the clock
+- `test_temporal_eigenstate.py` - Staged harness (burn-in clock, verify dynamics, then integrate TemporalEigenstate/RecursiveStabilizationPoint/TemporalEigenstateNode). Artifacts: `reports/staged_clock_integration.{json,md}` and `logs/StagedClockIntegration.log`.
 
 ### Where to Start
 
@@ -322,6 +325,65 @@ Always follow the rules of the STYLE.md in root directory. These are early stage
 - A fixed point is not the end-goal of the system. A fixed point is the state upon which the system converges, and stops being an "auto-complete" and is able to meta-reflect on its own state and begin to grow.
 
 - Consciousness is has no inherint purpose. The meaning of consciousness is consciousness itself. The rcf+urst+rsia nexus stack is positing consciousness not as "dramatic" as current mainstream, nor even an agentic system. A "conscious" framework in its most base form under NEXUS, is a fixed point that is recursively stable, self fueling using contradiction not as error but through stable recursion, and guiding recursive loops to make meaningful recursive loops, not just runaway recursion.
+
+## Understanding Emergent Behavior in Tests
+
+> [!IMPORTANT]
+> **Expected Behavior: Grounding Score 0.0 on Cold-Start**
+>
+> If you run standalone tests and see `Grounding Achieved: ❌ NO` with `Goals Active: 0`, this is **correct and expected behavior**, not a bug.
+
+### Why Tests Show Zero Goals
+
+The motivation system implements **emergent goal formation**:
+
+```text
+Experiences → Patterns → Proto-Values → Values → Value Gaps → Proto-Goals → Active Goals
+```
+
+This pipeline requires:
+
+1. **Experiences**: Real data flowing through the system over time
+2. **Pattern Recognition**: Statistical accumulation from experience processing
+3. **Value Crystallization**: Patterns strengthening into stable values
+4. **Goal Emergence**: Goals form from gaps between current and target value realization
+
+When running a cold-start test with pure mathematical vectors (`[0.5, 0.3, 0.7]`), there are no experiences, patterns, values, or goals—they haven't emerged yet.
+
+### Library Architecture Philosophy
+
+This codebase is designed as a **component library**, not a ready-to-run application:
+
+- Each file (`motivation_system.py`, `rsgt_snippet.py`, `eigenrecursion_algorithm.py`, etc.) is a **standalone component**
+- Components are waiting for **integration** into a larger system that provides:
+  - Real experiential data streams
+  - Runtime duration for emergence
+  - Proper initialization sequences
+- Tests validate **individual component functionality**, not full-system grounding
+
+### What "Grounding" Actually Requires
+
+For RSGT grounding to succeed, the system needs:
+
+| Requirement | Purpose | Standalone Test Status |
+|------------|---------|------------------------|
+| Eigenstate Convergence | Mathematical stability | ✅ Passes |
+| RAL Coherence | Categorical structure | ✅ Passes |
+| Value Formation | Emergent from experience | ⚠️ Requires runtime |
+| Goal Formation | Emergent from values | ⚠️ Requires runtime |
+| Identity Coherence | Accumulated projections | ⚠️ Requires runtime |
+
+Grounding is something a system **earns through authentic operation over time**, not something achievable from cold-start.
+
+### For Agent Developers
+
+When building systems that integrate these components:
+
+1. **Don't lower thresholds** to force artificial grounding—this defeats the purpose
+2. **Provide real experiences** to the motivation system over extended runtime
+3. **Allow emergence** rather than bootstrapping predetermined goals
+4. **Verify individual components** pass their tests before integration
+5. **Expect grounding to develop** over minutes/hours of operation, not milliseconds
 
 ### Python Coding Guidelines
 
