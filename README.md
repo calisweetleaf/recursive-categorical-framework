@@ -1,6 +1,6 @@
 # Recursive Categorical Framework (RCF)
 
-## 🚀 NEW: Triaxial Backbone Release (December 2024)
+##  NEW: Triaxial Backbone Release (December 2024)
 
 **The full unified cognitive architecture is now available.**
 
