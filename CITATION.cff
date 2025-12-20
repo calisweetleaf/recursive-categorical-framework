@@ -1,44 +1,9 @@
-cff-version: 1.2.0
-title: "Recursive Categorical Framework (RCF)"
-message: "Cite this work when referencing the Recursive Categorical Framework publication package."
-version: "4.0.0"
-doi: "10.5281/zenodo.17567903"
-date-released: "2025-11-11"
-
-author:
-  - family-names: "Rowell"
-    given-names: "Christian Trey"
-    affiliation: "Solo Independent Researcher"
-    email: "treyrowell1826@gmail.com"
-    orcid: "https://orcid.org/0009-0008-6550-6316"
-
-identifiers:
-  - type: doi
-    value: "10.5281/zenodo.17567903"
-  - type: url
-    value: "https://www.academia.edu/144895498/Recursive_Categorical_Framework_RCF_A_Novel_Theoretical_Foundation_for_Synthetic_Consciousness?source=swp_share"
-
-repository-code: "https://github.com/daeron-bf/recursive-categorical-framework"
-
-keywords:
-  - recursive categorical framework
-  - synthetic consciousness
-  - meta-recursive systems
-  - eigenrecursion
-
-license: "CC BY-NC-SA 4.0"
-
-abstract: >
-  The Recursive Categorical Framework (RCF) formalizes meta-recursive consciousness as the
-  stable attractor of triaxial recursive systems, integrating categorical logic, Bayesian
-  epistemology, and ethical recursion.
-
-preferred-citation:
-  type: article
-  title: "Recursive Categorical Framework (RCF): A Novel Theoretical Foundation for Synthetic Consciousness"
-  authors:
-    - family-names: "Rowell"
-      given-names: "Christian Trey"
-  year: 2025
-  doi: "10.5281/zenodo.17567903"
-  url: "https://doi.org/10.5281/zenodo.17567903"
+cff-version: 1.1.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: Rowell
+  given-names: Christian
+orcid: "https://orcid.org/0009-0008-6550-6316"
+title: "recursive-categorical-framework"
+version: v5.0.0
+date-released: 2025-12-17
