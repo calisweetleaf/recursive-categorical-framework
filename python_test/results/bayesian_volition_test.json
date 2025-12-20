@@ -1,0 +1,64 @@
+{
+  "test": "RCF Enhanced Bayesian Volition Theorem (BVT-2)",
+  "timestamp": 1766101790.717281,
+  "synthesis": [
+    "Eigenrecursion (Theorem 1)",
+    "RBUS (Theorem 4)",
+    "Ethical Manifold Alignment"
+  ],
+  "properties_tested": 5,
+  "verification_results": [
+    {
+      "theorem": "Theorem 1: Ethical Fixed-Point Mechanics (Requires Eigenrecursion)",
+      "passed": true,
+      "belief_prior_loop_active": true,
+      "iterations": 100,
+      "kl_to_attractor": 1.0853298684547166,
+      "note": "Convergence requires full Eigenrecursion operator"
+    },
+    {
+      "theorem": "Theorem 2: Volitional Non-Equilibrium",
+      "passed": true,
+      "avg_momentum": 0.004011109871736815,
+      "V_star": 0.004011109871736815,
+      "momentum_history": [
+        0.0022881351643620385,
+        0.0018731089905278822,
+        0.009128329500059073,
+        0.004081787331143466,
+        0.0021523499747405192,
+        0.004079897631845044,
+        0.0036293352420505498,
+        0.005790292146436674,
+        0.004269665302615296,
+        0.0028181974335876056
+      ]
+    },
+    {
+      "test": "Coherence Stiffness Adaptation",
+      "passed": true,
+      "initial_beta": 2.0,
+      "final_beta": 0.1,
+      "beta_range": 1.9,
+      "beta_kl_correlation": -0.9562287271617161,
+      "note": "Alignment requires Eigenrecursion"
+    },
+    {
+      "test": "Contradiction-Driven Updates",
+      "passed": true,
+      "avg_contradiction_norm": 0.41701483188995314,
+      "contradictions_active": true,
+      "dynamics_active": true,
+      "note": "Ethical evolution requires Eigenrecursion"
+    },
+    {
+      "test": "Metacognitive Stability",
+      "passed": true,
+      "late_entropy_var": 5.9801118718639946e-05,
+      "entropy_bounded": true,
+      "kl_bounded": true,
+      "note": "Stabilization requires Eigenrecursion"
+    }
+  ],
+  "all_verified": true
+}

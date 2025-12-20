@@ -1,0 +1,58 @@
+{
+  "test": "RCF Recursive Bayesian Updating System (RBUS)",
+  "timestamp": 1766101858.5289207,
+  "properties_tested": 6,
+  "verification_results": [
+    {
+      "test": "Posterior Tracking (Epistemic Update)",
+      "passed": true,
+      "true_bias": 0.7,
+      "estimated_bias": 0.715685882778375,
+      "error": 0.015685882778375015,
+      "final_entropy": 1.2980945564014734,
+      "n_updates": 100,
+      "note": "Full convergence requires triaxial ERE-RBU-ES system"
+    },
+    {
+      "test": "Bayesian Coherence",
+      "passed": true,
+      "violations": 0,
+      "final_sum": 1.0000000000000002
+    },
+    {
+      "test": "Information Gain (Overall Decrease)",
+      "passed": true,
+      "initial_entropy": 2.995732271553991,
+      "final_entropy": 0.9541711086401566,
+      "total_info_gain": 2.0415611629138346,
+      "updates": 30,
+      "positive_gains": 22
+    },
+    {
+      "test": "Recursive Depth Convergence",
+      "passed": true,
+      "recursion_depth": 10,
+      "max_depth": 50,
+      "h1_posterior": 0.9999999462943131
+    },
+    {
+      "test": "Likelihood Sensitivity",
+      "passed": true,
+      "kl_divergence": 2.4530991772764725,
+      "different_dominant": true
+    },
+    {
+      "test": "Prior Influence Decay",
+      "passed": true,
+      "kl_divergences": [
+        7.914556117333361,
+        5.6597757722777855,
+        3.3443823963405825,
+        0.9503593065197932
+      ],
+      "final_kl": 0.9503593065197932,
+      "reduction_pct": 87.9922601794629
+    }
+  ],
+  "all_verified": true
+}

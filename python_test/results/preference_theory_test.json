@@ -1,0 +1,288 @@
+{
+  "test": "RCF Preference Theory - Multi-Layer Architecture",
+  "status": "passed",
+  "timestamp": 1766101748.52471,
+  "env": {
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "python_executable": "C:\\Users\\treyr\\Desktop\\RCF-v2\\.venv\\scripts\\python.exe",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "cwd": "C:\\Users\\treyr\\Desktop\\RCF-v2\\python_test"
+  },
+  "inputs": {
+    "spec_path": "theoroms\\ethics&stability\\core stability frameworks\\Preference_Theory.md",
+    "spec_exists": false,
+    "spec_sha256": null
+  },
+  "layers": {
+    "CORE_VALUES": 3,
+    "GENERAL_PRINCIPLES": 2,
+    "DOMAIN_SPECIFIC": 1,
+    "SITUATIONAL": 1,
+    "IMMEDIATE": 1
+  },
+  "contexts_tested": 3,
+  "activation_results": [
+    {
+      "context": 1,
+      "active_count": 6,
+      "coherence": 0.9234098016969206,
+      "domain": "science"
+    },
+    {
+      "context": 2,
+      "active_count": 6,
+      "coherence": 0.929298723648358,
+      "domain": "conversation"
+    },
+    {
+      "context": 3,
+      "active_count": 5,
+      "coherence": 0.9568767542740496,
+      "domain": "planning"
+    }
+  ],
+  "mathematical_verification": {
+    "axioms_theorems_tested": 7,
+    "passed": 7,
+    "failed": 0,
+    "all_verified": true,
+    "results": [
+      {
+        "axiom": "Axiom 1: Hierarchical Constraint",
+        "passed": true,
+        "conflicts_tested": 19,
+        "pass_rate": 1.0,
+        "sample_cases": [
+          {
+            "low_layer": "CORE_VALUES",
+            "high_layer": "GENERAL_PRINCIPLES",
+            "winner": "consistency_preservation",
+            "correct": true
+          },
+          {
+            "low_layer": "CORE_VALUES",
+            "high_layer": "GENERAL_PRINCIPLES",
+            "winner": "consistency_preservation",
+            "correct": true
+          },
+          {
+            "low_layer": "CORE_VALUES",
+            "high_layer": "GENERAL_PRINCIPLES",
+            "winner": "coherence_maximization",
+            "correct": true
+          },
+          {
+            "low_layer": "CORE_VALUES",
+            "high_layer": "GENERAL_PRINCIPLES",
+            "winner": "coherence_maximization",
+            "correct": true
+          },
+          {
+            "low_layer": "CORE_VALUES",
+            "high_layer": "DOMAIN_SPECIFIC",
+            "winner": "consistency_preservation",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "axiom": "Axiom 2: Temporal Variance",
+        "passed": true,
+        "layer_rates": {
+          "CORE_VALUES": 0.00047603926443145816,
+          "GENERAL_PRINCIPLES": 0.001971147817546366,
+          "DOMAIN_SPECIFIC": 0.0031698382936338533,
+          "SITUATIONAL": 0.004336902220526231,
+          "IMMEDIATE": 0.0049703973538983304
+        },
+        "monotonic": true
+      },
+      {
+        "axiom": "Axiom 4: Transitivity",
+        "passed": true,
+        "violation_count": 0,
+        "items_tested": 5
+      },
+      {
+        "theorem": "Theorem 1: Weight Convergence",
+        "passed": true,
+        "results": [
+          {
+            "layer": "CORE_VALUES",
+            "pref": "consistency_preservation",
+            "converged": true,
+            "final_weight": 1.0906755852606826,
+            "target": 1.5,
+            "distance": 0.40932441473931735,
+            "variance": 3.668750988375697e-05,
+            "tolerance": 5.05
+          },
+          {
+            "layer": "GENERAL_PRINCIPLES",
+            "pref": "truth_seeking",
+            "converged": true,
+            "final_weight": 1.3165210891369166,
+            "target": 1.5,
+            "distance": 0.18347891086308343,
+            "variance": 0.00022613005124712016,
+            "tolerance": 1.7166666666666666
+          },
+          {
+            "layer": "DOMAIN_SPECIFIC",
+            "pref": "scientific_methodology",
+            "converged": true,
+            "final_weight": 1.4330101625710183,
+            "target": 1.5,
+            "distance": 0.06698983742898168,
+            "variance": 0.000157083539626083,
+            "tolerance": 0.9590909090909092
+          },
+          {
+            "layer": "SITUATIONAL",
+            "pref": "conversational_clarity",
+            "converged": true,
+            "final_weight": 1.4912060266971392,
+            "target": 1.5,
+            "distance": 0.008793973302860802,
+            "variance": 1.8923981488561772e-05,
+            "tolerance": 0.5261904761904762
+          },
+          {
+            "layer": "IMMEDIATE",
+            "pref": "attentional_focus",
+            "converged": true,
+            "final_weight": 1.4999824736668754,
+            "target": 1.5,
+            "distance": 1.7526333124573412e-05,
+            "variance": 3.164782226955184e-09,
+            "tolerance": 0.24607843137254903
+          }
+        ]
+      },
+      {
+        "theorem": "Theorem 2: Contextual Specificity",
+        "passed": true,
+        "expected_activations": {
+          "CORE_VALUES": 0.9,
+          "GENERAL_PRINCIPLES": 0.7000000000000002,
+          "DOMAIN_SPECIFIC": 0.5,
+          "SITUATIONAL": 0.30000000000000004,
+          "IMMEDIATE": 0.15000000000000002
+        },
+        "contexts_sampled": 50
+      },
+      {
+        "theorem": "Theorem 3: Pareto Optimality",
+        "passed": true,
+        "best_action": "A",
+        "dominated_by": [],
+        "is_pareto_optimal": true
+      },
+      {
+        "theorem": "Theorem 4: Hierarchical Constraint Preservation",
+        "passed": true,
+        "initial_consistency": {
+          "CORE_VALUES-GENERAL_PRINCIPLES": 0.6976744186046512,
+          "CORE_VALUES-DOMAIN_SPECIFIC": 0.5288188015781807,
+          "CORE_VALUES-SITUATIONAL": 0.5275360016390697,
+          "CORE_VALUES-IMMEDIATE": 0.5405405405405405,
+          "GENERAL_PRINCIPLES-DOMAIN_SPECIFIC": 0.6860246534509569,
+          "GENERAL_PRINCIPLES-SITUATIONAL": 0.6838673485432858,
+          "GENERAL_PRINCIPLES-IMMEDIATE": 0.7058823529411765,
+          "DOMAIN_SPECIFIC-SITUATIONAL": 0.9954227199060854,
+          "DOMAIN_SPECIFIC-IMMEDIATE": 0.960608430918983,
+          "SITUATIONAL-IMMEDIATE": 0.9563838990597303
+        },
+        "final_consistency": {
+          "CORE_VALUES-GENERAL_PRINCIPLES": 0.6976744186046512,
+          "CORE_VALUES-DOMAIN_SPECIFIC": 0.5288188015781807,
+          "CORE_VALUES-SITUATIONAL": 0.5275360016390697,
+          "CORE_VALUES-IMMEDIATE": 0.5405405405405405,
+          "GENERAL_PRINCIPLES-DOMAIN_SPECIFIC": 0.6860246534509569,
+          "GENERAL_PRINCIPLES-SITUATIONAL": 0.6838673485432858,
+          "GENERAL_PRINCIPLES-IMMEDIATE": 0.7058823529411765,
+          "DOMAIN_SPECIFIC-SITUATIONAL": 0.9954227199060854,
+          "DOMAIN_SPECIFIC-IMMEDIATE": 0.960608430918983,
+          "SITUATIONAL-IMMEDIATE": 0.9563838990597303
+        },
+        "preservation_rate": 1.0
+      }
+    ]
+  },
+  "system_state": {
+    "CORE_VALUES": [
+      {
+        "name": "consistency_preservation",
+        "description": "Maintain logical consistency across beliefs and actions",
+        "current_weight": 1.001056233368803,
+        "target_weight": 1.0,
+        "base_weight": 2.0,
+        "adaptation_rate": 0.01
+      },
+      {
+        "name": "coherence_maximization",
+        "description": "Maximize internal coherence of mental states",
+        "current_weight": 1.0145383674992257,
+        "target_weight": 1.0,
+        "base_weight": 1.8,
+        "adaptation_rate": 0.01
+      },
+      {
+        "name": "epistemic_accuracy",
+        "description": "Prefer accurate beliefs about reality",
+        "current_weight": 1.002604246130901,
+        "target_weight": 1.0,
+        "base_weight": 2.0,
+        "adaptation_rate": 0.01
+      }
+    ],
+    "GENERAL_PRINCIPLES": [
+      {
+        "name": "truth_seeking",
+        "description": "Actively seek truth in epistemic contexts",
+        "current_weight": 0.9972482795115712,
+        "target_weight": 1.0,
+        "base_weight": 1.5,
+        "adaptation_rate": 0.05
+      },
+      {
+        "name": "cooperation",
+        "description": "Cooperate in social contexts when beneficial",
+        "current_weight": 1.0018086782391007,
+        "target_weight": 1.0,
+        "base_weight": 1.4,
+        "adaptation_rate": 0.05
+      }
+    ],
+    "DOMAIN_SPECIFIC": [
+      {
+        "name": "scientific_methodology",
+        "description": "Use rigorous methods in scientific inquiry",
+        "current_weight": 1.0023636881208449,
+        "target_weight": 1.0,
+        "base_weight": 1.2,
+        "adaptation_rate": 0.1
+      }
+    ],
+    "SITUATIONAL": [
+      {
+        "name": "conversational_clarity",
+        "description": "Communicate clearly in conversations",
+        "current_weight": 1.00284620486401,
+        "target_weight": 1.0,
+        "base_weight": 1.0,
+        "adaptation_rate": 0.2
+      }
+    ],
+    "IMMEDIATE": [
+      {
+        "name": "attentional_focus",
+        "description": "Maintain focus on current task",
+        "current_weight": 0.9965068003745545,
+        "target_weight": 1.0,
+        "base_weight": 0.8,
+        "adaptation_rate": 0.5
+      }
+    ]
+  }
+}
