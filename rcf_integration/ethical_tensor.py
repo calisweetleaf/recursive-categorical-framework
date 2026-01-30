@@ -778,6 +778,7 @@ class CollapseAdapter:
         collapsed_pattern = self._identify_pattern(after_density)
         entropy_change = self._calculate_entropy(after_density) - self._calculate_entropy(before_density)
         ethical_alignment = self._calculate_ethical_alignment(tuple(int(x) for x in collapse_idx), ethical_tensor)
+        symmetry_score = self._calculate_symmetry_score(after_density)
         
         # Get ethical vector at collapse position
         ethical_vector = [ethical_tensor[e][collapse_idx] for e in range(ethical_tensor.shape[0])]
@@ -807,6 +808,7 @@ class CollapseAdapter:
             'collapse_position': collapse_idx,
             'collapse_magnitude': float(collapse_magnitude),
             'entropy_change': float(entropy_change),
+            'symmetry_score': float(symmetry_score),
             'ethical_alignment': ethical_alignment,
             'ethical_vector': [float(v) for v in ethical_vector],
             'pattern_type': collapsed_pattern,

@@ -1,0 +1,174 @@
+# File Tree: recursive-categorical-framework
+
+**Generated:** 1/30/2026, 4:26:51 PM
+**Root Path:** `c:\Users\treyr\Desktop\recursive-categorical-framework`
+
+```file_tree - C:\Users\treyr\Desktop\recursive-categorical-framework\
+
+├── RCF
+│   ├── 01_Eigenrecursion_Test.tex
+│   ├── 03_FINAL_TEST.tex
+│   ├── PROVENANCE.md
+│   ├── PROVENANCE.yaml
+│   ├── Recursive Categorical Framework.pdf
+│   ├── Recursive Categorical Framework.tex
+│   ├── Recursive_Categorical_Framework.md
+│   ├── experiment.pdf
+│   ├── rcf_explanation.json
+│   ├── rcf_publish.md
+│   ├── rcf_publish.pdf
+│   └── rcf_publish.tex
+├── RSIA
+│   ├── RSIA.tex
+│   ├── RSIA_final.pdf
+│   └── Recursive Symbolic Identity Architechture.md
+├── URST
+│   ├── Unified_Recursive_Sentience_Theory.md
+│   ├── Unified_Recursive_Sentience_Theory.pdf
+│   └── Unified_Recursive_Sentience_Theory.tex
+├── figures
+│   ├── paper_figures
+│   │   ├── eigenrecursion_convergence_delta.pdf
+│   │   ├── eigenrecursion_convergence_delta.png
+│   │   ├── eigenrecursion_convergence_st.pdf
+│   │   └── eigenrecursion_convergence_st.png
+│   ├── results
+│   │   ├── eigenrecursion_convergence_delta.png
+│   │   ├── eigenrecursion_convergence_st.png
+│   │   ├── eigenrecursion_log.json
+│   │   └── eigenrecursion_summary.json
+│   ├── 01_Eigenrecursion_Test.ipynb
+│   ├── 01_Eigenrecursion_Test_1761865396.pdf
+│   └── 03_FINAL_TEST.ipynb
+├── jupyter_demo
+│   ├── 01_Eigenrecursion_Test.ipynb
+│   └── 03_FINAL_TEST.ipynb
+├── labs
+├── legacy_test
+│   └── test_eigenrecursion_integration.py
+├── provenence
+│   ├── orcid-works.pdf
+│   └── zenodo-doi.txt
+├── python_test
+│   ├── results
+│   │   ├── URSMIF_Validation.md
+│   │   ├── bayesian-volition-theory.md
+│   │   ├── bayesian_volition_test.json
+│   │   ├── internal-contradiction-validation.md
+│   │   ├── pref_theory_terminal_log.md
+│   │   ├── preference_theory_test.json
+│   │   ├── preference_theory_test_manifest.json
+│   │   ├── preference_theory_test_report.md
+│   │   ├── rbus-theory.md
+│   │   └── rbus_theory_test.json
+│   ├── bayesian-volition-theory.py
+│   ├── bayesian_config_orchestrator.py
+│   ├── bco_test_utils.py
+│   ├── internal-contradictions-theory.py
+│   ├── pref-theory.py
+│   ├── rbus-theory.py
+│   └── ursmif-theory.py
+├── rcf_integration
+│   ├── rsgt
+│   │   ├── enhanced_rsgt_analysis_report.md
+│   │   ├── motivation_system.py
+│   │   └── rsgt_snippet.py
+│   ├── rsia
+│   │   ├── recursive_symbolic_identity_architechture.py
+│   │   └── run_recursive_identity.py
+│   ├── __init__.py
+│   ├── base_tensor.py
+│   ├── eigenrecursion_algorithm.py
+│   ├── eigenrecursive_operations.py
+│   ├── ethical_tensor.py
+│   ├── governance_framework.py
+│   ├── metacognitive_tensor.py
+│   ├── recursive_tensor.py
+│   ├── stability_matrix.py
+│   ├── temporal_eigenloom.py
+│   ├── temporal_eigenstate.py
+│   └── urft_python_snippet.py
+├── reports
+│   ├── FBS_Tokenizer_Results.md
+│   ├── eigenrecursion_integration_report.json
+│   ├── eigenrecursion_integration_report.md
+│   ├── eigenrecursion_stage_metrics.dat
+│   ├── enhanced_rsgt_analysis_report.md
+│   ├── ethical_tensor_output.md
+│   ├── fbs_terminal_log.md
+│   ├── motivation_test.md
+│   ├── rcf_terminal_log.md
+│   ├── rcf_test_manifest.json
+│   ├── rcf_test_report.md
+│   ├── sacred_fbs_validation.png
+│   ├── staged_clock_integration.json
+│   ├── staged_clock_integration.md
+│   ├── temporal_eigenloom_terminal_log.md
+│   ├── temporal_eigenstate_output.md
+│   ├── triaxial_backbone_report.md
+│   ├── triaxial_backbone_terminal.md
+│   ├── triaxial_sanity.md
+│   └── zebra_core_log.md
+├── resources
+│   ├── Academia_link.txt
+│   └── orcid_id_and_record_link.txt
+├── reteds_runs
+│   └── reteds_runner.loh
+├── reteds_turing_test
+│   ├── reteds.py
+│   └── reteds_runner.py
+├── rsia_runs_test
+│   ├── combined_summary_20251126T153131Z.json
+│   ├── run_summary_20251126T153131Z.json
+│   └── run_summary_20251126T153131Z.md
+├── tools
+│   ├── tex_verify.py
+│   └── validate_latex.py
+├── .gpt_zero_config_key
+├── AGENT.md
+├── ANTITHESIS.md
+├── CITATION.cff
+├── CONTEXT.md
+├── GLOSSARY.md
+├── LIBRARY.md
+├── LICENSE
+├── PROVENANCE.yaml
+├── PROVENENCE.md
+├── README.md
+├── README.md.mutable
+├── Recursive Categorical Framework — Publication Manifest.md
+├── SHA256SUMS
+├── SHA256SUMS.asc
+├── SHA256SUMS.sha256
+├── SHA256SUMS.txt
+├── SHA256SUMS.txt.asc
+├── SHA256SUMS.txt.sha256
+├── STYLE.md
+├── Symbolic_Grounding_Theorom.md
+├── allowed_signers.yaml
+├── bayesian_config_orchestrator.py
+├── ethical_tensor_test.py
+├── fbs_tokenizer.py
+├── figures.zip
+├── file-tree.md
+├── hash-index.ps1
+├── internal_clock.py
+├── motivation_test.py
+├── rcf_core.py
+├── requirements.txt
+├── sacred_fbs_validation.png
+├── test_recursive_destruction_benchmark.py
+├── test_sacred_fbs.py
+├── test_temporal_eigenloom_integration.py
+├── test_temporal_eigenstate.py
+├── test_triaxial_backbone.py
+├── test_zebra_core.py
+├── treyrowell_pubkey.asc
+├── triaxial_backbone.py
+├── visualize_rcf_architectures.py
+├── zenodo.json
+└── zynx_zebra_core.py
+```
+
+---
+*Generated by FileTree Pro Extension*
