@@ -1,0 +1,1294 @@
+[
+  {
+    "timestamp": "2026-01-08T19:24:08.992804",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n100_d1"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:08.994494",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n100_d1",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:09.032019",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n100_d3"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:09.037010",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n100_d3",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:09.076231",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n100_d5"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:09.115622",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n100_d5",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:09.189291",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n100_d10"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:09.230694",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n100_d10",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:09.272871",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n100_d20"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:09.348168",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n100_d20",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:09.379121",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n100_d50"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:09.915246",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n100_d50",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:09.946097",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n1000_d1"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:09.954705",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n1000_d1",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:09.988972",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n1000_d3"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:10.000653",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n1000_d3",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:10.038014",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n1000_d5"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:10.055618",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n1000_d5",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:10.089707",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n1000_d10"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:10.128597",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n1000_d10",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:10.162453",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n1000_d20"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:10.272060",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n1000_d20",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:10.300286",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n1000_d50"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:10.891544",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n1000_d50",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:10.920558",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n10000_d1"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:10.989458",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n10000_d1",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:11.025348",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n10000_d3"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:11.127131",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n10000_d3",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:11.162098",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n10000_d5"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:11.284560",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n10000_d5",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:11.316628",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n10000_d10"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:11.564922",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n10000_d10",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:11.596929",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n10000_d20"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:12.172792",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n10000_d20",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:12.205892",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n10000_d50"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:13.969083",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n10000_d50",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:13.998049",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n100000_d1"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:14.848329",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n100000_d1",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:14.918285",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n100000_d3"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:15.887675",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n100000_d3",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:15.948795",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n100000_d5"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:17.539175",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n100000_d5",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:17.599898",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n100000_d10"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:19.904699",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n100000_d10",
+      "status": "limit"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:19.962153",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n100000_d20"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:22.349613",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n100000_d20",
+      "status": "limit"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:22.413866",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n100000_d50"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:24.426954",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n100000_d50",
+      "status": "limit"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:24.494725",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n250000_d1"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:25.200718",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n250000_d1",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:25.263080",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n250000_d3"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:26.476076",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n250000_d3",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:26.539100",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n250000_d5"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:28.111867",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n250000_d5",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:28.182973",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n250000_d10"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:30.293580",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n250000_d10",
+      "status": "limit"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:30.368411",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n250000_d20"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:32.481246",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n250000_d20",
+      "status": "limit"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:32.584467",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n250000_d50"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:34.891850",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n250000_d50",
+      "status": "limit"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:35.020806",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n500000_d1"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:35.980608",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n500000_d1",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:36.053213",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n500000_d3"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:37.636175",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n500000_d3",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:37.705931",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n500000_d5"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:39.898049",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n500000_d5",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:40.010357",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n500000_d10"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:42.381201",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n500000_d10",
+      "status": "limit"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:42.445463",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n500000_d20"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:44.794446",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n500000_d20",
+      "status": "limit"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:44.865259",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n500000_d50"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:47.138102",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n500000_d50",
+      "status": "limit"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:47.198347",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n1000000_d1"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:47.906884",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n1000000_d1",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:47.985808",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n1000000_d3"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:49.153586",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n1000000_d3",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:49.212256",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n1000000_d5"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:51.100367",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n1000000_d5",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:51.169015",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n1000000_d10"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:53.253638",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n1000000_d10",
+      "status": "limit"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:53.318708",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n1000000_d20"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:55.866241",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n1000000_d20",
+      "status": "limit"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:55.928929",
+    "event": "case_start",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n1000000_d50"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:58.026593",
+    "event": "case_end",
+    "details": {
+      "test": "scaling_saturation",
+      "case_id": "n1000000_d50",
+      "status": "limit"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:58.090692",
+    "event": "case_start",
+    "details": {
+      "test": "recursion_storm",
+      "case_id": "depth_5"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:58.177975",
+    "event": "case_end",
+    "details": {
+      "test": "recursion_storm",
+      "case_id": "depth_5",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:58.206768",
+    "event": "case_start",
+    "details": {
+      "test": "recursion_storm",
+      "case_id": "depth_10"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:58.410618",
+    "event": "case_end",
+    "details": {
+      "test": "recursion_storm",
+      "case_id": "depth_10",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:58.469492",
+    "event": "case_start",
+    "details": {
+      "test": "recursion_storm",
+      "case_id": "depth_25"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:59.173640",
+    "event": "case_end",
+    "details": {
+      "test": "recursion_storm",
+      "case_id": "depth_25",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:24:59.210667",
+    "event": "case_start",
+    "details": {
+      "test": "recursion_storm",
+      "case_id": "depth_50"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:01.249600",
+    "event": "case_end",
+    "details": {
+      "test": "recursion_storm",
+      "case_id": "depth_50",
+      "status": "limit"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:01.292453",
+    "event": "case_start",
+    "details": {
+      "test": "recursion_storm",
+      "case_id": "depth_75"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:03.390615",
+    "event": "case_end",
+    "details": {
+      "test": "recursion_storm",
+      "case_id": "depth_75",
+      "status": "limit"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:03.437842",
+    "event": "case_start",
+    "details": {
+      "test": "recursion_storm",
+      "case_id": "depth_100"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:05.522629",
+    "event": "case_end",
+    "details": {
+      "test": "recursion_storm",
+      "case_id": "depth_100",
+      "status": "limit"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:05.575507",
+    "event": "case_start",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb1000_r0"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:05.583757",
+    "event": "case_end",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb1000_r0",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:05.629073",
+    "event": "case_start",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb1000_r10"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:05.638364",
+    "event": "case_end",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb1000_r10",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:05.745444",
+    "event": "case_start",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb1000_r30"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:05.772560",
+    "event": "case_end",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb1000_r30",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:05.826841",
+    "event": "case_start",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb1000_r60"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:05.832570",
+    "event": "case_end",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb1000_r60",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:05.865601",
+    "event": "case_start",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb1000_r90"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:05.874946",
+    "event": "case_end",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb1000_r90",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:05.913882",
+    "event": "case_start",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb5000_r0"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:05.950740",
+    "event": "case_end",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb5000_r0",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:05.984504",
+    "event": "case_start",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb5000_r10"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:06.020867",
+    "event": "case_end",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb5000_r10",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:06.053250",
+    "event": "case_start",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb5000_r30"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:06.086309",
+    "event": "case_end",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb5000_r30",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:06.114876",
+    "event": "case_start",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb5000_r60"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:06.143798",
+    "event": "case_end",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb5000_r60",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:06.173383",
+    "event": "case_start",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb5000_r90"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:06.195885",
+    "event": "case_end",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb5000_r90",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:06.234734",
+    "event": "case_start",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb20000_r0"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:06.378620",
+    "event": "case_end",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb20000_r0",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:06.414320",
+    "event": "case_start",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb20000_r10"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:06.553007",
+    "event": "case_end",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb20000_r10",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:06.590449",
+    "event": "case_start",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb20000_r30"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:06.718789",
+    "event": "case_end",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb20000_r30",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:06.750705",
+    "event": "case_start",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb20000_r60"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:06.871449",
+    "event": "case_end",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb20000_r60",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:06.904645",
+    "event": "case_start",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb20000_r90"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:07.001952",
+    "event": "case_end",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb20000_r90",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:07.033721",
+    "event": "case_start",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb50000_r0"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:07.378187",
+    "event": "case_end",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb50000_r0",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:07.417102",
+    "event": "case_start",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb50000_r10"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:07.721440",
+    "event": "case_end",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb50000_r10",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:07.763763",
+    "event": "case_start",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb50000_r30"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:08.098177",
+    "event": "case_end",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb50000_r30",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:08.138891",
+    "event": "case_start",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb50000_r60"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:08.404465",
+    "event": "case_end",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb50000_r60",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:08.448200",
+    "event": "case_start",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb50000_r90"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:08.669861",
+    "event": "case_end",
+    "details": {
+      "test": "contradiction_cascade",
+      "case_id": "kb50000_r90",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:08.708638",
+    "event": "case_start",
+    "details": {
+      "test": "entropy_flood",
+      "case_id": "entropy_10"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:08.710654",
+    "event": "case_end",
+    "details": {
+      "test": "entropy_flood",
+      "case_id": "entropy_10",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:08.735775",
+    "event": "case_start",
+    "details": {
+      "test": "entropy_flood",
+      "case_id": "entropy_100"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:08.743462",
+    "event": "case_end",
+    "details": {
+      "test": "entropy_flood",
+      "case_id": "entropy_100",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:08.773772",
+    "event": "case_start",
+    "details": {
+      "test": "entropy_flood",
+      "case_id": "entropy_500"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:08.784701",
+    "event": "case_end",
+    "details": {
+      "test": "entropy_flood",
+      "case_id": "entropy_500",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:08.814555",
+    "event": "case_start",
+    "details": {
+      "test": "entropy_flood",
+      "case_id": "entropy_1000"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:08.836086",
+    "event": "case_end",
+    "details": {
+      "test": "entropy_flood",
+      "case_id": "entropy_1000",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:08.872888",
+    "event": "case_start",
+    "details": {
+      "test": "entropy_flood",
+      "case_id": "entropy_2500"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:08.914539",
+    "event": "case_end",
+    "details": {
+      "test": "entropy_flood",
+      "case_id": "entropy_2500",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:08.948547",
+    "event": "case_start",
+    "details": {
+      "test": "entropy_flood",
+      "case_id": "entropy_5000"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:09.034945",
+    "event": "case_end",
+    "details": {
+      "test": "entropy_flood",
+      "case_id": "entropy_5000",
+      "status": "ok"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:09.066547",
+    "event": "case_start",
+    "details": {
+      "test": "pattern_saturation",
+      "case_id": "iterations_2000"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:11.085955",
+    "event": "case_end",
+    "details": {
+      "test": "pattern_saturation",
+      "case_id": "iterations_2000",
+      "status": "limit"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:11.121337",
+    "event": "case_start",
+    "details": {
+      "test": "state_fuzzing",
+      "case_id": "fuzz_300"
+    }
+  },
+  {
+    "timestamp": "2026-01-08T19:25:13.173590",
+    "event": "case_end",
+    "details": {
+      "test": "state_fuzzing",
+      "case_id": "fuzz_300",
+      "status": "limit"
+    }
+  }
+]

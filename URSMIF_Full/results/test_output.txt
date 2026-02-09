@@ -1,0 +1,26 @@
+======================================================================
+RCF URSMIF v1.7 Test
+Unified Recursive Self-Monitoring and Intervention Framework
+With ADHD Recursion Theory + Epistemological Foundations + RCF Consciousness
+======================================================================
+
+Author: Daeron Blackfyre
+
+v1.5 Core Verifications:
+  ò Recursive loop detection
+  ò Contradiction identification and resolution
+  ò Self-reference density monitoring
+  ò Entropy-based pattern detection
+  ò Intervention effectiveness
+  ò Epistemic coherence under monitoring
+
+v1.6 ADHD Recursion Theory Verifications:
+Traceback (most recent call last):
+  File "C:\Users\treyr\Desktop\ursmif\ursmif-theory.py", line 7619, in <module>
+    run_ursmif_test()
+  File "C:\Users\treyr\Desktop\ursmif\ursmif-theory.py", line 7473, in run_ursmif_test
+    print("  ò Resonance profile computation (R(s) = \u03a3 w_X ╖ X)")
+  File "C:\Users\treyr\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u03a3' in position 42: character maps to <undefined>

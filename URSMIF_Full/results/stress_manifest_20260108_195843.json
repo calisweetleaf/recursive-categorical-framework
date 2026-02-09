@@ -1,0 +1,1456 @@
+{
+  "run_id": "20260108_195843",
+  "timestamp": "2026-01-08T20:02:50.462767",
+  "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "system_info": {
+    "platform": "win32",
+    "cpu_count": 8,
+    "memory_total_gb": 9.91,
+    "memory_available_gb": 1.46
+  },
+  "test_configuration": {
+    "graph_sizes": [
+      100,
+      1000,
+      10000,
+      100000,
+      250000,
+      500000,
+      1000000
+    ],
+    "recursion_depths": [
+      1,
+      3,
+      5,
+      10,
+      20,
+      50
+    ],
+    "max_kb_entries": 100000,
+    "max_outputs": 1000,
+    "max_time_s": 20.0,
+    "max_memory_mb": 512.0,
+    "contradiction_ratios": [
+      0.0,
+      0.1,
+      0.3,
+      0.6,
+      0.9
+    ],
+    "entropy_sizes": [
+      10,
+      100,
+      500,
+      1000,
+      2500,
+      5000
+    ],
+    "saturation_iterations": 2000,
+    "fuzz_cases": 300,
+    "seed": 1337
+  },
+  "results": [
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n100_d1",
+      "status": "ok",
+      "execution_time_ms": 3.0009,
+      "memory_peak_mb": 0.0189,
+      "memory_delta_mb": 0.0469,
+      "cpu_percent": 0.0,
+      "patterns_detected": 2,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 100,
+        "recursion_depth": 1,
+        "kb_entries": 100,
+        "outputs_count": 5
+      },
+      "timestamp": "2026-01-08T19:58:43.032908"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n100_d3",
+      "status": "ok",
+      "execution_time_ms": 6.2775,
+      "memory_peak_mb": 0.0232,
+      "memory_delta_mb": 0.0,
+      "cpu_percent": 0.0,
+      "patterns_detected": 10,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 100,
+        "recursion_depth": 3,
+        "kb_entries": 100,
+        "outputs_count": 5
+      },
+      "timestamp": "2026-01-08T19:58:43.090199"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n100_d5",
+      "status": "ok",
+      "execution_time_ms": 12.1517,
+      "memory_peak_mb": 0.028,
+      "memory_delta_mb": 0.0039,
+      "cpu_percent": 104.2,
+      "patterns_detected": 23,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 100,
+        "recursion_depth": 5,
+        "kb_entries": 100,
+        "outputs_count": 5
+      },
+      "timestamp": "2026-01-08T19:58:43.152454"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n100_d10",
+      "status": "ok",
+      "execution_time_ms": 29.0525,
+      "memory_peak_mb": 0.0438,
+      "memory_delta_mb": 0.1055,
+      "cpu_percent": 100.8,
+      "patterns_detected": 73,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 100,
+        "recursion_depth": 10,
+        "kb_entries": 100,
+        "outputs_count": 5
+      },
+      "timestamp": "2026-01-08T19:58:43.244415"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n100_d20",
+      "status": "ok",
+      "execution_time_ms": 93.7905,
+      "memory_peak_mb": 0.0868,
+      "memory_delta_mb": 0.0586,
+      "cpu_percent": 83.1,
+      "patterns_detected": 193,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 100,
+        "recursion_depth": 20,
+        "kb_entries": 100,
+        "outputs_count": 5
+      },
+      "timestamp": "2026-01-08T19:58:43.392800"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n100_d50",
+      "status": "ok",
+      "execution_time_ms": 713.0625,
+      "memory_peak_mb": 0.2283,
+      "memory_delta_mb": 0.6445,
+      "cpu_percent": 95.8,
+      "patterns_detected": 553,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 100,
+        "recursion_depth": 50,
+        "kb_entries": 100,
+        "outputs_count": 5
+      },
+      "timestamp": "2026-01-08T19:58:44.152564"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n1000_d1",
+      "status": "ok",
+      "execution_time_ms": 10.4453,
+      "memory_peak_mb": 0.1579,
+      "memory_delta_mb": 0.0078,
+      "cpu_percent": 97.7,
+      "patterns_detected": 2,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 1000,
+        "recursion_depth": 1,
+        "kb_entries": 1000,
+        "outputs_count": 5
+      },
+      "timestamp": "2026-01-08T19:58:44.214862"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n1000_d3",
+      "status": "ok",
+      "execution_time_ms": 13.2039,
+      "memory_peak_mb": 0.1138,
+      "memory_delta_mb": 0.0039,
+      "cpu_percent": 104.2,
+      "patterns_detected": 10,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 1000,
+        "recursion_depth": 3,
+        "kb_entries": 1000,
+        "outputs_count": 5
+      },
+      "timestamp": "2026-01-08T19:58:44.279253"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n1000_d5",
+      "status": "ok",
+      "execution_time_ms": 19.7479,
+      "memory_peak_mb": 0.1184,
+      "memory_delta_mb": 0.0039,
+      "cpu_percent": 97.7,
+      "patterns_detected": 23,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 1000,
+        "recursion_depth": 5,
+        "kb_entries": 1000,
+        "outputs_count": 5
+      },
+      "timestamp": "2026-01-08T19:58:44.352963"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n1000_d10",
+      "status": "ok",
+      "execution_time_ms": 44.3896,
+      "memory_peak_mb": 0.1384,
+      "memory_delta_mb": 0.0,
+      "cpu_percent": 99.7,
+      "patterns_detected": 79,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 1000,
+        "recursion_depth": 10,
+        "kb_entries": 1000,
+        "outputs_count": 5
+      },
+      "timestamp": "2026-01-08T19:58:44.452910"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n1000_d20",
+      "status": "ok",
+      "execution_time_ms": 110.3384,
+      "memory_peak_mb": 0.1855,
+      "memory_delta_mb": 0.0117,
+      "cpu_percent": 85.2,
+      "patterns_detected": 199,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 1000,
+        "recursion_depth": 20,
+        "kb_entries": 1000,
+        "outputs_count": 5
+      },
+      "timestamp": "2026-01-08T19:58:44.611232"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n1000_d50",
+      "status": "ok",
+      "execution_time_ms": 751.217,
+      "memory_peak_mb": 0.3385,
+      "memory_delta_mb": 0.3398,
+      "cpu_percent": 91.7,
+      "patterns_detected": 563,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 1000,
+        "recursion_depth": 50,
+        "kb_entries": 1000,
+        "outputs_count": 5
+      },
+      "timestamp": "2026-01-08T19:58:45.404726"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n10000_d1",
+      "status": "ok",
+      "execution_time_ms": 84.8631,
+      "memory_peak_mb": 1.6951,
+      "memory_delta_mb": 1.8398,
+      "cpu_percent": 66.5,
+      "patterns_detected": 2,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 10000,
+        "recursion_depth": 1,
+        "kb_entries": 10000,
+        "outputs_count": 10
+      },
+      "timestamp": "2026-01-08T19:58:45.539848"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n10000_d3",
+      "status": "ok",
+      "execution_time_ms": 127.2122,
+      "memory_peak_mb": 1.8823,
+      "memory_delta_mb": 0.4609,
+      "cpu_percent": 100.0,
+      "patterns_detected": 10,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 10000,
+        "recursion_depth": 3,
+        "kb_entries": 10000,
+        "outputs_count": 10
+      },
+      "timestamp": "2026-01-08T19:58:45.720379"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n10000_d5",
+      "status": "ok",
+      "execution_time_ms": 196.0058,
+      "memory_peak_mb": 1.9094,
+      "memory_delta_mb": 1.8125,
+      "cpu_percent": 74.8,
+      "patterns_detected": 23,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 10000,
+        "recursion_depth": 5,
+        "kb_entries": 10000,
+        "outputs_count": 10
+      },
+      "timestamp": "2026-01-08T19:58:45.972029"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n10000_d10",
+      "status": "ok",
+      "execution_time_ms": 472.3449,
+      "memory_peak_mb": 1.9855,
+      "memory_delta_mb": 1.9297,
+      "cpu_percent": 90.2,
+      "patterns_detected": 77,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 10000,
+        "recursion_depth": 10,
+        "kb_entries": 10000,
+        "outputs_count": 10
+      },
+      "timestamp": "2026-01-08T19:58:46.506214"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n10000_d20",
+      "status": "ok",
+      "execution_time_ms": 1082.994,
+      "memory_peak_mb": 2.144,
+      "memory_delta_mb": 1.0078,
+      "cpu_percent": 92.8,
+      "patterns_detected": 197,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 10000,
+        "recursion_depth": 20,
+        "kb_entries": 10000,
+        "outputs_count": 10
+      },
+      "timestamp": "2026-01-08T19:58:47.655464"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n10000_d50",
+      "status": "ok",
+      "execution_time_ms": 4548.2389,
+      "memory_peak_mb": 2.6331,
+      "memory_delta_mb": 1.4375,
+      "cpu_percent": 89.4,
+      "patterns_detected": 573,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 10000,
+        "recursion_depth": 50,
+        "kb_entries": 10000,
+        "outputs_count": 10
+      },
+      "timestamp": "2026-01-08T19:58:52.255456"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n100000_d1",
+      "status": "ok",
+      "execution_time_ms": 1247.4765,
+      "memory_peak_mb": 19.013,
+      "memory_delta_mb": 13.6523,
+      "cpu_percent": 82.7,
+      "patterns_detected": 2,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 100000,
+        "recursion_depth": 1,
+        "kb_entries": 100000,
+        "outputs_count": 100
+      },
+      "timestamp": "2026-01-08T19:58:53.595876"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n100000_d3",
+      "status": "ok",
+      "execution_time_ms": 1242.9628,
+      "memory_peak_mb": 19.3938,
+      "memory_delta_mb": 4.8906,
+      "cpu_percent": 94.0,
+      "patterns_detected": 10,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 100000,
+        "recursion_depth": 3,
+        "kb_entries": 100000,
+        "outputs_count": 100
+      },
+      "timestamp": "2026-01-08T19:58:54.982974"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n100000_d5",
+      "status": "ok",
+      "execution_time_ms": 2182.4183,
+      "memory_peak_mb": 19.7734,
+      "memory_delta_mb": 3.1758,
+      "cpu_percent": 96.5,
+      "patterns_detected": 23,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 100000,
+        "recursion_depth": 5,
+        "kb_entries": 100000,
+        "outputs_count": 100
+      },
+      "timestamp": "2026-01-08T19:58:57.305891"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n100000_d10",
+      "status": "ok",
+      "execution_time_ms": 6466.8395,
+      "memory_peak_mb": 20.7295,
+      "memory_delta_mb": 6.1641,
+      "cpu_percent": 92.6,
+      "patterns_detected": 73,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 100000,
+        "recursion_depth": 10,
+        "kb_entries": 100000,
+        "outputs_count": 100
+      },
+      "timestamp": "2026-01-08T19:59:03.928423"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n100000_d20",
+      "status": "ok",
+      "execution_time_ms": 12227.3489,
+      "memory_peak_mb": 22.652,
+      "memory_delta_mb": 6.1055,
+      "cpu_percent": 96.9,
+      "patterns_detected": 193,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 100000,
+        "recursion_depth": 20,
+        "kb_entries": 100000,
+        "outputs_count": 100
+      },
+      "timestamp": "2026-01-08T19:59:16.307450"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n100000_d50",
+      "status": "limit",
+      "execution_time_ms": 20125.8085,
+      "memory_peak_mb": 25.7318,
+      "memory_delta_mb": 9.75,
+      "cpu_percent": 98.1,
+      "patterns_detected": 385,
+      "limit_triggered": "time_limit",
+      "exception": null,
+      "details": {
+        "graph_size": 100000,
+        "recursion_depth": 50
+      },
+      "timestamp": "2026-01-08T19:59:36.545808"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n250000_d1",
+      "status": "ok",
+      "execution_time_ms": 674.3234,
+      "memory_peak_mb": 19.0211,
+      "memory_delta_mb": 3.5547,
+      "cpu_percent": 100.1,
+      "patterns_detected": 2,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 250000,
+        "recursion_depth": 1,
+        "kb_entries": 100000,
+        "outputs_count": 250
+      },
+      "timestamp": "2026-01-08T19:59:37.322615"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n250000_d3",
+      "status": "ok",
+      "execution_time_ms": 877.1354,
+      "memory_peak_mb": 19.418,
+      "memory_delta_mb": 4.4102,
+      "cpu_percent": 98.3,
+      "patterns_detected": 10,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 250000,
+        "recursion_depth": 3,
+        "kb_entries": 100000,
+        "outputs_count": 250
+      },
+      "timestamp": "2026-01-08T19:59:38.293850"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n250000_d5",
+      "status": "ok",
+      "execution_time_ms": 1511.6181,
+      "memory_peak_mb": 19.8138,
+      "memory_delta_mb": 4.4258,
+      "cpu_percent": 100.1,
+      "patterns_detected": 23,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 250000,
+        "recursion_depth": 5,
+        "kb_entries": 100000,
+        "outputs_count": 250
+      },
+      "timestamp": "2026-01-08T19:59:39.898641"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n250000_d10",
+      "status": "ok",
+      "execution_time_ms": 4346.6401,
+      "memory_peak_mb": 20.8105,
+      "memory_delta_mb": 3.9102,
+      "cpu_percent": 98.9,
+      "patterns_detected": 73,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 250000,
+        "recursion_depth": 10,
+        "kb_entries": 100000,
+        "outputs_count": 250
+      },
+      "timestamp": "2026-01-08T19:59:44.345819"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n250000_d20",
+      "status": "ok",
+      "execution_time_ms": 13182.8858,
+      "memory_peak_mb": 22.8136,
+      "memory_delta_mb": 4.8789,
+      "cpu_percent": 94.0,
+      "patterns_detected": 193,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 250000,
+        "recursion_depth": 20,
+        "kb_entries": 100000,
+        "outputs_count": 250
+      },
+      "timestamp": "2026-01-08T19:59:57.649429"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n250000_d50",
+      "status": "limit",
+      "execution_time_ms": 20097.4926,
+      "memory_peak_mb": 25.8223,
+      "memory_delta_mb": 6.1484,
+      "cpu_percent": 97.6,
+      "patterns_detected": 373,
+      "limit_triggered": "time_limit",
+      "exception": null,
+      "details": {
+        "graph_size": 250000,
+        "recursion_depth": 50
+      },
+      "timestamp": "2026-01-08T20:00:17.909470"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n500000_d1",
+      "status": "ok",
+      "execution_time_ms": 789.0999,
+      "memory_peak_mb": 19.0344,
+      "memory_delta_mb": 3.1406,
+      "cpu_percent": 96.3,
+      "patterns_detected": 2,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 500000,
+        "recursion_depth": 1,
+        "kb_entries": 100000,
+        "outputs_count": 500
+      },
+      "timestamp": "2026-01-08T20:00:18.854922"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n500000_d3",
+      "status": "ok",
+      "execution_time_ms": 1117.4272,
+      "memory_peak_mb": 19.4581,
+      "memory_delta_mb": 4.6992,
+      "cpu_percent": 90.5,
+      "patterns_detected": 10,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 500000,
+        "recursion_depth": 3,
+        "kb_entries": 100000,
+        "outputs_count": 500
+      },
+      "timestamp": "2026-01-08T20:00:20.182319"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n500000_d5",
+      "status": "ok",
+      "execution_time_ms": 2246.221,
+      "memory_peak_mb": 19.8807,
+      "memory_delta_mb": 3.7383,
+      "cpu_percent": 93.2,
+      "patterns_detected": 23,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 500000,
+        "recursion_depth": 5,
+        "kb_entries": 100000,
+        "outputs_count": 500
+      },
+      "timestamp": "2026-01-08T20:00:22.576475"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n500000_d10",
+      "status": "ok",
+      "execution_time_ms": 6922.4947,
+      "memory_peak_mb": 20.9441,
+      "memory_delta_mb": 3.9766,
+      "cpu_percent": 87.3,
+      "patterns_detected": 73,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 500000,
+        "recursion_depth": 10,
+        "kb_entries": 100000,
+        "outputs_count": 500
+      },
+      "timestamp": "2026-01-08T20:00:29.671295"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n500000_d20",
+      "status": "ok",
+      "execution_time_ms": 13322.1394,
+      "memory_peak_mb": 23.081,
+      "memory_delta_mb": 4.6875,
+      "cpu_percent": 97.9,
+      "patterns_detected": 193,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 500000,
+        "recursion_depth": 20,
+        "kb_entries": 100000,
+        "outputs_count": 500
+      },
+      "timestamp": "2026-01-08T20:00:43.159489"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n500000_d50",
+      "status": "limit",
+      "execution_time_ms": 20130.4041,
+      "memory_peak_mb": 25.6476,
+      "memory_delta_mb": 5.6484,
+      "cpu_percent": 99.0,
+      "patterns_detected": 337,
+      "limit_triggered": "time_limit",
+      "exception": null,
+      "details": {
+        "graph_size": 500000,
+        "recursion_depth": 50
+      },
+      "timestamp": "2026-01-08T20:01:03.455090"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n1000000_d1",
+      "status": "ok",
+      "execution_time_ms": 794.1927,
+      "memory_peak_mb": 19.0618,
+      "memory_delta_mb": 5.4375,
+      "cpu_percent": 96.2,
+      "patterns_detected": 2,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 1000000,
+        "recursion_depth": 1,
+        "kb_entries": 100000,
+        "outputs_count": 1000
+      },
+      "timestamp": "2026-01-08T20:01:04.393485"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n1000000_d3",
+      "status": "ok",
+      "execution_time_ms": 1029.6633,
+      "memory_peak_mb": 19.5401,
+      "memory_delta_mb": 2.5742,
+      "cpu_percent": 98.6,
+      "patterns_detected": 10,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 1000000,
+        "recursion_depth": 3,
+        "kb_entries": 100000,
+        "outputs_count": 1000
+      },
+      "timestamp": "2026-01-08T20:01:05.545788"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n1000000_d5",
+      "status": "ok",
+      "execution_time_ms": 1640.5691,
+      "memory_peak_mb": 20.0173,
+      "memory_delta_mb": 4.6289,
+      "cpu_percent": 97.2,
+      "patterns_detected": 23,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 1000000,
+        "recursion_depth": 5,
+        "kb_entries": 100000,
+        "outputs_count": 1000
+      },
+      "timestamp": "2026-01-08T20:01:07.299356"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n1000000_d10",
+      "status": "ok",
+      "execution_time_ms": 4714.5065,
+      "memory_peak_mb": 21.2172,
+      "memory_delta_mb": 3.6797,
+      "cpu_percent": 99.3,
+      "patterns_detected": 73,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 1000000,
+        "recursion_depth": 10,
+        "kb_entries": 100000,
+        "outputs_count": 1000
+      },
+      "timestamp": "2026-01-08T20:01:12.135198"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n1000000_d20",
+      "status": "ok",
+      "execution_time_ms": 12949.7379,
+      "memory_peak_mb": 23.6272,
+      "memory_delta_mb": 5.0977,
+      "cpu_percent": 97.5,
+      "patterns_detected": 193,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "graph_size": 1000000,
+        "recursion_depth": 20,
+        "kb_entries": 100000,
+        "outputs_count": 1000
+      },
+      "timestamp": "2026-01-08T20:01:25.259748"
+    },
+    {
+      "test_name": "scaling_saturation",
+      "case_id": "n1000000_d50",
+      "status": "limit",
+      "execution_time_ms": 20347.937,
+      "memory_peak_mb": 24.8317,
+      "memory_delta_mb": 5.3516,
+      "cpu_percent": 93.8,
+      "patterns_detected": 253,
+      "limit_triggered": "time_limit",
+      "exception": null,
+      "details": {
+        "graph_size": 1000000,
+        "recursion_depth": 50
+      },
+      "timestamp": "2026-01-08T20:01:45.766538"
+    },
+    {
+      "test_name": "recursion_storm",
+      "case_id": "depth_5",
+      "status": "ok",
+      "execution_time_ms": 92.3792,
+      "memory_peak_mb": 1.6522,
+      "memory_delta_mb": 2.1094,
+      "cpu_percent": 99.7,
+      "patterns_detected": 16,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "depth": 5,
+        "recursion_stack": 5,
+        "meta_stability_samples": 5
+      },
+      "timestamp": "2026-01-08T20:01:45.966484"
+    },
+    {
+      "test_name": "recursion_storm",
+      "case_id": "depth_10",
+      "status": "ok",
+      "execution_time_ms": 218.828,
+      "memory_peak_mb": 3.2365,
+      "memory_delta_mb": 1.6523,
+      "cpu_percent": 99.9,
+      "patterns_detected": 36,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "depth": 10,
+        "recursion_stack": 10,
+        "meta_stability_samples": 10
+      },
+      "timestamp": "2026-01-08T20:01:46.221245"
+    },
+    {
+      "test_name": "recursion_storm",
+      "case_id": "depth_25",
+      "status": "ok",
+      "execution_time_ms": 726.8623,
+      "memory_peak_mb": 8.0025,
+      "memory_delta_mb": 3.3359,
+      "cpu_percent": 100.0,
+      "patterns_detected": 102,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "depth": 25,
+        "recursion_stack": 20,
+        "meta_stability_samples": 25
+      },
+      "timestamp": "2026-01-08T20:01:47.002300"
+    },
+    {
+      "test_name": "recursion_storm",
+      "case_id": "depth_50",
+      "status": "ok",
+      "execution_time_ms": 2585.7519,
+      "memory_peak_mb": 15.9309,
+      "memory_delta_mb": 6.4961,
+      "cpu_percent": 98.8,
+      "patterns_detected": 204,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "depth": 50,
+        "recursion_stack": 20,
+        "meta_stability_samples": 50
+      },
+      "timestamp": "2026-01-08T20:01:49.674530"
+    },
+    {
+      "test_name": "recursion_storm",
+      "case_id": "depth_75",
+      "status": "ok",
+      "execution_time_ms": 5354.0817,
+      "memory_peak_mb": 23.8383,
+      "memory_delta_mb": 11.0781,
+      "cpu_percent": 98.6,
+      "patterns_detected": 319,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "depth": 75,
+        "recursion_stack": 20,
+        "meta_stability_samples": 75
+      },
+      "timestamp": "2026-01-08T20:01:55.130673"
+    },
+    {
+      "test_name": "recursion_storm",
+      "case_id": "depth_100",
+      "status": "ok",
+      "execution_time_ms": 11202.8296,
+      "memory_peak_mb": 31.8015,
+      "memory_delta_mb": 19.7422,
+      "cpu_percent": 98.2,
+      "patterns_detected": 413,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "depth": 100,
+        "recursion_stack": 20,
+        "meta_stability_samples": 100
+      },
+      "timestamp": "2026-01-08T20:02:06.448895"
+    },
+    {
+      "test_name": "contradiction_cascade",
+      "case_id": "kb1000_r0",
+      "status": "ok",
+      "execution_time_ms": 6.0777,
+      "memory_peak_mb": 0.1135,
+      "memory_delta_mb": 0.0781,
+      "cpu_percent": 104.2,
+      "patterns_detected": 1,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "kb_entries": 1000,
+        "contradiction_ratio": 0.0,
+        "contradictions_detected": 0
+      },
+      "timestamp": "2026-01-08T20:02:06.526014"
+    },
+    {
+      "test_name": "contradiction_cascade",
+      "case_id": "kb1000_r10",
+      "status": "ok",
+      "execution_time_ms": 5.7631,
+      "memory_peak_mb": 0.1115,
+      "memory_delta_mb": 0.0,
+      "cpu_percent": 104.2,
+      "patterns_detected": 2,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "kb_entries": 1000,
+        "contradiction_ratio": 0.1,
+        "contradictions_detected": 1
+      },
+      "timestamp": "2026-01-08T20:02:06.570769"
+    },
+    {
+      "test_name": "contradiction_cascade",
+      "case_id": "kb1000_r30",
+      "status": "ok",
+      "execution_time_ms": 7.5107,
+      "memory_peak_mb": 0.1077,
+      "memory_delta_mb": 0.0,
+      "cpu_percent": 0.0,
+      "patterns_detected": 2,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "kb_entries": 1000,
+        "contradiction_ratio": 0.3,
+        "contradictions_detected": 1
+      },
+      "timestamp": "2026-01-08T20:02:06.613990"
+    },
+    {
+      "test_name": "contradiction_cascade",
+      "case_id": "kb1000_r60",
+      "status": "ok",
+      "execution_time_ms": 8.3953,
+      "memory_peak_mb": 0.1029,
+      "memory_delta_mb": 0.0,
+      "cpu_percent": 0.0,
+      "patterns_detected": 2,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "kb_entries": 1000,
+        "contradiction_ratio": 0.6,
+        "contradictions_detected": 1
+      },
+      "timestamp": "2026-01-08T20:02:06.755779"
+    },
+    {
+      "test_name": "contradiction_cascade",
+      "case_id": "kb1000_r90",
+      "status": "ok",
+      "execution_time_ms": 3.7067,
+      "memory_peak_mb": 0.0823,
+      "memory_delta_mb": 0.0,
+      "cpu_percent": 0.0,
+      "patterns_detected": 2,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "kb_entries": 1000,
+        "contradiction_ratio": 0.9,
+        "contradictions_detected": 1
+      },
+      "timestamp": "2026-01-08T20:02:06.812318"
+    },
+    {
+      "test_name": "contradiction_cascade",
+      "case_id": "kb5000_r0",
+      "status": "ok",
+      "execution_time_ms": 36.5681,
+      "memory_peak_mb": 1.0824,
+      "memory_delta_mb": 1.1914,
+      "cpu_percent": 99.7,
+      "patterns_detected": 1,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "kb_entries": 5000,
+        "contradiction_ratio": 0.0,
+        "contradictions_detected": 0
+      },
+      "timestamp": "2026-01-08T20:02:06.884110"
+    },
+    {
+      "test_name": "contradiction_cascade",
+      "case_id": "kb5000_r10",
+      "status": "ok",
+      "execution_time_ms": 27.4914,
+      "memory_peak_mb": 1.0188,
+      "memory_delta_mb": 0.0,
+      "cpu_percent": 100.8,
+      "patterns_detected": 2,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "kb_entries": 5000,
+        "contradiction_ratio": 0.1,
+        "contradictions_detected": 1
+      },
+      "timestamp": "2026-01-08T20:02:06.949377"
+    },
+    {
+      "test_name": "contradiction_cascade",
+      "case_id": "kb5000_r30",
+      "status": "ok",
+      "execution_time_ms": 24.317,
+      "memory_peak_mb": 0.998,
+      "memory_delta_mb": 0.0,
+      "cpu_percent": 50.4,
+      "patterns_detected": 2,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "kb_entries": 5000,
+        "contradiction_ratio": 0.3,
+        "contradictions_detected": 1
+      },
+      "timestamp": "2026-01-08T20:02:07.004749"
+    },
+    {
+      "test_name": "contradiction_cascade",
+      "case_id": "kb5000_r60",
+      "status": "ok",
+      "execution_time_ms": 23.266,
+      "memory_peak_mb": 0.9746,
+      "memory_delta_mb": -0.1289,
+      "cpu_percent": 97.7,
+      "patterns_detected": 2,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "kb_entries": 5000,
+        "contradiction_ratio": 0.6,
+        "contradictions_detected": 1
+      },
+      "timestamp": "2026-01-08T20:02:07.057774"
+    },
+    {
+      "test_name": "contradiction_cascade",
+      "case_id": "kb5000_r90",
+      "status": "ok",
+      "execution_time_ms": 20.0891,
+      "memory_peak_mb": 0.9761,
+      "memory_delta_mb": 0.1953,
+      "cpu_percent": 97.7,
+      "patterns_detected": 2,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "kb_entries": 5000,
+        "contradiction_ratio": 0.9,
+        "contradictions_detected": 1
+      },
+      "timestamp": "2026-01-08T20:02:07.110464"
+    },
+    {
+      "test_name": "contradiction_cascade",
+      "case_id": "kb20000_r0",
+      "status": "ok",
+      "execution_time_ms": 126.3051,
+      "memory_peak_mb": 4.4433,
+      "memory_delta_mb": 4.6016,
+      "cpu_percent": 100.4,
+      "patterns_detected": 1,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "kb_entries": 20000,
+        "contradiction_ratio": 0.0,
+        "contradictions_detected": 0
+      },
+      "timestamp": "2026-01-08T20:02:07.272637"
+    },
+    {
+      "test_name": "contradiction_cascade",
+      "case_id": "kb20000_r10",
+      "status": "ok",
+      "execution_time_ms": 122.535,
+      "memory_peak_mb": 4.3992,
+      "memory_delta_mb": 3.0547,
+      "cpu_percent": 87.5,
+      "patterns_detected": 2,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "kb_entries": 20000,
+        "contradiction_ratio": 0.1,
+        "contradictions_detected": 1
+      },
+      "timestamp": "2026-01-08T20:02:07.432582"
+    },
+    {
+      "test_name": "contradiction_cascade",
+      "case_id": "kb20000_r30",
+      "status": "ok",
+      "execution_time_ms": 113.9654,
+      "memory_peak_mb": 4.3133,
+      "memory_delta_mb": 1.1445,
+      "cpu_percent": 100.0,
+      "patterns_detected": 2,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "kb_entries": 20000,
+        "contradiction_ratio": 0.3,
+        "contradictions_detected": 1
+      },
+      "timestamp": "2026-01-08T20:02:07.584433"
+    },
+    {
+      "test_name": "contradiction_cascade",
+      "case_id": "kb20000_r60",
+      "status": "ok",
+      "execution_time_ms": 97.8939,
+      "memory_peak_mb": 4.2434,
+      "memory_delta_mb": 2.4219,
+      "cpu_percent": 99.7,
+      "patterns_detected": 2,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "kb_entries": 20000,
+        "contradiction_ratio": 0.6,
+        "contradictions_detected": 1
+      },
+      "timestamp": "2026-01-08T20:02:07.720208"
+    },
+    {
+      "test_name": "contradiction_cascade",
+      "case_id": "kb20000_r90",
+      "status": "ok",
+      "execution_time_ms": 83.7075,
+      "memory_peak_mb": 4.2477,
+      "memory_delta_mb": 2.0156,
+      "cpu_percent": 99.7,
+      "patterns_detected": 2,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "kb_entries": 20000,
+        "contradiction_ratio": 0.9,
+        "contradictions_detected": 1
+      },
+      "timestamp": "2026-01-08T20:02:07.839517"
+    },
+    {
+      "test_name": "contradiction_cascade",
+      "case_id": "kb50000_r0",
+      "status": "ok",
+      "execution_time_ms": 320.0545,
+      "memory_peak_mb": 9.5464,
+      "memory_delta_mb": 6.3867,
+      "cpu_percent": 100.0,
+      "patterns_detected": 1,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "kb_entries": 50000,
+        "contradiction_ratio": 0.0,
+        "contradictions_detected": 0
+      },
+      "timestamp": "2026-01-08T20:02:08.203780"
+    },
+    {
+      "test_name": "contradiction_cascade",
+      "case_id": "kb50000_r10",
+      "status": "ok",
+      "execution_time_ms": 313.2161,
+      "memory_peak_mb": 9.4483,
+      "memory_delta_mb": -5.4062,
+      "cpu_percent": 100.0,
+      "patterns_detected": 2,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "kb_entries": 50000,
+        "contradiction_ratio": 0.1,
+        "contradictions_detected": 1
+      },
+      "timestamp": "2026-01-08T20:02:08.578494"
+    },
+    {
+      "test_name": "contradiction_cascade",
+      "case_id": "kb50000_r30",
+      "status": "ok",
+      "execution_time_ms": 285.3883,
+      "memory_peak_mb": 7.7782,
+      "memory_delta_mb": 8.8164,
+      "cpu_percent": 100.0,
+      "patterns_detected": 2,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "kb_entries": 50000,
+        "contradiction_ratio": 0.3,
+        "contradictions_detected": 1
+      },
+      "timestamp": "2026-01-08T20:02:08.917928"
+    },
+    {
+      "test_name": "contradiction_cascade",
+      "case_id": "kb50000_r60",
+      "status": "ok",
+      "execution_time_ms": 273.0966,
+      "memory_peak_mb": 7.7104,
+      "memory_delta_mb": 2.6289,
+      "cpu_percent": 100.0,
+      "patterns_detected": 2,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "kb_entries": 50000,
+        "contradiction_ratio": 0.6,
+        "contradictions_detected": 1
+      },
+      "timestamp": "2026-01-08T20:02:09.247273"
+    },
+    {
+      "test_name": "contradiction_cascade",
+      "case_id": "kb50000_r90",
+      "status": "ok",
+      "execution_time_ms": 209.8775,
+      "memory_peak_mb": 7.735,
+      "memory_delta_mb": 2.1055,
+      "cpu_percent": 107.0,
+      "patterns_detected": 2,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "kb_entries": 50000,
+        "contradiction_ratio": 0.9,
+        "contradictions_detected": 1
+      },
+      "timestamp": "2026-01-08T20:02:09.510143"
+    },
+    {
+      "test_name": "entropy_flood",
+      "case_id": "entropy_10",
+      "status": "ok",
+      "execution_time_ms": 0.6601,
+      "memory_peak_mb": 0.0031,
+      "memory_delta_mb": 0.0039,
+      "cpu_percent": 0.0,
+      "patterns_detected": 1,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "output_count": 10,
+        "entropy": 3.3219
+      },
+      "timestamp": "2026-01-08T20:02:09.552048"
+    },
+    {
+      "test_name": "entropy_flood",
+      "case_id": "entropy_100",
+      "status": "ok",
+      "execution_time_ms": 3.9455,
+      "memory_peak_mb": 0.0154,
+      "memory_delta_mb": 0.0,
+      "cpu_percent": 97.7,
+      "patterns_detected": 1,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "output_count": 100,
+        "entropy": 6.6439
+      },
+      "timestamp": "2026-01-08T20:02:09.585817"
+    },
+    {
+      "test_name": "entropy_flood",
+      "case_id": "entropy_500",
+      "status": "ok",
+      "execution_time_ms": 9.3885,
+      "memory_peak_mb": 0.0676,
+      "memory_delta_mb": 0.0,
+      "cpu_percent": 97.7,
+      "patterns_detected": 1,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "output_count": 500,
+        "entropy": 8.9658
+      },
+      "timestamp": "2026-01-08T20:02:09.631017"
+    },
+    {
+      "test_name": "entropy_flood",
+      "case_id": "entropy_1000",
+      "status": "ok",
+      "execution_time_ms": 19.973,
+      "memory_peak_mb": 0.1349,
+      "memory_delta_mb": 0.0234,
+      "cpu_percent": 97.7,
+      "patterns_detected": 1,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "output_count": 1000,
+        "entropy": 9.9658
+      },
+      "timestamp": "2026-01-08T20:02:09.690201"
+    },
+    {
+      "test_name": "entropy_flood",
+      "case_id": "entropy_2500",
+      "status": "ok",
+      "execution_time_ms": 42.6301,
+      "memory_peak_mb": 0.3225,
+      "memory_delta_mb": 0.0508,
+      "cpu_percent": 100.8,
+      "patterns_detected": 1,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "output_count": 2500,
+        "entropy": 11.2877
+      },
+      "timestamp": "2026-01-08T20:02:09.768499"
+    },
+    {
+      "test_name": "entropy_flood",
+      "case_id": "entropy_5000",
+      "status": "ok",
+      "execution_time_ms": 78.6994,
+      "memory_peak_mb": 0.645,
+      "memory_delta_mb": 0.0195,
+      "cpu_percent": 99.7,
+      "patterns_detected": 1,
+      "limit_triggered": null,
+      "exception": null,
+      "details": {
+        "output_count": 5000,
+        "entropy": 12.2877
+      },
+      "timestamp": "2026-01-08T20:02:09.880750"
+    },
+    {
+      "test_name": "pattern_saturation",
+      "case_id": "iterations_2000",
+      "status": "limit",
+      "execution_time_ms": 20071.5161,
+      "memory_peak_mb": 1.2118,
+      "memory_delta_mb": 0.0273,
+      "cpu_percent": 99.5,
+      "patterns_detected": 3779,
+      "limit_triggered": "time_limit",
+      "exception": null,
+      "details": {
+        "iterations": 319,
+        "pattern_cache": 3779
+      },
+      "timestamp": "2026-01-08T20:02:29.990461"
+    },
+    {
+      "test_name": "state_fuzzing",
+      "case_id": "fuzz_300",
+      "status": "limit",
+      "execution_time_ms": 20060.6164,
+      "memory_peak_mb": 86.6757,
+      "memory_delta_mb": 64.9414,
+      "cpu_percent": 97.2,
+      "patterns_detected": 809,
+      "limit_triggered": "time_limit",
+      "exception": null,
+      "details": {
+        "cases": 260,
+        "failures": 0
+      },
+      "timestamp": "2026-01-08T20:02:50.303755"
+    }
+  ],
+  "summary": {
+    "total_cases": 76,
+    "ok_cases": 70,
+    "limit_cases": 6,
+    "error_cases": 0,
+    "max_execution_ms": 20347.937,
+    "max_memory_mb": 86.6757
+  }
+}
