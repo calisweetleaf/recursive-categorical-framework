@@ -27,6 +27,7 @@ Verifies:
 - Meta-monitoring stability
 - AGM belief revision
 - Epistemic operators (K_a, M_a, B_a)
+Author: Christian Trey Levi Rowell
 """
 
 import json

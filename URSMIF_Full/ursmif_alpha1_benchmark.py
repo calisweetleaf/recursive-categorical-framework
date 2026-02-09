@@ -9,9 +9,8 @@ Validates URSMIF capabilities for Alpha-1 AGI integration:
 - RAL abstraction dynamics
 - Memory profiling & real-time performance
 
-Author: Daeron Blackfyre
+Author: Christian Trey Levi Rowell
 Date: January 8, 2026
-Purpose: Pre-collaboration validation for Alan Kleden's Alpha-1 project
 """
 
 import sys

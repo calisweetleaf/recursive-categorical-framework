@@ -6,6 +6,7 @@ usage, and failure thresholds. Generates:
 - Detailed terminal output
 - Markdown report
 - JSON manifest + JSON event log
+Author: Christian Trey Levi Rowell
 """
 
 import sys
